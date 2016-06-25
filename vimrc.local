@@ -1,0 +1,7 @@
+function! ShowColourSchemeName()
+    try
+        echo g:colors_name
+    catch /^Vim:E121/
+        echo default
+    endtry
+endfunction
