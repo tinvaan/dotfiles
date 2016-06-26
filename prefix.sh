@@ -1,5 +1,7 @@
 export KDE_INSTALL=/home/harish/devel/install
+export KDE_BUILD=/home/harish/devel/build
 
+export QTDIR=/usr
 export KF5=$KDE_INSTALL
 export XDG_DATA_DIRS=$KF5/share:$XDG_DATA_DIRS:/usr/local/share
 export XDG_CONFIG_DIRS=$KF5/etc/xdg:$XDG_CONFIG_DIRS:/usr/local/etc/xdg
