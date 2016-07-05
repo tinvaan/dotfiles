@@ -12,4 +12,4 @@ export QML_IMPORT_PATH=$QML2_IMPORT_PATH:$QML_IMPORT_PATH
 export CMAKE_PREFIX_PATH=$KF5:$CMAKE_PREFIX_PATH
 export KDEDIRS=$KDE_INSTALL:$KDEDIRS
 export LD_LIBRARY_PATH=$KDE_INSTALL/lib64:$LD_LIBRARY_PATH
-export PKG_CONFIG_PATH=/usr/lib/pkgconfig:/$KDE_INSTALL/lib64/pkgconfig:/usr/share/pkgconfig:$PKG_CONFIG_PATH
+export PKG_CONFIG_PATH=/usr/lib/pkgconfig:$KDE_INSTALL/lib64/pkgconfig:/usr/share/pkgconfig:$PKG_CONFIG_PATH
