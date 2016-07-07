@@ -1,7 +1,7 @@
 export KDE_INSTALL=/home/harish/devel/install
 export KDE_BUILD=/home/harish/devel/build
 
-export QTDIR=/usr
+#export QTDIR=/usr
 export KF5=$KDE_INSTALL
 export XDG_DATA_DIRS=$KF5/share:$XDG_DATA_DIRS:/usr/local/share
 export XDG_CONFIG_DIRS=$KF5/etc/xdg:$XDG_CONFIG_DIRS:/usr/local/etc/xdg
@@ -13,3 +13,5 @@ export CMAKE_PREFIX_PATH=$KF5:$CMAKE_PREFIX_PATH
 export KDEDIRS=$KDE_INSTALL:$KDEDIRS
 export LD_LIBRARY_PATH=$KDE_INSTALL/lib64:$LD_LIBRARY_PATH
 export PKG_CONFIG_PATH=/usr/lib/pkgconfig:$KDE_INSTALL/lib64/pkgconfig:/usr/share/pkgconfig:$PKG_CONFIG_PATH
+
+export KDE_INTEGRATION="true"
