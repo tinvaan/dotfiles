@@ -1,6 +1,6 @@
-export KDE_SRC=/home/harish/devel/src
-export KDE_BUILD=/home/harish/devel/build
-export KDE_INSTALL=/home/harish/devel/install
+export KDE_SRC=$HOME/projects/src
+export KDE_BUILD=$HOME/projects/build
+export KDE_INSTALL=$HOME/projects/install
 
 #export QTDIR=/usr
 export KF5=$KDE_INSTALL
