@@ -1,6 +1,6 @@
-export KDE_SRC=$HOME/projects/src
-export KDE_BUILD=$HOME/projects/build
-export KDE_INSTALL=$HOME/projects/install
+export KDE_SRC=$HOME/env/src
+export KDE_BUILD=$HOME/env/build
+export KDE_INSTALL=$HOME/env/install
 
 #export QTDIR=/usr
 export KF5=$KDE_INSTALL
