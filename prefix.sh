@@ -16,3 +16,13 @@ export LD_LIBRARY_PATH=$KDE_INSTALL/lib64:$LD_LIBRARY_PATH
 export PKG_CONFIG_PATH=/usr/lib/pkgconfig:$KDE_INSTALL/lib64/pkgconfig:/usr/share/pkgconfig:$PKG_CONFIG_PATH
 
 export KDE_INTEGRATION="true"
+
+export WORK=$KDE_SRC
+export work=$WORK
+
+# Python virtual environments
+export EDITOR=vim
+source virtualenvwrapper.sh
+source $HOME/dotfiles/anapi.sh
+
+export GOPATH=$HOME/env/build/go
