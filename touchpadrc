@@ -1,0 +1,6 @@
+[autodisable]
+DisableWhenMousePluggedIn=true
+
+[parameters]
+InvertVertScroll=true
+Tapping=true
