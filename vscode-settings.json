@@ -1,0 +1,64 @@
+{
+    "editor.fontFamily": "Fira Code Retina",
+    "editor.mouseWheelZoom": true,
+    "markdown.preview.fontSize": 13.5,
+    "window.menuBarVisibility": "toggle",
+    "editor.renderWhitespace": "boundary",
+    "workbench.editor.enablePreview": false,
+    "workbench.editor.enablePreviewFromQuickOpen": false,
+    "editor.smoothScrolling": true,
+    "breadcrumbs.enabled": true,
+    "editor.rulers": [80,120],
+    "[html]": {
+        "editor.tabSize": 2,
+        "editor.quickSuggestions": {
+            "other": true,
+            "comments": true,
+            "strings": true
+        }
+    },
+    "[django-html]": {
+        "editor.tabSize": 2,
+        "editor.quickSuggestions": {
+            "other": true,
+            "comments": true,
+            "strings": true
+        }
+    },
+    "[javascript]": {
+        "editor.tabSize": 2,
+        "editor.quickSuggestions": {
+            "other": true,
+            "comments": true,
+            "strings": true
+        }
+    },
+    "editor.fontLigatures": true,
+    "editor.minimap.showSlider": "always",
+    "workbench.editor.highlightModifiedTabs": true,
+    "workbench.editor.tabSizing": "shrink",
+    "search.showLineNumbers": true,
+    "editor.formatOnType": true,
+    "python.jediEnabled": false,
+    "monokaiPro.fileIconsMonochrome": true,
+    "window.zoomLevel": 0,
+    "window.titleBarStyle": "native",
+    "editor.cursorWidth": 5,
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "editor.fontSize": 13.5,
+    "editor.cursorStyle": "block",
+    "workbench.iconTheme": "vscode-icons",
+    "editor.fontWeight": "300",
+    "workbench.colorTheme": "One Dark Pro",
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                "scope": "variable.other.object",
+                "settings": {
+                    "foreground": "#e5c07bff"
+                }
+            }
+        ]
+    }
+}
