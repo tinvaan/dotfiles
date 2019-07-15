@@ -1,9 +1,9 @@
 {
-    "editor.fontFamily": "Fira Code Retina",
     "editor.mouseWheelZoom": true,
     "markdown.preview.fontSize": 13.5,
     "window.menuBarVisibility": "toggle",
     "editor.renderWhitespace": "boundary",
+    "workbench.sideBar.location": "left",
     "workbench.editor.enablePreview": false,
     "workbench.editor.enablePreviewFromQuickOpen": false,
     "editor.smoothScrolling": true,
@@ -46,19 +46,357 @@
     "editor.cursorWidth": 5,
     "editor.suggestSelection": "first",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-    "editor.fontSize": 13.5,
     "editor.cursorStyle": "block",
-    "workbench.iconTheme": "vscode-icons",
-    "editor.fontWeight": "300",
-    "workbench.colorTheme": "One Dark Pro",
+    "workbench.iconTheme": "material-icon-theme",
+    "bracket-pair-colorizer-2.colors": [
+        "#a0721cf1",
+        "Orchid",
+        "LightSkyBlue"
+    ],
     "editor.tokenColorCustomizations": {
         "textMateRules": [
             {
-                "scope": "variable.other.object",
+                "scope": [
+                    "variable.other.object"
+                ],
                 "settings": {
-                    "foreground": "#e5c07bff"
+                    "foreground": "#968527f1"
                 }
             }
-        ]
-    }
+        ],
+        "[Default Light+]": {
+            "textMateRules": [
+                {
+                    "scope": [
+                       "meta.function-call",
+                       "meta.member.access.python",
+                       "meta.function-call.generic",
+                       "meta.function-call.generic.python"
+                    ],
+                    "settings": {
+                        "foreground": "#001080"
+                    }
+                }
+            ]
+        },
+         "[Better Solarized Light]": {
+             "textMateRules": [
+                 {
+                     "scope": [
+                         "meta.function-call",
+                         "meta.function-call.python",
+                         "meta.function-call.generic.python"
+                     ],
+                     "settings": {
+                         "foreground": "#268BD2"
+                     }
+                 }
+             ]
+         },
+         "[Better Solarized Dark]": {
+             "textMateRules": [
+                 {
+                     "scope": [
+                        "meta.function-call.python",
+                        "meta.function-call.generic.python"
+                     ],
+                     "settings": {
+                         "foreground": "#268BD2"
+                     }
+                 }
+             ]
+         },
+         "[Cameo One Dark]": {
+            "textMateRules": [
+                {
+                    "scope": "storage",
+                    "settings": {
+                        "fontStyle": "italic"
+                    },
+                },
+                {
+                    "scope": "keyword.control.flow.python",
+                    "settings": {
+                        "fontStyle": ""
+                    }
+                }
+            ]
+        },
+         "[CodeSandbox]": {
+             "textMateRules": [
+                {
+                    "scope": [
+                        "meta.function-call.python",
+                        "meta.function-call.generic.python"
+                    ],
+                    "settings": {
+                        "foreground": "#61afefff",
+                    }
+                },
+                {
+                    "scope": [
+                        "comment.line.double-slash",
+                        "comment.line.number-sign.python"
+                    ],
+                    "settings": {
+                        "fontStyle": ""
+                    }
+                }
+             ]
+         },
+         "[CodeSandbox Black]": {
+            "textMateRules": [
+                {
+                    "scope": [
+                        "meta.function-call.python",
+                        "meta.function-call.generic.python"
+                    ],
+                    "settings": {
+                        "foreground": "#61afefff",
+                    }
+                },
+                {
+                    "scope": [
+                        "comment.line.double-slash",
+                        "comment.line.number-sign.python"
+                    ],
+                    "settings": {
+                        "fontStyle": ""
+                    }
+                }
+             ]
+         },
+         "[Material Gecko(No italics)]": {
+            "textMateRules": [
+                {
+                    "scope": [
+                        "storage.type",
+                        "keyword.control",
+                        "keyword.control.flow.js"
+                    ],
+                    "settings": {
+                        "fontStyle": ""
+                    }
+                }
+            ]
+         },
+         "[Material Theme High Contrast]": {
+            "textMateRules": [
+                {
+                    "scope": [
+                        "text.html.jinja",
+                        "keyword.control",
+                        "meta.block",
+                        "meta.tag.block.any",
+                        "meta.function.expression",
+                        "comment.line.double-slash",
+                        "entity.other.attribute-name",
+                    ],
+                    "settings": {
+                        "fontStyle": ""
+                    }
+                }
+            ]
+         },
+         "[GitHub Plus]": {
+            "textMateRules": [
+                {
+                    "scope": "variable.language.special.self.python",
+                    "settings": {
+                        "foreground": "#D73A49"
+                    }
+                },
+                {
+                    "scope": "variable.parameter.function-call.python",
+                    "settings": {
+                        "foreground": "#E27F2D",
+                    }
+                }
+            ]
+        },
+        "[Sublime Material Theme - Dark]": {
+            "textMateRules": [
+                {
+                    "scope": "keyword.control",
+                    "settings": {
+                        "fontStyle": ""
+                    }
+                }
+            ]
+        },
+        "[Sourcegraph Dark]": {
+            "textMateRules": [
+                {
+                    "scope": "meta.function-call.arguments.python",
+                    "settings": {
+                        "foreground": "#72C3FC"
+                    }
+                },
+                {
+                    "scope": [
+                        "meta.function-call",
+                        "meta.function-call.python",
+                        "meta.function-call.generic.python"
+                    ],
+                    "settings": {
+                        "foreground": "#0066ff",
+                    }
+                }
+            ]
+        },
+        "[Night Owl Black]": {
+            "textMateRules": [
+                {
+                    "scope": [
+                        "meta.function-call",
+                        "meta.function-call.generic.python"
+                    ],
+                    "settings": {
+                        "foreground": "#001080"
+                    }
+                }
+            ]
+        },
+         "[Xcode Partial (Light)]": {
+            "textMateRules": [
+                {
+                    "scope": [
+                        "meta.function-call.python",
+                        "meta.function-call.generic.python",
+                        "keyword.operator.logical.python"
+                    ],
+                    "settings": {
+                        "foreground": "#2F7A90"
+                    },
+                },
+                {
+                    "scope": [
+                        "constant.numeric.dec",
+                        "meta.function-call.arguments",
+                        "variable.language.special.self.python"
+                    ],
+                    "settings": {
+                        "foreground": "#0A1776"
+                    }
+                },
+                {
+                    "scope": "keyword.operator.arithmetic",
+                    "settings": {
+                        "foreground": "#ff816fff",
+                    }
+                },
+                {
+                    "scope": [
+                        "comment.line.double-slash",
+                        "comment.line.number-sign.python"
+                    ],
+                    "settings": {
+                        "fontStyle": ""
+                    }
+                }
+             ]
+         },
+         "[Xcode Default (Dark)]": {
+             "textMateRules": [
+                {
+                    "scope": [
+                        "meta.function-call.python",
+                        "meta.function-call.generic.python",
+                        "keyword.operator.logical.python"
+                    ],
+                    "settings": {
+                        "foreground": "#A79DF8"
+                    },
+                },
+                {
+                    "scope": [
+                        "constant.numeric.dec",
+                        "meta.function-call.arguments",
+                        "variable.language.special.self.python"
+                    ],
+                    "settings": {
+                        "foreground": "#61afefff"
+                    }
+                },
+                {
+                    "scope": "keyword.operator.arithmetic",
+                    "settings": {
+                        "foreground": "#ff816fff",
+                    }
+                },
+                {
+                    "scope": [
+                        "comment.line.double-slash",
+                        "comment.line.number-sign.python"
+                    ],
+                    "settings": {
+                        "fontStyle": ""
+                    }
+                }
+             ]
+         },
+         "[Xcode Partial (Dark)]": {
+            "textMateRules": [
+                {
+                    "scope": "source",
+                    "settings": {
+                        "foreground": "#D4D4D4",
+                    }
+                },
+                {
+                    "scope": [
+                        "meta.function-call.python",
+                        "meta.function-call.generic.python",
+                        "keyword.operator.logical.python"
+                    ],
+                    "settings": {
+                        "foreground": "#A79DF8"
+                    },
+                },
+                {
+                    "scope": [
+                        "constant.numeric.dec",
+                        "meta.function-call.arguments",
+                        "variable.language.special.self.python"
+                    ],
+                    "settings": {
+                        "foreground": "#61afefff"
+                    }
+                },
+                {
+                    "scope": "keyword.operator.arithmetic",
+                    "settings": {
+                        "foreground": "#ff816fff",
+                    }
+                },
+                {
+                    "scope": [
+                        "comment.line.double-slash",
+                        "comment.line.number-sign.python"
+                    ],
+                    "settings": {
+                        "fontStyle": ""
+                    }
+                }
+             ]
+         }
+    },
+    "leetcode.workspaceFolder": "/run/media/harish/WORK/code/scratch/challenges/leetcode",
+    "leetcode.defaultLanguage": "python3",
+    "leetcode.hint.configWebviewMarkdown": false,
+    "leetcode.hint.commandShortcut": false,
+    "leetcode.showLocked": true,
+    "font-switcher.enableLivePreview": true,
+    "font-switcher.fontFamily": "Andale Mono, Anonymous Pro, Anonymous Pro Minus, Code New Roman, Consolas, Courier, Courier Prime Code, Dank Mono, Droid Sans Mono, DejaVu Sans Code, DejaVu Sans Mono, Iosevka, Input Mono, Monaco, Monospace, Noto Sans Mono, Operator Mono Book, Operator Mono Medium, Hasklig, Fira Code Retina, Fira Mono, Cascadia Code, League Mono, Roboto Mono, Space Mono, Go Mono, Source Code Pro, Source Code Variable, Ubuntu Mono",
+    "terminal.integrated.rendererType": "dom",
+    "workbench.colorTheme": "Night Owl Black",
+    "errorLens.fontWeight": "100",
+    "errorLens.gutterIconsEnabled": true,
+    "C_Cpp.updateChannel": "Insiders",
+    "leetcode.showCommentDescription": true,
+    "leetcode.hint.commentDescription": false,
+    "vsicons.dontShowNewVersionMessage": true,
+    "latex-workshop.view.pdf.viewer": "tab",
+    "editor.fontSize": 13,
+    "editor.fontFamily": "Cascadia Code"
 }
