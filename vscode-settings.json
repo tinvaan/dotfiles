@@ -79,6 +79,38 @@
                 }
             ]
         },
+        "[After Dark]": {
+            "textMateRules": [
+                {
+                    "scope": "variable.language.special.self.python",
+                    "settings": {
+                        "foreground": "#F386BF",
+                    }
+                },
+                {
+                    "scope": "meta.function-call.arguments",
+                    "settings": {
+                        "foreground": "#88ABF9"
+                    }
+                }
+            ]
+        },
+        "[After Dark No Italics]": {
+            "textMateRules": [
+                {
+                    "scope": "variable.language.special.self.python",
+                    "settings": {
+                        "foreground": "#F386BF",
+                    }
+                },
+                {
+                    "scope": "meta.function-call.arguments",
+                    "settings": {
+                        "foreground": "#88ABF9"
+                    }
+                }
+            ]
+        },
          "[Better Solarized Light]": {
              "textMateRules": [
                  {
@@ -252,7 +284,7 @@
                         "meta.function-call.generic.python"
                     ],
                     "settings": {
-                        "foreground": "#001080"
+                        "foreground": "#7FDBCA"
                     }
                 }
             ]
@@ -389,7 +421,6 @@
     "font-switcher.enableLivePreview": true,
     "font-switcher.fontFamily": "Andale Mono, Anonymous Pro, Anonymous Pro Minus, Code New Roman, Consolas, Courier, Courier Prime Code, Dank Mono, Droid Sans Mono, DejaVu Sans Code, DejaVu Sans Mono, Iosevka, Input Mono, Monaco, Monospace, Noto Sans Mono, Operator Mono Book, Operator Mono Medium, Hasklig, Fira Code Retina, Fira Mono, Cascadia Code, League Mono, Roboto Mono, Space Mono, Go Mono, Source Code Pro, Source Code Variable, Ubuntu Mono",
     "terminal.integrated.rendererType": "dom",
-    "workbench.colorTheme": "Night Owl Black",
     "errorLens.fontWeight": "100",
     "errorLens.gutterIconsEnabled": true,
     "C_Cpp.updateChannel": "Insiders",
@@ -398,5 +429,6 @@
     "vsicons.dontShowNewVersionMessage": true,
     "latex-workshop.view.pdf.viewer": "tab",
     "editor.fontSize": 13,
-    "editor.fontFamily": "Cascadia Code"
+    "editor.fontFamily": "Cascadia Code",
+    "workbench.colorTheme": "After Dark No Italics"
 }
