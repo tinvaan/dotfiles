@@ -246,6 +246,26 @@
                 }
             ]
         },
+        "[Gruvbox Dark (Hard)]": {
+            "textMateRules": [
+                {
+                    "scope": "comment",
+                    "settings": {
+                        "fontStyle": ""
+                    }
+                },
+                {
+                    "scope": [
+                        "meta.function-call.generic.python",
+                        "meta.function-call.python",
+                        "meta.member.access.python"
+                    ],
+                    "settings": {
+                        "foreground": "#FABD2F",
+                    }
+                }
+            ]
+        },
         "[Sublime Material Theme - Dark]": {
             "textMateRules": [
                 {
@@ -430,5 +450,5 @@
     "latex-workshop.view.pdf.viewer": "tab",
     "editor.fontSize": 13,
     "editor.fontFamily": "Cascadia Code",
-    "workbench.colorTheme": "After Dark No Italics"
+    "workbench.colorTheme": "Gruvbox Dark (Hard)"
 }
