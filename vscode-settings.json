@@ -111,34 +111,57 @@
                 }
             ]
         },
-         "[Better Solarized Light]": {
-             "textMateRules": [
-                 {
-                     "scope": [
-                         "meta.function-call",
-                         "meta.function-call.python",
-                         "meta.function-call.generic.python"
-                     ],
-                     "settings": {
-                         "foreground": "#268BD2"
-                     }
-                 }
-             ]
-         },
-         "[Better Solarized Dark]": {
-             "textMateRules": [
-                 {
-                     "scope": [
+        "[One Dark Pro]": {
+            "textMateRules": [
+                {
+                    "scope": "meta.member.access.python",
+                    "settings": {
+                        "fontStyle": ""
+                    }
+                },
+                {
+                    "scope": [
+                        "storage",
+                        "keyword.control.flow.python",
+                        "keyword.control.import.python",
+                        "meta.function.parameters.python",
+                        "comment.line.number-sign.python",
+                        "variable.parameter.function.language.python"
+                    ],
+                    "settings": {
+                        "fontStyle": ""
+                    }
+                }
+            ]
+        },
+        "[Better Solarized Light]": {
+            "textMateRules": [
+                {
+                    "scope": [
+                        "meta.function-call",
                         "meta.function-call.python",
                         "meta.function-call.generic.python"
-                     ],
-                     "settings": {
-                         "foreground": "#268BD2"
-                     }
-                 }
-             ]
-         },
-         "[Cameo One Dark]": {
+                    ],
+                    "settings": {
+                        "foreground": "#268BD2"
+                    }
+                }
+            ]
+        },
+        "[Better Solarized Dark]": {
+            "textMateRules": [
+                {
+                    "scope": [
+                    "meta.function-call.python",
+                    "meta.function-call.generic.python"
+                    ],
+                    "settings": {
+                        "foreground": "#268BD2"
+                    }
+                }
+            ]
+        },
+        "[Cameo One Dark]": {
             "textMateRules": [
                 {
                     "scope": "storage",
@@ -154,83 +177,83 @@
                 }
             ]
         },
-         "[CodeSandbox]": {
-             "textMateRules": [
-                {
-                    "scope": [
-                        "meta.function-call.python",
-                        "meta.function-call.generic.python"
-                    ],
-                    "settings": {
-                        "foreground": "#61afefff",
-                    }
-                },
-                {
-                    "scope": [
-                        "comment.line.double-slash",
-                        "comment.line.number-sign.python"
-                    ],
-                    "settings": {
-                        "fontStyle": ""
-                    }
-                }
-             ]
-         },
-         "[CodeSandbox Black]": {
+        "[CodeSandbox]": {
             "textMateRules": [
-                {
-                    "scope": [
-                        "meta.function-call.python",
-                        "meta.function-call.generic.python"
-                    ],
-                    "settings": {
-                        "foreground": "#61afefff",
-                    }
-                },
-                {
-                    "scope": [
-                        "comment.line.double-slash",
-                        "comment.line.number-sign.python"
-                    ],
-                    "settings": {
-                        "fontStyle": ""
-                    }
+            {
+                "scope": [
+                    "meta.function-call.python",
+                    "meta.function-call.generic.python"
+                ],
+                "settings": {
+                    "foreground": "#61afefff",
                 }
-             ]
-         },
-         "[Material Gecko(No italics)]": {
-            "textMateRules": [
-                {
-                    "scope": [
-                        "storage.type",
-                        "keyword.control",
-                        "keyword.control.flow.js"
-                    ],
-                    "settings": {
-                        "fontStyle": ""
-                    }
+            },
+            {
+                "scope": [
+                    "comment.line.double-slash",
+                    "comment.line.number-sign.python"
+                ],
+                "settings": {
+                    "fontStyle": ""
                 }
+            }
             ]
-         },
-         "[Material Theme High Contrast]": {
-            "textMateRules": [
-                {
-                    "scope": [
-                        "text.html.jinja",
-                        "keyword.control",
-                        "meta.block",
-                        "meta.tag.block.any",
-                        "meta.function.expression",
-                        "comment.line.double-slash",
-                        "entity.other.attribute-name",
-                    ],
-                    "settings": {
-                        "fontStyle": ""
-                    }
+        },
+        "[CodeSandbox Black]": {
+        "textMateRules": [
+            {
+                "scope": [
+                    "meta.function-call.python",
+                    "meta.function-call.generic.python"
+                ],
+                "settings": {
+                    "foreground": "#61afefff",
                 }
+            },
+            {
+                "scope": [
+                    "comment.line.double-slash",
+                    "comment.line.number-sign.python"
+                ],
+                "settings": {
+                    "fontStyle": ""
+                }
+            }
             ]
-         },
-         "[GitHub Plus]": {
+        },
+        "[Material Gecko(No italics)]": {
+        "textMateRules": [
+            {
+                "scope": [
+                    "storage.type",
+                    "keyword.control",
+                    "keyword.control.flow.js"
+                ],
+                "settings": {
+                    "fontStyle": ""
+                }
+            }
+        ]
+        },
+        "[Material Theme High Contrast]": {
+        "textMateRules": [
+            {
+                "scope": [
+                    "text.html.jinja",
+                    "keyword.control",
+                    "meta.block",
+                    "meta.tag.block.any",
+                    "meta.function.expression",
+                    "comment.line.double-slash",
+                    "entity.other.attribute-name",
+                ],
+                "settings": {
+                    "fontStyle": ""
+                }
+            }
+        ]
+        },
+        "[GitHub Plus]": {
             "textMateRules": [
                 {
                     "scope": "variable.language.special.self.python",
@@ -309,129 +332,129 @@
                 }
             ]
         },
-         "[Xcode Partial (Light)]": {
+        "[Xcode Partial (Light)]": {
+        "textMateRules": [
+            {
+                "scope": [
+                    "meta.function-call.python",
+                    "meta.function-call.generic.python",
+                    "keyword.operator.logical.python"
+                ],
+                "settings": {
+                    "foreground": "#2F7A90"
+                },
+            },
+            {
+                "scope": [
+                    "constant.numeric.dec",
+                    "meta.function-call.arguments",
+                    "variable.language.special.self.python"
+                ],
+                "settings": {
+                    "foreground": "#0A1776"
+                }
+            },
+            {
+                "scope": "keyword.operator.arithmetic",
+                "settings": {
+                    "foreground": "#ff816fff",
+                }
+            },
+            {
+                "scope": [
+                    "comment.line.double-slash",
+                    "comment.line.number-sign.python"
+                ],
+                "settings": {
+                    "fontStyle": ""
+                }
+            }
+            ]
+        },
+        "[Xcode Default (Dark)]": {
             "textMateRules": [
-                {
-                    "scope": [
-                        "meta.function-call.python",
-                        "meta.function-call.generic.python",
-                        "keyword.operator.logical.python"
-                    ],
-                    "settings": {
-                        "foreground": "#2F7A90"
-                    },
+            {
+                "scope": [
+                    "meta.function-call.python",
+                    "meta.function-call.generic.python",
+                    "keyword.operator.logical.python"
+                ],
+                "settings": {
+                    "foreground": "#A79DF8"
                 },
-                {
-                    "scope": [
-                        "constant.numeric.dec",
-                        "meta.function-call.arguments",
-                        "variable.language.special.self.python"
-                    ],
-                    "settings": {
-                        "foreground": "#0A1776"
-                    }
-                },
-                {
-                    "scope": "keyword.operator.arithmetic",
-                    "settings": {
-                        "foreground": "#ff816fff",
-                    }
-                },
-                {
-                    "scope": [
-                        "comment.line.double-slash",
-                        "comment.line.number-sign.python"
-                    ],
-                    "settings": {
-                        "fontStyle": ""
-                    }
+            },
+            {
+                "scope": [
+                    "constant.numeric.dec",
+                    "meta.function-call.arguments",
+                    "variable.language.special.self.python"
+                ],
+                "settings": {
+                    "foreground": "#61afefff"
                 }
-             ]
-         },
-         "[Xcode Default (Dark)]": {
-             "textMateRules": [
-                {
-                    "scope": [
-                        "meta.function-call.python",
-                        "meta.function-call.generic.python",
-                        "keyword.operator.logical.python"
-                    ],
-                    "settings": {
-                        "foreground": "#A79DF8"
-                    },
-                },
-                {
-                    "scope": [
-                        "constant.numeric.dec",
-                        "meta.function-call.arguments",
-                        "variable.language.special.self.python"
-                    ],
-                    "settings": {
-                        "foreground": "#61afefff"
-                    }
-                },
-                {
-                    "scope": "keyword.operator.arithmetic",
-                    "settings": {
-                        "foreground": "#ff816fff",
-                    }
-                },
-                {
-                    "scope": [
-                        "comment.line.double-slash",
-                        "comment.line.number-sign.python"
-                    ],
-                    "settings": {
-                        "fontStyle": ""
-                    }
+            },
+            {
+                "scope": "keyword.operator.arithmetic",
+                "settings": {
+                    "foreground": "#ff816fff",
                 }
-             ]
-         },
-         "[Xcode Partial (Dark)]": {
-            "textMateRules": [
-                {
-                    "scope": "source",
-                    "settings": {
-                        "foreground": "#D4D4D4",
-                    }
-                },
-                {
-                    "scope": [
-                        "meta.function-call.python",
-                        "meta.function-call.generic.python",
-                        "keyword.operator.logical.python"
-                    ],
-                    "settings": {
-                        "foreground": "#A79DF8"
-                    },
-                },
-                {
-                    "scope": [
-                        "constant.numeric.dec",
-                        "meta.function-call.arguments",
-                        "variable.language.special.self.python"
-                    ],
-                    "settings": {
-                        "foreground": "#61afefff"
-                    }
-                },
-                {
-                    "scope": "keyword.operator.arithmetic",
-                    "settings": {
-                        "foreground": "#ff816fff",
-                    }
-                },
-                {
-                    "scope": [
-                        "comment.line.double-slash",
-                        "comment.line.number-sign.python"
-                    ],
-                    "settings": {
-                        "fontStyle": ""
-                    }
+            },
+            {
+                "scope": [
+                    "comment.line.double-slash",
+                    "comment.line.number-sign.python"
+                ],
+                "settings": {
+                    "fontStyle": ""
                 }
-             ]
-         }
+            }
+            ]
+        },
+        "[Xcode Partial (Dark)]": {
+        "textMateRules": [
+            {
+                "scope": "source",
+                "settings": {
+                    "foreground": "#D4D4D4",
+                }
+            },
+            {
+                "scope": [
+                    "meta.function-call.python",
+                    "meta.function-call.generic.python",
+                    "keyword.operator.logical.python"
+                ],
+                "settings": {
+                    "foreground": "#A79DF8"
+                },
+            },
+            {
+                "scope": [
+                    "constant.numeric.dec",
+                    "meta.function-call.arguments",
+                    "variable.language.special.self.python"
+                ],
+                "settings": {
+                    "foreground": "#61afefff"
+                }
+            },
+            {
+                "scope": "keyword.operator.arithmetic",
+                "settings": {
+                    "foreground": "#ff816fff",
+                }
+            },
+            {
+                "scope": [
+                    "comment.line.double-slash",
+                    "comment.line.number-sign.python"
+                ],
+                "settings": {
+                    "fontStyle": ""
+                }
+            }
+            ]
+        }
     },
     "leetcode.workspaceFolder": "/run/media/harish/WORK/code/scratch/challenges/leetcode",
     "leetcode.defaultLanguage": "python3",
@@ -450,5 +473,5 @@
     "latex-workshop.view.pdf.viewer": "tab",
     "editor.fontSize": 13,
     "editor.fontFamily": "Cascadia Code",
-    "workbench.colorTheme": "Gruvbox Dark (Hard)"
+    "workbench.colorTheme": "One Dark Pro"
 }
