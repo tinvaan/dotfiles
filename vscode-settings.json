@@ -3,7 +3,7 @@
     "markdown.preview.fontSize": 13.5,
     "window.menuBarVisibility": "toggle",
     "editor.renderWhitespace": "boundary",
-    "workbench.sideBar.location": "left",
+    "workbench.sideBar.location": "right",
     "workbench.editor.enablePreview": false,
     "workbench.editor.enablePreviewFromQuickOpen": false,
     "editor.smoothScrolling": true,
@@ -43,10 +43,9 @@
     "monokaiPro.fileIconsMonochrome": true,
     "window.zoomLevel": 0,
     "window.titleBarStyle": "native",
-    "editor.cursorWidth": 5,
+    "editor.cursorWidth": 2,
     "editor.suggestSelection": "first",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-    "editor.cursorStyle": "block",
     "workbench.iconTheme": "material-icon-theme",
     "bracket-pair-colorizer-2.colors": [
         "#a0721cf1",
@@ -179,79 +178,215 @@
         },
         "[CodeSandbox]": {
             "textMateRules": [
-            {
-                "scope": [
-                    "meta.function-call.python",
-                    "meta.function-call.generic.python"
-                ],
-                "settings": {
-                    "foreground": "#61afefff",
+                {
+                    "scope": "meta.function-call.arguments.python",
+                    "settings": {
+                        "foreground": "#D19A66",
+                    }
+                },
+                {
+                    "scope": "variable.parameter.function-call.python",
+                    "settings": {
+                        "foreground": "#E06C75"
+                    }
+                },
+                {
+                    "scope": [
+                        "meta.function-call.python",
+                        "meta.function-call.generic.python"
+                    ],
+                    "settings": {
+                        "foreground": "#61afefff",
+                    }
+                },
+                {
+                    "scope": [
+                        "comment.line.double-slash",
+                        "comment.line.number-sign.python"
+                    ],
+                    "settings": {
+                        "fontStyle": ""
+                    }
                 }
-            },
-            {
-                "scope": [
-                    "comment.line.double-slash",
-                    "comment.line.number-sign.python"
-                ],
-                "settings": {
-                    "fontStyle": ""
-                }
-            }
             ]
         },
         "[CodeSandbox Black]": {
-        "textMateRules": [
-            {
-                "scope": [
-                    "meta.function-call.python",
-                    "meta.function-call.generic.python"
-                ],
-                "settings": {
-                    "foreground": "#61afefff",
+            "textMateRules": [
+                {
+                    "scope": "meta.function-call.arguments.python",
+                    "settings": {
+                        "foreground": "#D19A66",
+                    }
+                },
+                {
+                    "scope": "variable.parameter.function-call.python",
+                    "settings": {
+                        "foreground": "#E06C75"
+                    }
+                },
+                {
+                    "scope": [
+                        "meta.function-call.python",
+                        "meta.function-call.generic.python"
+                    ],
+                    "settings": {
+                        "foreground": "#61afefff",
+                    }
+                },
+                {
+                    "scope": [
+                        "comment.line.double-slash",
+                        "comment.line.number-sign.python"
+                    ],
+                    "settings": {
+                        "fontStyle": ""
+                    }
                 }
-            },
-            {
-                "scope": [
-                    "comment.line.double-slash",
-                    "comment.line.number-sign.python"
-                ],
-                "settings": {
-                    "fontStyle": ""
-                }
-            }
             ]
         },
         "[Material Gecko(No italics)]": {
-        "textMateRules": [
-            {
-                "scope": [
-                    "storage.type",
-                    "keyword.control",
-                    "keyword.control.flow.js"
-                ],
-                "settings": {
-                    "fontStyle": ""
+            "textMateRules": [
+                {
+                    "scope": [
+                        "storage.type",
+                        "keyword.control",
+                        "keyword.control.flow.js"
+                    ],
+                    "settings": {
+                        "fontStyle": ""
+                    }
                 }
-            }
-        ]
+            ]
         },
         "[Material Theme High Contrast]": {
-        "textMateRules": [
-            {
-                "scope": [
-                    "text.html.jinja",
-                    "keyword.control",
-                    "meta.block",
-                    "meta.tag.block.any",
-                    "meta.function.expression",
-                    "comment.line.double-slash",
-                    "entity.other.attribute-name",
-                ],
-                "settings": {
-                    "fontStyle": ""
+            "textMateRules": [
+                {
+                    "scope": [
+                        "text.html.jinja",
+                        "keyword.control",
+                        "meta.block",
+                        "meta.tag.block.any",
+                        "meta.function.expression",
+                        "comment.line.double-slash",
+                        "entity.other.attribute-name",
+                    ],
+                    "settings": {
+                        "fontStyle": ""
+                    }
                 }
-            }
-        ]
+            ]
+        },
+        "[GitHub Light]": {
+            "textMateRules": [
+                {
+                    "scope": "meta.member.access.python",
+                    "settings": {
+                        "foreground": "#FFAB70",
+                    }
+                },
+                {
+                    "scope": "variable.language.special.self.python",
+                    "settings": {
+                        "foreground": "#D73A49"
+                    }
+                },
+                {
+                    "scope": [
+                        "meta.member.access.python",
+                        "meta.function-call.arguments.python",
+                        "entity.name.function.decorator.python"
+                    ],
+                    "settings": {
+                        "foreground": "#005CC5"
+                    }
+                },
+                // {
+                //     "scope": [
+                //         "meta.function-call.python",
+                //         "meta.function-call.generic.python"
+                //     ],
+                //     "settings": {
+                //         "foreground": "#6F42C1",
+                //     }
+                // },
+                {
+                    "scope": "meta.function-call.arguments.python",
+                    "settings": {
+                        "foreground": "#24292E"
+                    }
+                },
+                {
+                    "scope": [
+                        "string.quoted",
+                        "string.unquoted",
+                        "string.quoted.single",
+                        "string.quoted.double",
+                        "string.quoted.triple",
+                        "string.interpolated",
+                        "string.regexp",
+                        "string.other"
+                    ],
+                    "settings": {
+                        "foreground": "#6e95bd"
+                    }
+                },
+            ]
+        },
+        "[GitHub Dark]": {
+            "textMateRules": [
+                {
+                    "scope": "meta.member.access.python",
+                    "settings": {
+                        "foreground": "#FFAB70",
+                    }
+                },
+                {
+                    "scope": "variable.language.special.self.python",
+                    "settings": {
+                        "foreground": "#F97583"
+                    }
+                },
+                {
+                    "scope": [
+                        "meta.member.access.python",
+                        "meta.function-call.arguments.python",
+                        "entity.name.function.decorator.python"
+                    ],
+                    "settings": {
+                        "foreground": "#79B8FF"
+                    }
+                },
+                // {
+                //     "scope": [
+                //         "meta.function-call.python",
+                //         "meta.function-call.generic.python"
+                //     ],
+                //     "settings": {
+                //         "foreground": "#B392F0",
+                //     }
+                // },
+                {
+                    "scope": "meta.function-call.arguments.python",
+                    "settings": {
+                        "foreground": "#FAFBFC"
+                    }
+                },
+                {
+                    "scope": [
+                        "string.quoted",
+                        "string.unquoted",
+                        "string.quoted.single",
+                        "string.quoted.double",
+                        "string.quoted.triple",
+                        "string.interpolated",
+                        "string.regexp",
+                        "string.other"
+                    ],
+                    "settings": {
+                        "foreground": "#748ea8"
+                    }
+                },
+            ]
         },
         "[GitHub Plus]": {
             "textMateRules": [
@@ -472,6 +607,7 @@
     "vsicons.dontShowNewVersionMessage": true,
     "latex-workshop.view.pdf.viewer": "tab",
     "editor.fontSize": 13,
+    "workbench.colorTheme": "CodeSandbox Black",
     "editor.fontFamily": "Cascadia Code",
-    "workbench.colorTheme": "One Dark Pro"
+    "editor.cursorStyle": "block"
 }
