@@ -176,6 +176,52 @@
                 }
             ]
         },
+        "[CodePen-Nights]": {
+            "textMateRules": [
+                {
+                    "scope": "variable.parameter.function-call.python",
+                    "settings": {
+                        "foreground": "#E06C75"
+                    }
+                },
+                {
+                    "scope": "meta.function-call.arguments.python",
+                    "settings": {
+                        "foreground": "#D19A66",
+                    }
+                },
+                {
+                    "scope": [
+                        "meta.function-call.python",
+                        "meta.function-call.generic.python"
+                    ],
+                    "settings": {
+                        "foreground": "#61afefff",
+                    }
+                },
+                {
+                    "scope": [
+                        "comment.line.double-slash",
+                        "comment.line.number-sign.python",
+                        "keyword.control.flow.python"
+                    ],
+                    "settings": {
+                        "fontStyle": ""
+                    }
+                },
+                {
+                    "scope": [
+                        "keyword.control.import.python",
+                        "variable.language.special.self.python",
+                        "variable.parameter.function.language.special.self.python"
+                    ],
+                    "settings": {
+                        "foreground": "#FF8D41",
+                        "fontStyle": ""
+                    }
+                }
+            ]
+        },
         "[CodeSandbox]": {
             "textMateRules": [
                 {
