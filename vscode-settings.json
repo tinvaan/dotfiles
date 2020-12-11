@@ -24,8 +24,8 @@
     "editor.cursorWidth": 2,
     "editor.suggestSelection": "first",
     "workbench.iconTheme": "vscode-icons",
-    "workbench.colorTheme": "GitHub Dark",
-    "editor.fontFamily": "Cascadia Code",
+    "workbench.colorTheme": "Sourcegraph Dark",
+    "editor.fontFamily": "Dank Mono",
     "font-switcher.enableLivePreview": true,
     "font-switcher.fontFamily": "Andale Mono, Antikor Mono, Anonymous Pro, Anonymous Pro Minus, Code New Roman, Consolas, Courier, Courier Prime Code, Dank Mono, Droid Sans Mono, DejaVu Sans Code, DejaVu Sans Mono, Iosevka, Input Mono, Monaco, Monospace, Nitti, Noto Sans Mono, Operator Mono Book, Operator Mono Medium, Hasklig, JetBrains Mono, Fira Code Retina, Fira Mono, Cascadia Code, League Mono, Roboto Mono, Space Mono, Go Mono, San Francisco Mono, Source Code Pro, Source Code Variable, Ubuntu Mono",
     "vs-kubernetes": {
@@ -241,6 +241,36 @@
                 },
             ]
         },
+        "[Sourcegraph Dark]": {
+            "textMateRules": [
+                {
+                    "scope": "meta.function-call.arguments",
+                    "settings": {
+                        // "foreground": "#72C3FC"
+                        "foreground": "#cef7d6"
+                    }
+                },
+                {
+                    "scope": [
+                        "meta.indexed-name",
+                        "meta.function-call",
+                    ],
+                    "settings": {
+                        "foreground": "#329AF0"
+                    }
+                },
+                {
+                    "scope": [
+                        "variable.language.special.self.python",
+                        "variable.parameter.function-call.python",
+                        "variable.parameter.function.language.special.self.python"
+                    ],
+                    "settings": {
+                        "foreground": "#FFA8A8"
+                    }
+                }
+            ]
+        },
         "[Night Owl (No Italics)]": {
             "textMateRules": [
                 {
@@ -265,7 +295,7 @@
             ]
         }
     },
-    "editor.fontSize": 13.5,
+    "editor.fontSize": 15,
     "python.linting.flake8Enabled": true,
     "python.linting.pylintPath": "/usr/bin/pylint",
     "python.linting.flake8Path": "/usr/bin/flake8"
