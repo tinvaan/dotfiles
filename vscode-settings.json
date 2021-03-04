@@ -33,6 +33,32 @@
         "vs-kubernetes.helm-path.linux": "/home/harish/.vs-kubernetes/tools/helm/linux-amd64/helm",
         "vs-kubernetes.draft-path.linux": "/home/harish/.vs-kubernetes/tools/draft/linux-amd64/draft"
     },
+    "workbench.colorCustomizations": {
+        "[Default Dark+]": {
+            "activityBar.border": "#343434",
+            "activityBar.background": "#08090e",
+            "activityBarBadge.background": "#242424",
+            "sideBar.border": "#343434",
+            "sideBar.background": "#0c1117",
+            "sideBar.foreground": "#8c939b",
+            "sideBarTitle.foreground": "#fff",
+            "sideBarSectionHeader.border": "#343434",
+            "sideBarSectionHeader.foreground": "#fff",
+            "sideBarSectionHeader.background": "#0b1117",
+            "tab.border": "#08090e",
+            "tab.activeBorder": "#08090e",
+            "tab.activeForeground": "#fff",
+            "tab.activeBackground": "#08090e",
+            "tab.inactiveBackground": "#0c1117",
+            "tab.inactiveForeground": "#757575",
+            "tab.unfocusedActiveForeground": "#fff",
+            "tab.unfocusedInactiveForeground": "#757575",
+            "editor.background": "#08090e",
+            "editorWhitespace.foreground": "#242424",
+            "editorGroupHeader.tabsBackground": "#08090e",
+            "statusBar.background": "#08090e"
+        }
+    },
     "editor.tokenColorCustomizations": {
         "[CodePen-Nights]": {
             "textMateRules": [
@@ -128,6 +154,40 @@
                     ],
                     "settings": {
                         "fontStyle": ""
+                    }
+                }
+            ]
+        },
+        "[Default Dark+]": {
+            "textMateRules": [
+                {
+                    "scope": "meta.function-call.python",
+                    "settings": {
+                        "foreground": "#DCDCAA"
+                    }
+                },
+                {
+                    "scope": "meta.function-call.arguments.python",
+                    "settings": {
+                        "foreground": "#9CDCFE"
+                    }
+                },
+                {
+                    "scope": "variable.parameter.function-call.python",
+                    "settings": {
+                        "foreground": "#C586C0"
+                    }
+                },
+                {
+                    "scope": [
+                        "variable.language.special.cls.python",
+                        "variable.language.special.self.python",
+                        // "variable.parameter.function-call.python",
+                        "variable.parameter.function.language.special.cls.python",
+                        "variable.parameter.function.language.special.self.python"
+                    ],
+                    "settings": {
+                        "foreground": "#569CD6"
                     }
                 }
             ]
