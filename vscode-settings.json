@@ -13,7 +13,6 @@
     "editor.smoothScrolling": true,
     "breadcrumbs.enabled": true,
     "editor.fontLigatures": true,
-    "editor.cursorStyle": "block",
     "editor.minimap.showSlider": "always",
     "workbench.editor.highlightModifiedTabs": true,
     "workbench.editor.tabSizing": "shrink",
@@ -23,15 +22,13 @@
     "window.titleBarStyle": "native",
     "editor.cursorWidth": 2,
     "editor.suggestSelection": "first",
-    "workbench.iconTheme": "vscode-icons",
-    "workbench.colorTheme": "Sourcegraph Dark",
-    "editor.fontFamily": "Dank Mono",
-    "font-switcher.enableLivePreview": true,
-    "font-switcher.fontFamily": "Andale Mono, Antikor Mono, Anonymous Pro, Anonymous Pro Minus, Code New Roman, Consolas, Courier, Courier Prime Code, Dank Mono, Droid Sans Mono, DejaVu Sans Code, DejaVu Sans Mono, Iosevka, Input Mono, Monaco, Monospace, Nitti, Noto Sans Mono, Operator Mono Book, Operator Mono Medium, Hasklig, JetBrains Mono, Fira Code Retina, Fira Mono, Cascadia Code, League Mono, Roboto Mono, Space Mono, Go Mono, San Francisco Mono, Source Code Pro, Source Code Variable, Ubuntu Mono",
+    "editor.fontFamily": "Andale Mono, Consolas, San Francisco Mono, Fira Mono, JetBrains Mono, Cascadia Code, Operator Mono Medium, Fira Code Retina, Input Mono, League Mono, Noto Sans Mono, Anonymous Pro Minus, Operator Mono Book, Source Code Pro, Iosevka, Monaco, Code New Roman, DejaVu Sans Code, Antikor Mono, DejaVu Sans Mono, Monospace, Roboto Mono, Dank Mono, Source Code Variable, Hasklig, Courier Prime Code, Space Mono, Go Mono, Anonymous Pro, Droid Sans Mono, Ubuntu Mono, Nitti, MonoLisa, Fira Code Retina, Andale Mono, Courier",
     "vs-kubernetes": {
         "vs-kubernetes.minikube-path.linux": "/home/harish/.vs-kubernetes/tools/minikube/linux-amd64/minikube",
         "vs-kubernetes.helm-path.linux": "/home/harish/.vs-kubernetes/tools/helm/linux-amd64/helm",
-        "vs-kubernetes.draft-path.linux": "/home/harish/.vs-kubernetes/tools/draft/linux-amd64/draft"
+        "vs-kubernetes.draft-path.linux": "/home/harish/.vs-kubernetes/tools/draft/linux-amd64/draft",
+        "vscode-kubernetes.helm-path.linux": "/home/harish/.vs-kubernetes/tools/helm/linux-amd64/helm",
+        "vscode-kubernetes.minikube-path.linux": "/home/harish/.vs-kubernetes/tools/minikube/linux-amd64/minikube"
     },
     "workbench.colorCustomizations": {
         "[Default Dark+]": {
@@ -57,9 +54,187 @@
             "editorWhitespace.foreground": "#242424",
             "editorGroupHeader.tabsBackground": "#08090e",
             "statusBar.background": "#08090e"
+        },
+        "[One Monokai]": {
+            "activityBar.border": "#343434",
+            "activityBar.background": "#08090e",
+            "activityBarBadge.background": "#242424",
+            "editor.background": "#08090e",
+            "editorWhitespace.foreground": "#242424",
+            "sideBar.border": "#343434",
+            "sideBar.background": "#0c1117",
+            "sideBar.foreground": "#8c939b",
+            "sideBarTitle.foreground": "#fff",
+            "sideBarSectionHeader.border": "#343434",
+            "sideBarSectionHeader.foreground": "#fff",
+            "sideBarSectionHeader.background": "#0b1117"
+        },
+        "[GitHub Dark Default]": {
+            "editorWhitespace.foreground": "#242424"
+        },
+        "[GitHub Dark Dimmed]": {
+            "editorWhitespace.foreground": "#242424"
+        },
+        "[Better Solarized Dark]": {
+            "peekView.border": "#E50A69AB",
+            "peekViewTitle.background": "#002b36",
+            "peekViewResult.background": "#00212b",
+            "peekViewEditor.background": "#002b36",
+            "peekViewEditor.matchHighlightBackground": "#00212bAB"
         }
     },
+    "editor.semanticTokenColorCustomizations": {
+        "[After Dark]": {
+            "rules": {
+                "variable": "#ADBAC7",
+                "property": "#88ABF9"
+            }
+        },
+        "[After Dark No Italics]": {
+            "rules": {
+                "variable": "#ADBAC7",
+                "property": "#88ABF9"
+            }
+        },
+        // "[Default Dark+]": {
+        //     "rules": {
+        //         "class": "#DCDCAA"
+        //     }
+        // },
+        "[Default Dark+]": {},
+        "[One Dark Pro]": {
+            "rules": {
+                "variable": "#D4D4D4",
+                "function": "#61AFEF",
+                "*.decorator": "#e5c07b"
+            }
+        },
+    },
     "editor.tokenColorCustomizations": {
+        "[After Dark]": {
+            "textMateRules": [
+                {
+                    "scope": "meta.attribute.python",
+                    "settings": {
+                        // "foreground": "#E6A26F"
+                        "foreground": "#88ABF9"
+                    }
+                },
+                {
+                    "scope": [
+                        "variable.parameter",
+                        "variable.parameter.function.language.python",
+                    ],
+                    "settings": {
+                        "foreground": "#ADBAC7"
+                    }
+                },
+                {
+                    "scope": [
+                        "variable.language.special.cls.python",
+                        "variable.language.special.self.python",
+                        // "variable.parameter.function-call.python",
+                        "variable.parameter.function.language.special.cls.python",
+                        "variable.parameter.function.language.special.self.python"
+                    ],
+                    "settings": {
+                        "foreground": "#E6A26F"
+                    }
+                },
+                {
+                    "scope": [
+                        "string.quoted",
+                        "string.unquoted",
+                        "string.quoted.single",
+                        "string.quoted.double",
+                        "string.quoted.triple",
+                        "string.quoted.other",
+                        "string.interpolated",
+                        "string.regexp",
+                        "string.other"
+                    ],
+                    "settings": {
+                        "foreground": "#748EA8"
+                    }
+                }
+            ]
+        },
+        "[After Dark No Italics]": {
+            "textMateRules": [
+                {
+                    "scope": "meta.attribute.python",
+                    "settings": {
+                        // "foreground": "#E6A26F"
+                        "foreground": "#88ABF9"
+                    }
+                },
+                {
+                    "scope": [
+                        "variable.parameter",
+                        "variable.parameter.function.language.python",
+                    ],
+                    "settings": {
+                        "foreground": "#ADBAC7"
+                    }
+                },
+                {
+                    "scope": [
+                        "variable.language.special.cls.python",
+                        "variable.language.special.self.python",
+                        // "variable.parameter.function-call.python",
+                        "variable.parameter.function.language.special.cls.python",
+                        "variable.parameter.function.language.special.self.python"
+                    ],
+                    "settings": {
+                        "foreground": "#E6A26F"
+                    }
+                },
+                {
+                    "scope": [
+                        "string.quoted",
+                        "string.unquoted",
+                        "string.quoted.single",
+                        "string.quoted.double",
+                        "string.quoted.triple",
+                        "string.quoted.other",
+                        "string.interpolated",
+                        "string.regexp",
+                        "string.other"
+                    ],
+                    "settings": {
+                        "foreground": "#748EA8"
+                    }
+                }
+            ]
+        },
+        "[Better Solarized Dark]": {
+            "textMateRules": [
+                {
+                    "scope": "meta.function-call.generic.python",
+                    "settings": {
+                        "foreground": "#268BD2"
+                    }
+                },
+                {
+                    "scope": "meta.attribute.python",
+                    "settings": {
+                        "foreground": "#2AA198"
+                    }
+                },
+                {
+                    "scope": [
+                        "keyword.control.import.python",
+                        "variable.language.special.self.python",
+                        "variable.parameter.function.language.special.cls.python",
+                        "variable.parameter.function.language.special.self.python"
+                    ],
+                    "settings": {
+                        "foreground": "#DC322F",
+                        "fontStyle": ""
+                    }
+                }
+            ]
+        },
         "[CodePen-Nights]": {
             "textMateRules": [
                 {
@@ -111,9 +286,12 @@
         "[CodeSandbox Black]": {
             "textMateRules": [
                 {
-                    "scope": "meta.function-call.arguments.python",
+                    "scope": [
+                        "comment.line.double-slash",
+                        "comment.line.number-sign.python"
+                    ],
                     "settings": {
-                        "foreground": "#D19A66",
+                        "fontStyle": ""
                     }
                 },
                 {
@@ -123,6 +301,15 @@
                     ],
                     "settings": {
                         "foreground": "#977CDC"
+                    }
+                },
+                {
+                    "scope": [
+                        "meta.function-call.arguments.python",
+                        "string.quoted.docstring.multi.python"
+                    ],
+                    "settings": {
+                        "foreground": "#D19A66",
                     }
                 },
                 {
@@ -146,32 +333,44 @@
                     "settings": {
                         "foreground": "#2794ee",
                     }
+                }
+            ]
+        },
+        "[City Lights]": {
+            "textMateRules": [
+                {
+                    "scope": [
+                        "support.type.python",
+                        "support.type.exception.python"
+                    ],
+                    "settings": {
+                        "foreground": "#70E1E8"
+                    }
                 },
                 {
                     "scope": [
-                        "comment.line.double-slash",
-                        "comment.line.number-sign.python"
+                        "meta.function.parameters.python",
+                        "variable.parameter.function.language.python"
                     ],
                     "settings": {
-                        "fontStyle": ""
+                        "foreground": "#B7C5D3"
                     }
-                }
+                },
+                {
+                    "scope": [
+                        "variable.other.property.js",
+                        "variable.language.special.self.python",
+                        "variable.parameter.function-call.python",
+                        "variable.parameter.function.language.special.self.python"
+                    ],
+                    "settings": {
+                        "foreground": "#EBBF83"
+                    }
+                },
             ]
         },
         "[Default Dark+]": {
             "textMateRules": [
-                {
-                    "scope": "meta.function-call.python",
-                    "settings": {
-                        "foreground": "#DCDCAA"
-                    }
-                },
-                {
-                    "scope": "meta.function-call.arguments.python",
-                    "settings": {
-                        "foreground": "#9CDCFE"
-                    }
-                },
                 {
                     "scope": "variable.parameter.function-call.python",
                     "settings": {
@@ -180,9 +379,36 @@
                 },
                 {
                     "scope": [
+                        "meta.function-call.python",
+                        "meta.function-call.generic.python"
+                    ],
+                    "settings": {
+                        "foreground": "#DCDCAA"
+                    }
+                },
+                {
+                    "scope": [
+                        "entity.name.namespace",
+                        "meta.function-call.arguments.python"
+                    ],
+                    "settings": {
+                        "foreground": "#9CDCFE"
+                    }
+                },
+                {
+                    "scope": [
+                        "meta.attribute.python",
+                        "meta.member.access.python",
+                        "variable.other.property.js"
+                    ],
+                    "settings": {
+                        "foreground": "#569CD6"
+                    }
+                },
+                {
+                    "scope": [
                         "variable.language.special.cls.python",
                         "variable.language.special.self.python",
-                        // "variable.parameter.function-call.python",
                         "variable.parameter.function.language.special.cls.python",
                         "variable.parameter.function.language.special.self.python"
                     ],
@@ -214,7 +440,6 @@
                 },
                 {
                     "scope": [
-                        "meta.member.access.python",
                         "meta.function-call.python",
                         "meta.function-call.generic.python",
                         "entity.name.function.decorator.python"
@@ -244,6 +469,136 @@
                         "foreground": "#748ea8"
                     }
                 },
+            ]
+        },
+        "[GitHub Dark Default]": {
+            "textMateRules": [
+                {
+                    "scope": [
+                        "entity.name.type.class",
+                        "constant.language.python",
+                        "support.function.builtin.python"
+                    ],
+                    "settings": {
+                        "foreground": "#D2A8FF"
+                    }
+                },
+                {
+                    "scope": [
+                        "variable.parameter",
+                        "meta.attribute.python",
+                        "variable.other.constant",
+                        "variable.parameter.function-call.python",
+                        "variable.parameter.function.language.python"
+                    ],
+                    "settings": {
+                        "foreground": "#FFA657"
+                    }
+                },
+                {
+                    "scope": [
+                        "variable.parameter.function",
+                        "variable.language.special.cls",
+                        "variable.language.special.self.python",
+                        "variable.parameter.function.language.special.self.python"
+                    ],
+                    "settings": {
+                        "foreground": "#F97583"
+                    }
+                },
+                {
+                    "scope": [
+                        // "variable.parameter",
+                        // "meta.attribute.python",
+                        "meta.function-call.generic",
+                        "meta.function-call.generic.python",
+                        "entity.name.function",
+                        "entity.name.function.member",
+                        "entity.name.function.decorator.python"
+                    ],
+                    "settings": {
+                        "foreground": "#79C0FF"
+                    }
+                },
+                {
+                    "scope": [
+                        "string.quoted",
+                        "string.unquoted",
+                        "string.quoted.single",
+                        "string.quoted.double",
+                        "string.quoted.triple",
+                        "string.interpolated",
+                        "string.regexp",
+                        "string.other"
+                    ],
+                    "settings": {
+                        "foreground": "#748ea8"
+                    }
+                }
+            ]
+        },
+        "[GitHub Dark Dimmed]": {
+            "textMateRules": [
+                {
+                    "scope": [
+                        "entity.name.type.class",
+                        "constant.language.python",
+                        "support.function.builtin.python"
+                    ],
+                    "settings": {
+                        "foreground": "#D2A8FF"
+                    }
+                },
+                {
+                    "scope": [
+                        "meta.attribute.python",
+                        "variable.other.constant",
+                        "variable.parameter.function-call.python",
+                        "variable.parameter.function.language.python"
+                    ],
+                    "settings": {
+                        "foreground": "#FFA657"
+                    }
+                },
+                {
+                    "scope": [
+                        "variable.parameter.function",
+                        "variable.language.special.cls",
+                        "variable.language.special.self.python",
+                        "variable.parameter.function.language.special.self.python"
+                    ],
+                    "settings": {
+                        "foreground": "#F97583"
+                    }
+                },
+                {
+                    "scope": [
+                        "meta.function-call.generic",
+                        "meta.function-call.generic.python",
+                        "meta.function-call.arguments.python",
+                        "entity.name.function",
+                        "entity.name.function.member",
+                        "entity.name.function.decorator.python"
+                    ],
+                    "settings": {
+                        "foreground": "#79C0FF"
+                    }
+                },
+                {
+                    "scope": [
+                        "string.quoted",
+                        "string.unquoted",
+                        "string.quoted.single",
+                        "string.quoted.double",
+                        "string.quoted.triple",
+                        "string.interpolated",
+                        "string.regexp",
+                        "string.other"
+                    ],
+                    "settings": {
+                        "foreground": "#748ea8"
+                    }
+                }
             ]
         },
         "[GitHub Light]": {
@@ -301,38 +656,63 @@
                 },
             ]
         },
-        "[Sourcegraph Dark]": {
+        "[GitHub Light Default]": {
             "textMateRules": [
                 {
-                    "scope": "meta.function-call.arguments",
-                    "settings": {
-                        // "foreground": "#72C3FC"
-                        "foreground": "#cef7d6"
-                    }
-                },
-                {
                     "scope": [
-                        "meta.indexed-name",
-                        "meta.function-call",
+                        "meta.function-call.generic",
+                        "support.function.builtin.python"
                     ],
                     "settings": {
-                        "foreground": "#329AF0"
+                        "foreground": "#D2A8FF"
                     }
                 },
                 {
                     "scope": [
+                        "meta.attribute.python",
+                        "meta.function-call.generic.python",
+                        "entity.name.function.decorator.python"
+                    ],
+                    "settings": {
+                        "foreground": "#005CC5"
+                    }
+                },
+                {
+                    "scope": [
+                        "meta.attribute.python",
+                        "variable.parameter.function.language.python"
+                    ],
+                    "settings": {
+                        "foreground": "#E36209"
+                    }
+                },
+                {
+                    "scope": [
+                        "variable.parameter.function",
+                        "variable.language.special.cls",
                         "variable.language.special.self.python",
-                        "variable.parameter.function-call.python",
                         "variable.parameter.function.language.special.self.python"
                     ],
                     "settings": {
-                        "foreground": "#FFA8A8"
+                        "foreground": "#D73A49"
                     }
                 }
             ]
         },
         "[Night Owl (No Italics)]": {
             "textMateRules": [
+                {
+                    "scope": "meta.function-call.arguments.python",
+                    "settings": {
+                        "foreground": "#D6DEEB"
+                    }
+                },
+                {
+                    "scope": "string.quoted.docstring.multi.python",
+                    "settings": {
+                        "foreground": "#637777"
+                    }
+                },
                 {
                     "scope": [
                         "meta.function-call",
@@ -343,9 +723,25 @@
                     }
                 },
                 {
+                    "scope":"variable.parameter.function.language.python",
+                    "settings": {
+                        "foreground": "#ECC48D"
+                    }
+                },
+                {
                     "scope": [
+                        "meta.attribute.python",
+                        "variable.parameter.function-call.python"
+                    ],
+                    "settings": {
+                        "foreground": "#82AAFF"
+                    }
+                },
+                {
+                    "scope": [
+                        "variable.parameter.function",
+                        "variable.language.special.cls",
                         "variable.language.special.self.python",
-                        "variable.parameter.function-call.python",
                         "variable.parameter.function.language.special.self.python"
                     ],
                     "settings": {
@@ -353,10 +749,316 @@
                     }
                 },
             ]
-        }
+        },
+        "[Night Owl Black]": {
+            "textMateRules": [
+                {
+                    "scope": [
+                        "storage.type.class.python",
+                        "storage.type.function.python",
+                        "keyword.control.flow.python"
+                    ],
+                    "settings": {
+                        "foreground": "#C792EA"
+                    }
+                },
+                {
+                    "scope": "meta.function-call.arguments.python",
+                    "settings": {
+                        "foreground": "#D6DEEB"
+                    }
+                },
+                {
+                    "scope": "string.quoted.docstring.multi.python",
+                    "settings": {
+                        "foreground": "#637777"
+                    }
+                },
+                {
+                    "scope": [
+                        "meta.function-call",
+                        "meta.function-call.generic.python",
+                    ],
+                    "settings": {
+                        "foreground": "#7FDBCA",
+                    }
+                },
+                {
+                    "scope":"variable.parameter.function.language.python",
+                    "settings": {
+                        "foreground": "#ECC48D"
+                    }
+                },
+                {
+                    "scope": [
+                        "meta.attribute.python",
+                        "variable.parameter.function-call.python"
+                    ],
+                    "settings": {
+                        "foreground": "#82AAFF"
+                    }
+                },
+                {
+                    "scope": [
+                        "variable.parameter.function",
+                        "variable.language.special.cls",
+                        "variable.language.special.self.python",
+                        "variable.parameter.function.language.special.self.python"
+                    ],
+                    "settings": {
+                        "foreground": "#FF5874"
+                    }
+                }
+            ]
+        },
+        "[Night Owl Black (No Italics)]": {
+            "textMateRules": [
+                {
+                    "scope": [
+                        "storage.type.class.python",
+                        "storage.type.function.python",
+                        "keyword.control.flow.python"
+                    ],
+                    "settings": {
+                        "foreground": "#C792EA"
+                    }
+                },
+                {
+                    "scope": "meta.function-call.arguments.python",
+                    "settings": {
+                        "foreground": "#D6DEEB"
+                    }
+                },
+                {
+                    "scope": "string.quoted.docstring.multi.python",
+                    "settings": {
+                        "foreground": "#637777"
+                    }
+                },
+                {
+                    "scope": [
+                        "meta.function-call",
+                        "meta.function-call.generic.python",
+                    ],
+                    "settings": {
+                        "foreground": "#7FDBCA",
+                    }
+                },
+                {
+                    "scope":"variable.parameter.function.language.python",
+                    "settings": {
+                        "foreground": "#ECC48D"
+                    }
+                },
+                {
+                    "scope": [
+                        "meta.attribute.python",
+                        "variable.parameter.function-call.python"
+                    ],
+                    "settings": {
+                        "foreground": "#82AAFF"
+                    }
+                },
+                {
+                    "scope": [
+                        "variable.parameter.function",
+                        "variable.language.special.cls",
+                        "variable.language.special.self.python",
+                        "variable.parameter.function.language.special.self.python"
+                    ],
+                    "settings": {
+                        "foreground": "#FF5874"
+                    }
+                }
+            ]
+        },
+        "[One Dark Pro]": {
+            "textMateRules": [
+                {
+                    "scope": [
+                        "keyword.control.flow.python",
+                        "keyword.control.import.python"
+                    ],
+                    "settings": {
+                        "fontStyle": ""
+                    }
+                },
+                {
+                    "scope": "variable.parameter",
+                    "settings": {
+                        "fontStyle": "",
+                        "foreground": "#D4D4D4"
+                    }
+                },
+                {
+                    "scope": [
+                        "meta.attribute.python",
+                        "variable.other.property"
+                    ],
+                    "settings": {
+                        "foreground": "#D19A66"
+                    }
+                },
+                // {
+                //     "scope": [
+                //         "meta.function-call",
+                //         "meta.function-call.python",
+                //         "meta.function-call.generic.python"
+                //     ],
+                //     "settings": {
+                //         "foreground": "#61AFEF"
+                //     }
+                // },
+                {
+                    "scope": [
+                        "meta.function.decorator.python",
+                        "entity.name.function.decorator.python"
+                    ],
+                    "settings": {
+                        "foreground": "#e5c07b"
+                    }
+                },
+                {
+                    "scope": [
+                        "variable.language.special.cls.python",
+                        "variable.language.special.self.python",
+                        "variable.parameter.function-call.python",
+                        "variable.parameter.function.language.special.cls.python",
+                        "variable.parameter.function.language.special.self.python"
+                    ],
+                    "settings": {
+                        "fontStyle": "",
+                        "foreground": "#e06c75",
+                    }
+                },
+            ]
+        },
+        "[One Monokai]": {
+            "textMateRules": [
+                {
+                    "scope": "meta.function-call.generic.python",
+                    "settings": {
+                        "foreground": "#61AFEF"
+                    }
+                },
+                {
+                    "scope": [
+                        "meta.attribute.python",
+                        // "meta.member.access.python",
+                    ],
+                    "settings": {
+                        // "foreground": "#56B6C2"
+                        "foreground": "#98C379"
+                    }
+                },
+                {
+                    "scope": [
+                        "variable.parameter.function.language.python",
+                        "meta.function-call.agruments",
+                        "meta.function.parameters",
+                        "variable.parameter"
+                    ],
+                    "settings": {
+                        "foreground": "#D19A66",
+                        "fontStyle": ""
+                    }
+                },
+                {
+                    "scope": [
+                        "variable.parameter.function",
+                        "variable.language.special.cls",
+                        "variable.language.special.self.python",
+                        "variable.parameter.function.language.special.self.python"
+                    ],
+                    "settings": {
+                        "foreground": "#E06C75"
+                    }
+                },
+            ]
+        },
+        "[Sourcegraph Dark]": {
+            "textMateRules": [
+                {
+                    "scope": [
+                        "meta.attribute.python",
+                        "variable.parameter.function-call.python",
+                    ],
+                    "settings": {
+                        "foreground": "#FFF3BF"
+                    }
+                },
+                {
+                    "scope": [
+                        "meta.function-call.generic.python"
+                    ],
+                    "settings": {
+                        "foreground": "#72C3FC"
+                        // "foreground": "#cef7d6"
+                    }
+                },
+                {
+                    "scope": [
+                        "variable.other.object",
+                        // "variable.other.object.property",
+                        "constant.other.caps.python",
+                        "meta.function.decorator.python",
+                        "entity.name.function.decorator.python"
+                    ],
+                    "settings": {
+                        "foreground": "#4EC9B0"
+                    }
+                },
+                {
+                    "scope": [
+                        "variable.parameter.function.language.python"
+                    ],
+                    "settings": {
+                        "foreground": "#F2F4F8"
+                    }
+                },
+                {
+                    "scope": [
+                        "variable.language.special.cls",
+                        "variable.language.special.self.python",
+                        "variable.parameter.function.language.special.self.python"
+                    ],
+                    "settings": {
+                        "foreground": "#329AF0"
+                    }
+                }
+            ]
+        },
     },
-    "editor.fontSize": 15,
     "python.linting.flake8Enabled": true,
     "python.linting.pylintPath": "/usr/bin/pylint",
-    "python.linting.flake8Path": "/usr/bin/flake8"
+    "python.linting.flake8Path": "/usr/bin/flake8",
+    "workbench.productIconTheme": "fluent-icons",
+    "python.languageServer": "Pylance",
+    "cmake.configureOnOpen": false,
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook"
+    },
+    "leetcode.workspaceFolder": "/run/media/harish/WORK/code/scratch/challenges/leetcode",
+    "leetcode.defaultLanguage": "python3",
+    "leetcode.hint.configWebviewMarkdown": false,
+    "leetcode.showDescription": "Both",
+    "leetcode.hint.commentDescription": false,
+    "editor.cursorStyle": "block",
+    "editor.cursorBlinking": "smooth",
+    "python.showStartPage": false,
+    "[python]": {
+        "gitlens.codeLens.symbolScopes": [
+            "!Module"
+        ],
+        "editor.wordBasedSuggestions": false
+    },
+    "editor.fontSize": 13.5,
+    "redhat.telemetry.enabled": false,
+    "workbench.iconTheme": "field-lights",
+    "oneDarkPro.editorTheme": "shadow",
+    "oneDarkPro.vivid": true,
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "left"
+    }
 }
