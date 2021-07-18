@@ -22,7 +22,7 @@
     "window.titleBarStyle": "native",
     "editor.cursorWidth": 2,
     "editor.suggestSelection": "first",
-    "editor.fontFamily": "Andale Mono, Consolas, San Francisco Mono, Fira Mono, JetBrains Mono, Cascadia Code, Operator Mono Medium, Fira Code Retina, Input Mono, League Mono, Noto Sans Mono, Anonymous Pro Minus, Operator Mono Book, Source Code Pro, Iosevka, Monaco, Code New Roman, DejaVu Sans Code, Antikor Mono, DejaVu Sans Mono, Monospace, Roboto Mono, Dank Mono, Source Code Variable, Hasklig, Courier Prime Code, Space Mono, Go Mono, Anonymous Pro, Droid Sans Mono, Ubuntu Mono, Nitti, MonoLisa, Fira Code Retina, Andale Mono, Courier",
+    "editor.fontFamily": "IBM Plex Mono, IBM Plex Mono Medium, Operator Mono Medium, Cascadia Code, Fira Code Retina, Fira Mono, Andale Mono, Consolas, San Francisco Mono, JetBrains Mono, Input Mono, League Mono, Noto Sans Mono, Anonymous Pro Minus, Operator Mono Book, Source Code Pro, Iosevka, Monaco, Code New Roman, DejaVu Sans Code, Antikor Mono, DejaVu Sans Mono, Monospace, Roboto Mono, Dank Mono, Source Code Variable, Hasklig, Courier Prime Code, Space Mono, Go Mono, Anonymous Pro, Droid Sans Mono, Ubuntu Mono, Nitti, MonoLisa, Fira Code Retina, Andale Mono, Courier",
     "vs-kubernetes": {
         "vs-kubernetes.minikube-path.linux": "/home/harish/.vs-kubernetes/tools/minikube/linux-amd64/minikube",
         "vs-kubernetes.helm-path.linux": "/home/harish/.vs-kubernetes/tools/helm/linux-amd64/helm",
@@ -96,19 +96,13 @@
                 "property": "#88ABF9"
             }
         },
-        // "[Default Dark+]": {
-        //     "rules": {
-        //         "class": "#DCDCAA"
-        //     }
-        // },
-        "[Default Dark+]": {},
         "[One Dark Pro]": {
             "rules": {
                 "variable": "#D4D4D4",
                 "function": "#61AFEF",
                 "*.decorator": "#e5c07b"
             }
-        },
+        }
     },
     "editor.tokenColorCustomizations": {
         "[After Dark]": {
@@ -116,14 +110,13 @@
                 {
                     "scope": "meta.attribute.python",
                     "settings": {
-                        // "foreground": "#E6A26F"
                         "foreground": "#88ABF9"
                     }
                 },
                 {
                     "scope": [
                         "variable.parameter",
-                        "variable.parameter.function.language.python",
+                        "variable.parameter.function.language.python"
                     ],
                     "settings": {
                         "foreground": "#ADBAC7"
@@ -133,7 +126,6 @@
                     "scope": [
                         "variable.language.special.cls.python",
                         "variable.language.special.self.python",
-                        // "variable.parameter.function-call.python",
                         "variable.parameter.function.language.special.cls.python",
                         "variable.parameter.function.language.special.self.python"
                     ],
@@ -164,14 +156,13 @@
                 {
                     "scope": "meta.attribute.python",
                     "settings": {
-                        // "foreground": "#E6A26F"
                         "foreground": "#88ABF9"
                     }
                 },
                 {
                     "scope": [
                         "variable.parameter",
-                        "variable.parameter.function.language.python",
+                        "variable.parameter.function.language.python"
                     ],
                     "settings": {
                         "foreground": "#ADBAC7"
@@ -181,7 +172,6 @@
                     "scope": [
                         "variable.language.special.cls.python",
                         "variable.language.special.self.python",
-                        // "variable.parameter.function-call.python",
                         "variable.parameter.function.language.special.cls.python",
                         "variable.parameter.function.language.special.self.python"
                     ],
@@ -237,6 +227,56 @@
         },
         "[CodePen-Nights]": {
             "textMateRules": [
+                {
+                    "scope": [
+                        "storage.type.ts",
+                        "storage.modifier.async.ts"
+                    ],
+                    "settings": {
+                        "foreground": "#0EBEFF"
+                    }
+                },
+                {
+                    "scope": [
+                        "keyword.control.as.ts",
+                        "keyword.control.flow.ts",
+                        "keyword.control.from.ts",
+                        "keyword.control.import.ts",
+                        "keyword.control.export.ts"
+                    ],
+                    "settings":{
+                        "foreground": "#5E91F2",
+                        "fontStyle": ""
+                    }
+                },
+                {
+                    "scope": [
+                        "storage.modifier.ts",
+                        "storage.type.class.ts",
+                    ],
+                    "settings": {
+                        "foreground": "#FF8D41"
+                    }
+                },
+                {
+                    "scope": [
+                        "variable.other.object.ts",
+                        "variable.other.constant.ts",
+                        "variable.other.readwrite.ts",
+                    ],
+                    "settings": {
+                        "foreground": "#EEFFFF"
+                    }
+                },
+                {
+                    "scope": [
+                        "variable.parameter.ts",
+                        "meta.object-literal.key.ts"
+                    ],
+                    "settings": {
+                        "foreground": "#FFCFCB"
+                    }
+                },
                 {
                     "scope": "variable.parameter.function-call.python",
                     "settings": {
@@ -309,7 +349,7 @@
                         "string.quoted.docstring.multi.python"
                     ],
                     "settings": {
-                        "foreground": "#D19A66",
+                        "foreground": "#D19A66"
                     }
                 },
                 {
@@ -331,7 +371,7 @@
                         "punctuation.definition.decorator.python"
                     ],
                     "settings": {
-                        "foreground": "#2794ee",
+                        "foreground": "#2794ee"
                     }
                 }
             ]
@@ -366,11 +406,29 @@
                     "settings": {
                         "foreground": "#EBBF83"
                     }
-                },
+                }
             ]
         },
         "[Default Dark+]": {
             "textMateRules": [
+                {
+                    "scope": [
+                        "storage.modifier.ts",
+                    ],
+                    "settings": {
+                        "foreground": "#C586C0"
+                    }
+                },
+                {
+                    "scope": [
+                        // "storage.type.ts",
+                        "variable.other.constant.ts",
+                        "meta.method.declaration.ts"
+                    ],
+                    "settings": {
+                        "foreground": "#4FC1FF"
+                    }
+                },
                 {
                     "scope": "variable.parameter.function-call.python",
                     "settings": {
@@ -468,7 +526,7 @@
                     "settings": {
                         "foreground": "#748ea8"
                     }
-                },
+                }
             ]
         },
         "[GitHub Dark Default]": {
@@ -508,8 +566,6 @@
                 },
                 {
                     "scope": [
-                        // "variable.parameter",
-                        // "meta.attribute.python",
                         "meta.function-call.generic",
                         "meta.function-call.generic.python",
                         "entity.name.function",
@@ -610,7 +666,7 @@
                         "entity.name.function.decorator.python"
                     ],
                     "settings": {
-                        "foreground": "#ec7723",
+                        "foreground": "#ec7723"
                     }
                 },
                 {
@@ -653,7 +709,7 @@
                     "settings": {
                         "foreground": "#748ea8"
                     }
-                },
+                }
             ]
         },
         "[GitHub Light Default]": {
@@ -716,14 +772,14 @@
                 {
                     "scope": [
                         "meta.function-call",
-                        "meta.function-call.generic.python",
+                        "meta.function-call.generic.python"
                     ],
                     "settings": {
-                        "foreground": "#7FDBCA",
+                        "foreground": "#7FDBCA"
                     }
                 },
                 {
-                    "scope":"variable.parameter.function.language.python",
+                    "scope": "variable.parameter.function.language.python",
                     "settings": {
                         "foreground": "#ECC48D"
                     }
@@ -747,7 +803,7 @@
                     "settings": {
                         "foreground": "#FF5874"
                     }
-                },
+                }
             ]
         },
         "[Night Owl Black]": {
@@ -777,14 +833,14 @@
                 {
                     "scope": [
                         "meta.function-call",
-                        "meta.function-call.generic.python",
+                        "meta.function-call.generic.python"
                     ],
                     "settings": {
-                        "foreground": "#7FDBCA",
+                        "foreground": "#7FDBCA"
                     }
                 },
                 {
-                    "scope":"variable.parameter.function.language.python",
+                    "scope": "variable.parameter.function.language.python",
                     "settings": {
                         "foreground": "#ECC48D"
                     }
@@ -838,14 +894,14 @@
                 {
                     "scope": [
                         "meta.function-call",
-                        "meta.function-call.generic.python",
+                        "meta.function-call.generic.python"
                     ],
                     "settings": {
-                        "foreground": "#7FDBCA",
+                        "foreground": "#7FDBCA"
                     }
                 },
                 {
-                    "scope":"variable.parameter.function.language.python",
+                    "scope": "variable.parameter.function.language.python",
                     "settings": {
                         "foreground": "#ECC48D"
                     }
@@ -899,16 +955,6 @@
                         "foreground": "#D19A66"
                     }
                 },
-                // {
-                //     "scope": [
-                //         "meta.function-call",
-                //         "meta.function-call.python",
-                //         "meta.function-call.generic.python"
-                //     ],
-                //     "settings": {
-                //         "foreground": "#61AFEF"
-                //     }
-                // },
                 {
                     "scope": [
                         "meta.function.decorator.python",
@@ -928,9 +974,9 @@
                     ],
                     "settings": {
                         "fontStyle": "",
-                        "foreground": "#e06c75",
+                        "foreground": "#e06c75"
                     }
-                },
+                }
             ]
         },
         "[One Monokai]": {
@@ -943,11 +989,9 @@
                 },
                 {
                     "scope": [
-                        "meta.attribute.python",
-                        // "meta.member.access.python",
+                        "meta.attribute.python"
                     ],
                     "settings": {
-                        // "foreground": "#56B6C2"
                         "foreground": "#98C379"
                     }
                 },
@@ -973,7 +1017,7 @@
                     "settings": {
                         "foreground": "#E06C75"
                     }
-                },
+                }
             ]
         },
         "[Sourcegraph Dark]": {
@@ -981,7 +1025,7 @@
                 {
                     "scope": [
                         "meta.attribute.python",
-                        "variable.parameter.function-call.python",
+                        "variable.parameter.function-call.python"
                     ],
                     "settings": {
                         "foreground": "#FFF3BF"
@@ -993,13 +1037,11 @@
                     ],
                     "settings": {
                         "foreground": "#72C3FC"
-                        // "foreground": "#cef7d6"
                     }
                 },
                 {
                     "scope": [
                         "variable.other.object",
-                        // "variable.other.object.property",
                         "constant.other.caps.python",
                         "meta.function.decorator.python",
                         "entity.name.function.decorator.python"
@@ -1027,7 +1069,7 @@
                     }
                 }
             ]
-        },
+        }
     },
     "python.linting.flake8Enabled": true,
     "python.linting.pylintPath": "/usr/bin/pylint",
@@ -1054,9 +1096,8 @@
     },
     "editor.fontSize": 13.5,
     "redhat.telemetry.enabled": false,
-    "workbench.iconTheme": "field-lights",
-    "oneDarkPro.editorTheme": "shadow",
-    "oneDarkPro.vivid": true,
+    "workbench.iconTheme": "Monokai Classic Icons",
+    "oneDarkPro.editorTheme": "oneDarkProFlat",
     "notebook.cellToolbarLocation": {
         "default": "right",
         "jupyter-notebook": "left"
