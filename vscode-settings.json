@@ -22,7 +22,7 @@
     "window.titleBarStyle": "native",
     "editor.cursorWidth": 2,
     "editor.suggestSelection": "first",
-    "editor.fontFamily": "IBM Plex Mono, IBM Plex Mono Medium, Operator Mono Medium, Cascadia Code, Fira Code Retina, Fira Mono, Andale Mono, Consolas, San Francisco Mono, JetBrains Mono, Input Mono, League Mono, Noto Sans Mono, Anonymous Pro Minus, Operator Mono Book, Source Code Pro, Iosevka, Monaco, Code New Roman, DejaVu Sans Code, Antikor Mono, DejaVu Sans Mono, Monospace, Roboto Mono, Dank Mono, Source Code Variable, Hasklig, Courier Prime Code, Space Mono, Go Mono, Anonymous Pro, Droid Sans Mono, Ubuntu Mono, Nitti, MonoLisa, Fira Code Retina, Andale Mono, Courier",
+    "editor.fontFamily": "IBM Plex Mono, Cascadia Code, IBM Plex Mono Medium, Operator Mono Medium, Fira Code Retina, Fira Mono, Andale Mono, Consolas, San Francisco Mono, JetBrains Mono, Input Mono, League Mono, Noto Sans Mono, Anonymous Pro Minus, Operator Mono Book, Source Code Pro, Iosevka, Monaco, Code New Roman, DejaVu Sans Code, Antikor Mono, DejaVu Sans Mono, Monospace, Roboto Mono, Dank Mono, Source Code Variable, Hasklig, Courier Prime Code, Space Mono, Go Mono, Anonymous Pro, Droid Sans Mono, Ubuntu Mono, Nitti, MonoLisa, Fira Code Retina, Andale Mono, Courier",
     "vs-kubernetes": {
         "vs-kubernetes.minikube-path.linux": "/home/harish/.vs-kubernetes/tools/minikube/linux-amd64/minikube",
         "vs-kubernetes.helm-path.linux": "/home/harish/.vs-kubernetes/tools/helm/linux-amd64/helm",
@@ -54,6 +54,9 @@
             "editorWhitespace.foreground": "#242424",
             "editorGroupHeader.tabsBackground": "#08090e",
             "statusBar.background": "#08090e"
+        },
+        "[Material Night Eighties]": {
+            "editorWhitespace.foreground": "#414141d7"
         },
         "[One Monokai]": {
             "activityBar.border": "#343434",
@@ -94,6 +97,12 @@
             "rules": {
                 "variable": "#ADBAC7",
                 "property": "#88ABF9"
+            }
+        },
+        "[Default Dark+]": {
+            "rules": {
+                // "module": "#4EC9B0"
+                // "class": "#C586C0"
             }
         },
         "[One Dark Pro]": {
@@ -430,7 +439,11 @@
                     }
                 },
                 {
-                    "scope": "variable.parameter.function-call.python",
+                    "scope": [
+                        // "storage.type.class.python",
+                        // "storage.type.function.python",
+                        // "variable.parameter.function-call.python",
+                    ],
                     "settings": {
                         "foreground": "#C586C0"
                     }
@@ -438,7 +451,9 @@
                 {
                     "scope": [
                         "meta.function-call.python",
-                        "meta.function-call.generic.python"
+                        "meta.function-call.generic.python",
+                        "meta.class.inheritance.python",
+                        "entity.other.inherited-class.python"
                     ],
                     "settings": {
                         "foreground": "#DCDCAA"
@@ -467,6 +482,7 @@
                     "scope": [
                         "variable.language.special.cls.python",
                         "variable.language.special.self.python",
+                        "variable.parameter.function-call.python",
                         "variable.parameter.function.language.special.cls.python",
                         "variable.parameter.function.language.special.self.python"
                     ],
@@ -751,6 +767,27 @@
                     ],
                     "settings": {
                         "foreground": "#D73A49"
+                    }
+                }
+            ]
+        },
+        "[Material Night Eighties]": {
+            "textMateRules": [
+                {
+                    "scope": "entity.name.function",
+                    "settings": {
+                        "foreground": "#FFCB6B"
+                    }
+                },
+                {
+                    "scope": [
+                        // "variable.parameter.function",
+                        "variable.language.special.cls",
+                        "variable.language.special.self.python",
+                        "variable.parameter.function.language.special.self.python"
+                    ],
+                    "settings": {
+                        "foreground": "#FF5370"
                     }
                 }
             ]
@@ -1096,7 +1133,6 @@
     },
     "editor.fontSize": 13.5,
     "redhat.telemetry.enabled": false,
-    "workbench.iconTheme": "Monokai Classic Icons",
     "oneDarkPro.editorTheme": "oneDarkProFlat",
     "notebook.cellToolbarLocation": {
         "default": "right",
