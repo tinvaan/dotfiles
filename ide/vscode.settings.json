@@ -1,0 +1,3836 @@
+{
+    "breadcrumbs.enabled": true,
+    "cody.autocomplete.enabled": false,
+    "cmake.showOptionsMovedNotification": false,
+
+    "editor.cursorWidth": 2,
+    "editor.fontSize": 10.5,
+    "terminal.integrated.fontSize": 11.5,
+    "editor.rulers": [80, 120],
+    "editor.formatOnType": false,
+    "editor.formatOnSave": false,
+    "editor.mouseWheelZoom": true,
+    "editor.smoothScrolling": true,
+    "editor.suggestSelection": "first",
+    "editor.minimap.showSlider": "always",
+    "editor.inlineSuggest.suppressSuggestions": true,
+    "editor.fontLigatures": "'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'ss07', 'ss08', 'calt', 'dlig'",
+    "editor.fontFamily": "Menlo, Fira Code, Monaspace Neon, Monaco, Hack, MonoLisa, Operator Mono, Jetbrains Mono, Cascadia Code, Andale Mono, IBM Plex Mono, Fira Code Light, Fira Code Retina, SF Mono, IBM Plex Mono Medium, Fantasque Sans Mono, OperatorMono-Medium, Monaspace Krypton, Monaspace Argon, Monaspace Xenon, Monaspace Radon, Hubot Sans, Fira Mono, Roboto Mono, Cascadia Mono, Courier",
+    "editor.semanticHighlighting.enabled": true,
+    "editor.tokenColorCustomizations": {
+        "[*Light*]": {
+            "textMateRules": [
+                {
+                    "scope": "ref.matchtext",
+                    "settings": {
+                        "foreground": "#000"
+                    }
+                }
+            ]
+        },
+        "[*Dark*]": {
+            "textMateRules": [
+                {
+                    "scope": "ref.matchtext",
+                    "settings": {
+                        "foreground": "#fff"
+                    }
+                }
+            ]
+        },
+        "[Adapta Nokto]": {
+            "textMateRules": [
+                {
+                    "scope": [
+                        "comment",
+                        "comment.line",
+                        "comment.block"
+                    ],
+                    "settings": {
+                        "fontStyle": ""
+                    }
+                },
+                {
+                    "scope": [
+                        "support.type.exception.python"
+                    ],
+                    "settings": {
+                        "foreground": "#F78C6C"
+                    }
+                },
+                {
+                    "scope": [
+                        "meta.function-call.arguments.python",
+                        "variable.parameter.function-call.python"
+                    ],
+                    "settings": {
+                        "foreground": "#89DDFF"
+                    }
+                },
+                {
+                    "scope": [
+                        "variable.other.constant.js",
+                        "variable.other.readwrite.js",
+                        "meta.function-call.arguments.python"
+                    ],
+                    "settings": {
+                        "foreground": "#CCCCCC"
+                    }
+                },
+                {
+                    "scope": [
+                        "keyword.other.debugger.js",
+                        "keyword.other.debugger.ts",
+                        "constant.other.caps.python",
+                        "support.variable.magic.python",
+                        "support.function.magic.python",
+                        "variable.other.constant.property.js"
+                    ],
+                    "settings": {
+                        "foreground": "#9B859D"
+                    }
+                },
+                {
+                    "scope": [
+                        "meta.atribute.python",
+                        "meta.member.access.python",
+                        "meta.object-literal.key.js"
+                    ],
+                    "settings": {
+                        "foreground": "#C3E88D"
+                    }
+                },
+                {
+                    "scope": [
+                        "string.quoted",
+                        "string.unquoted",
+                        "string.quoted.single",
+                        "string.quoted.double",
+                        "string.quoted.triple",
+                        "string.quoted.other",
+                        "string.interpolated",
+                        "string.regexp",
+                        "string.other"
+                    ],
+                    "settings": {
+                        "foreground": "#99bece",
+                        "fontStyle": ""
+                    }
+                },
+                {
+                    "scope": [
+                        "variable.language.this.js",
+                        "variable.language.super.js",
+                        "variable.language.special.cls.python",
+                        "variable.language.special.self.python",
+                        "variable.parameter.function.language.special.cls.python",
+                        "variable.parameter.function.language.special.self.python"
+                    ],
+                    "settings": {
+                        "foreground": "#FF5370",
+                        "fontStyle": ""
+                    }
+                }
+            ]
+        },
+        "[After Dark]": {
+            "textMateRules": [
+                {
+                    "scope": "meta.attribute.python",
+                    "settings": {
+                        "foreground": "#88ABF9"
+                    }
+                },
+                {
+                    "scope": [
+                        "variable.parameter",
+                        "variable.parameter.function.language.python"
+                    ],
+                    "settings": {
+                        "foreground": "#ADBAC7"
+                    }
+                },
+                {
+                    "scope": [
+                        "variable.language.special.cls.python",
+                        "variable.language.special.self.python",
+                        "variable.parameter.function.language.special.cls.python",
+                        "variable.parameter.function.language.special.self.python"
+                    ],
+                    "settings": {
+                        "foreground": "#E6A26F"
+                    }
+                },
+                {
+                    "scope": [
+                        "string.quoted",
+                        "string.unquoted",
+                        "string.quoted.single",
+                        "string.quoted.double",
+                        "string.quoted.triple",
+                        "string.quoted.other",
+                        "string.interpolated",
+                        "string.regexp",
+                        "string.other"
+                    ],
+                    "settings": {
+                        "foreground": "#748EA8"
+                    }
+                }
+            ]
+        },
+        "[After Dark No Italics]": {
+            "textMateRules": [
+                {
+                    "scope": [
+                        "meta.attribute.python"
+                    ],
+                    "settings": {
+                        "foreground": "#88ABF9"
+                    }
+                },
+                {
+                    "scope": [
+                        "variable.parameter",
+                        "variable.parameter.function.language.python"
+                    ],
+                    "settings": {
+                        "foreground": "#ADBAC7"
+                    }
+                },
+                {
+                    "scope": [],
+                    "settings": {
+                        "foreground": "#B38098"
+                    }
+                },
+                {
+                    "scope": [
+                        "variable.language.special.cls.python",
+                        "variable.language.special.self.python",
+                        "variable.parameter.function.language.special.cls.python",
+                        "variable.parameter.function.language.special.self.python"
+                    ],
+                    "settings": {
+                        "foreground": "#E6A26F"
+                    }
+                },
+                {
+                    "scope": [
+                        "string.quoted",
+                        "string.unquoted",
+                        "string.quoted.single",
+                        "string.quoted.double",
+                        "string.quoted.triple",
+                        "string.quoted.other",
+                        "string.interpolated",
+                        "string.regexp",
+                        "string.other"
+                    ],
+                    "settings": {
+                        "foreground": "#748EA8"
+                    }
+                }
+            ]
+        },
+        "[Atom One Dark]": {
+            "textMateRules": [
+                {
+                    "scope": "source.python",
+                    "settings": {
+                        "foreground": "#ABB2BF"
+                    }
+                },
+                {
+                    "scope": "meta.function-call.generic",
+                    "settings": {
+                        "foreground": "#61AFEF"
+                    }
+                },
+                {
+                    "scope": "comment.line.number-sign.python",
+                    "settings": {
+                        "fontStyle": ""
+                    }
+                },
+                {
+                    "scope": [
+                        "meta.attribute.python",
+                        "meta.member.access.python"
+                    ],
+                    "settings": {
+                        "foreground": "#D19A66"
+                    }
+                },
+                {
+                    "scope": [
+                        "variable.language.special.cls.python",
+                        "variable.language.special.self.python",
+                        "variable.parameter.function.language.special.cls.python",
+                        "variable.parameter.function.language.special.self.python"
+                    ],
+                    "settings": {
+                        "foreground": "#E06C75"
+                    }
+                }
+            ]
+        },
+        "[Atom One Light]": {
+            "textMateRules": [
+                {
+                    "scope": "comment.line.number-sign.python",
+                    "settings": {
+                        "fontStyle": ""
+                    }
+                },
+                {
+                    "scope": [
+                        "meta.function-call.generic",
+                        "constant.other.caps.python"
+                    ],
+                    "settings": {
+                        "foreground": "#4078F2"
+                    }
+                },
+                {
+                    "scope": "meta.function-call.arguments.python",
+                    "settings": {
+                        "foreground": "#986801"
+                    }
+                },
+                {
+                    "scope": [
+                        "meta.attribute.python",
+                        "meta.member.access.python"
+                    ],
+                    "settings": {
+                        "foreground": "#C18401"
+                    }
+                },
+                {
+                    "scope": [
+                        "entity.other.inherited-class.python",
+                        "variable.language.special.cls.python",
+                        "variable.language.special.self.python",
+                        "variable.parameter.function.language.special.cls.python",
+                        "variable.parameter.function.language.special.self.python"
+                    ],
+                    "settings": {
+                        "foreground": "#A626A4"
+                    }
+                }
+            ]
+        },
+        "[Better Selenized Dark]": {
+            "textMateRules": [
+                {
+                    "scope": [
+                        "support.type",
+                        "meta.object-literal.key.ts"
+                    ],
+                    "settings": {
+                        "foreground": "#6C71C4"
+                    }
+                },
+                {
+                    "scope": [
+                        "comment",
+                        "variable.language.this.js",
+                        "variable.language.this.ts",
+                        "variable.language.special.cls.python",
+                        "variable.language.special.self.python"
+                    ],
+                    "settings": {
+                        "fontStyle": ""
+                    }
+                },
+                {
+                    "scope": [
+                        "variable.other.object.ts",
+                        "variable.other.property.js",
+                        "variable.other.property.ts",
+                        "constant.other.caps.python",
+                        "variable.parameter.function.language.python"
+                    ],
+                    "settings": {
+                        "foreground": "#B58900"
+                    }
+                },
+                {
+                    "scope": [
+                        "meta.attribute.python",
+                        "support.function.builtin.python",
+                        "entity.name.function.decorator.python"
+                    ],
+                    "settings": {
+                        "foreground": "#2AA198"
+                    }
+                },
+                {
+                    "scope": [
+                        "meta.function-call.generic.python"
+                    ],
+                    "settings": {
+                        "foreground": "#268BD2"
+                    }
+                }
+            ]
+        },
+        "[Better Solarized Dark]": {
+            "textMateRules": [
+                {
+                    "scope": "support.type",
+                    "settings": {
+                        "foreground": "#6C71C4"
+                    }
+                },
+                {
+                    "scope": [
+                        "comment",
+                        "variable.language.this.js",
+                        "variable.language.this.ts",
+                        "variable.language.special.self.python"
+                    ],
+                    "settings": {
+                        "fontStyle": ""
+                    }
+                },
+                {
+                    "scope": [
+                        "variable.other.object.ts",
+                        "variable.other.property.js",
+                        "variable.other.property.ts",
+                        "constant.other.caps.python",
+                        "variable.parameter.function.language.python"
+                    ],
+                    "settings": {
+                        "foreground": "#B58900"
+                    }
+                },
+                {
+                    "scope": [
+                        "meta.attribute.python",
+                        "entity.name.function.decorator.python"
+                    ],
+                    "settings": {
+                        "foreground": "#2AA198"
+                    }
+                },
+                {
+                    "scope": [
+                        "meta.function-call.generic.python"
+                    ],
+                    "settings": {
+                        "foreground": "#268BD2"
+                    }
+                }
+            ]
+        },
+        "[Better Solarized Dark Italics]": {
+            "textMateRules": [
+                {
+                    "scope": "support.type",
+                    "settings": {
+                        "foreground": "#6C71C4"
+                    }
+                },
+                {
+                    "scope": "constant.other.caps.python",
+                    "settings": {
+                        "foreground": "#B58900"
+                    }
+                },
+                {
+                    "scope": [
+                        "meta.attribute.python",
+                        "entity.name.function.decorator.python"
+                    ],
+                    "settings": {
+                        "foreground": "#2AA198"
+                    }
+                }
+            ]
+        },
+        "[CodePen-Nights]": {
+            "textMateRules": [
+                {
+                    "scope": "keyword.control",
+                    "settings": {
+                        "fontStyle": ""
+                    }
+                },
+                {
+                    "scope": [
+                        "storage.type.ts",
+                        "storage.modifier.async.ts"
+                    ],
+                    "settings": {
+                        "foreground": "#0EBEFF"
+                    }
+                },
+                {
+                    "scope": [
+                        "keyword.control.as.ts",
+                        "keyword.control.flow.ts",
+                        "keyword.control.from.ts",
+                        "keyword.control.import.ts",
+                        "keyword.control.export.ts"
+                    ],
+                    "settings": {
+                        "foreground": "#5E91F2",
+                        "fontStyle": ""
+                    }
+                },
+                {
+                    "scope": [
+                        "storage.modifier.ts",
+                        "storage.type.class.ts"
+                    ],
+                    "settings": {
+                        "foreground": "#FF8D41"
+                    }
+                },
+                {
+                    "scope": [
+                        "variable.other.object.ts",
+                        "variable.other.constant.ts",
+                        "variable.other.readwrite.ts"
+                    ],
+                    "settings": {
+                        "foreground": "#EEFFFF"
+                    }
+                },
+                {
+                    "scope": [
+                        "variable.parameter.ts",
+                        "meta.object-literal.key.ts"
+                    ],
+                    "settings": {
+                        "foreground": "#FFCFCB"
+                    }
+                },
+                {
+                    "scope": "constant.other.caps.python",
+                    "settings": {
+                        "foreground": "#0EBEFF"
+                    }
+                },
+                {
+                    "scope": "variable.parameter.function-call.python",
+                    "settings": {
+                        "foreground": "#E06C75"
+                    }
+                },
+                {
+                    "scope": "meta.function-call.arguments.python",
+                    "settings": {
+                        "foreground": "#D19A66"
+                    }
+                },
+                {
+                    "scope": [
+                        "meta.function-call.python",
+                        "meta.function-call.generic.python"
+                    ],
+                    "settings": {
+                        "foreground": "#61AFEFFF"
+                    }
+                },
+                {
+                    "scope": [
+                        "keyword.control.flow",
+                        "keyword.control.conditional",
+                        "comment.line.double-slash",
+                        "comment.line.number-sign.python"
+                    ],
+                    "settings": {
+                        "fontStyle": "",
+                        "foreground": "#9CA0B1"
+                    }
+                },
+                {
+                    "scope": [
+                        "keyword.control.import.python",
+                        "variable.language.special.cls.python",
+                        "variable.language.special.self.python",
+                        "variable.parameter.function.language.special.cls.python",
+                        "variable.parameter.function.language.special.self.python"
+                    ],
+                    "settings": {
+                        "fontStyle": "italic",
+                        "foreground": "#FF8D41"
+                    }
+                }
+            ]
+        },
+        "[CodeSandbox]": {
+            "textMateRules": [
+                {
+                    "scope": [
+                        "meta.function-call.generic.python"
+                    ],
+                    "settings": {
+                        "foreground": "#61AFEF"
+                    }
+                },
+                {
+                    "scope": [
+                        "entity.name.function.decorator.python"
+                    ],
+                    "settings": {
+                        "foreground": "#56B6C2"
+                    }
+                },
+                {
+                    "scope": [
+                        "constant.language.python",
+                        "variable.parameter.function.language.special.self.python"
+                    ],
+                    "settings": {
+                        "foreground": "#E06C75"
+                    }
+                }
+            ]
+        },
+        "[CodeSandbox Dark]": {
+            "textMateRules": [
+                {
+                    "scope": [
+                        "meta.function-call.generic.python"
+                    ],
+                    "settings": {
+                        "foreground": "#61AFEF"
+                    }
+                },
+                {
+                    "scope": [
+                        "entity.name.function.decorator.python"
+                    ],
+                    "settings": {
+                        "foreground": "#56B6C2"
+                    }
+                },
+                {
+                    "scope": [
+                        "constant.language.python",
+                        "variable.parameter.function.language.special.self.python"
+                    ],
+                    "settings": {
+                        "foreground": "#E06C75"
+                    }
+                }
+            ]
+        },
+        "[CodeSandbox Black]": {
+            "textMateRules": [
+                {
+                    "scope": [
+                        "comment.line.double-slash",
+                        "comment.line.number-sign.python"
+                    ],
+                    "settings": {
+                        "fontStyle": ""
+                    }
+                },
+                {
+                    "scope": [
+                        "storage.type.class.python",
+                        "storage.type.function.python"
+                    ],
+                    "settings": {
+                        "foreground": "#977CDC"
+                    }
+                },
+                {
+                    "scope": [
+                        "meta.function-call.arguments.python",
+                        "string.quoted.docstring.multi.python"
+                    ],
+                    "settings": {
+                        "foreground": "#D19A66"
+                    }
+                },
+                {
+                    "scope": [
+                        "meta.attribute.python",
+                        "meta.member.access.python"
+                    ],
+                    "settings": {
+                        "foreground": "#ABB2BF"
+                    }
+                },
+                {
+                    "scope": [
+                        "entity.name.type.module.js",
+                        "variable.language.special.self.python",
+                        "variable.parameter.function-call.python",
+                        "variable.parameter.function.language.special.self.python"
+                    ],
+                    "settings": {
+                        "foreground": "#E06C75"
+                    }
+                },
+                {
+                    "scope": [
+                        "support.type.python",
+                        "meta.function-call.python",
+                        "meta.function-call.generic.python",
+                        "entity.name.function.decorator.python",
+                        "punctuation.definition.decorator.python"
+                    ],
+                    "settings": {
+                        "foreground": "#2794ee"
+                    }
+                }
+            ]
+        },
+        "[City Lights]": {
+            "textMateRules": [
+                {
+                    "scope": [
+                        "support.type.python",
+                        "support.type.exception.python"
+                    ],
+                    "settings": {
+                        "foreground": "#70E1E8"
+                    }
+                },
+                {
+                    "scope": [
+                        "meta.function.parameters.python",
+                        "variable.parameter.function.language.python"
+                    ],
+                    "settings": {
+                        "foreground": "#B7C5D3"
+                    }
+                },
+                {
+                    "scope": [
+                        "variable.other.property.js",
+                        "variable.language.special.cls.python",
+                        "variable.language.special.self.python",
+                        "variable.parameter.function.language.special.self.python"
+                    ],
+                    "settings": {
+                        "foreground": "#B62D65"
+                    }
+                }
+            ]
+        },
+        "[Darcula]": {
+            "textMateRules": [
+                {
+                    "scope": [
+                        "support.type.exception.python"
+                    ],
+                    "settings": {
+                        "foreground": "#CC8242"
+                    }
+                },
+                {
+                    "scope": [
+                        "meta.attribute.python",
+                        "meta.member.access.python"
+                    ],
+                    "settings": {
+                        "foreground": "#7A9EC2"
+                    }
+                },
+                {
+                    "scope": [
+                        "entity.name.type.class.python",
+                        "meta.function-call.generic.python"
+                    ],
+                    "settings": {
+                        "foreground": "#FFC66D"
+                    }
+                }
+            ]
+        },
+        "[Dark+ Material]": {
+            "textMateRules": [
+                {
+                    "scope": [
+                        "variable.other.property",
+                        "meta.attribute.python",
+                        "meta.member.access.python",
+                        "meta.method.declaration.ts",
+                        "variable.other.constant.ts"
+                    ],
+                    "settings": {
+                        "foreground": "#81D4FA"
+                    }
+                },
+                {
+                    "scope": [
+                        "storage.modifier.ts",
+                        "constant.other.caps.python",
+                        "variable.parameter.function-call.python"
+                    ],
+                    "settings": {
+                        "foreground": "#C586C0"
+                    }
+                },
+                {
+                    "scope": [
+                        "entity.name.namespace",
+                        "variable.other.property.js",
+                        "meta.function-call.arguments.python"
+                    ],
+                    "settings": {
+                        "foreground": "#9CDCFE"
+                    }
+                },
+                {
+                    "scope": [
+                        "meta.function-call.python",
+                        "meta.class.inheritance.python",
+                        "meta.function.decorator.python",
+                        "meta.function-call.generic.python",
+                        "entity.name.function.python",
+                        "entity.other.inherited-class.python",
+                        "entity.name.function.decorator.python"
+                    ],
+                    "settings": {
+                        "foreground": "#F0F4C3"
+                    }
+                },
+                {
+                    "scope": [
+                        "constant.other.caps.python",
+                        "variable.language.special.cls.python",
+                        "variable.language.special.self.python",
+                        "variable.parameter.function-call.python",
+                        "variable.parameter.function.language.special.cls.python",
+                        "variable.parameter.function.language.special.self.python"
+                    ],
+                    "settings": {
+                        "foreground": "#2196F3"
+                    }
+                }
+            ]
+        },
+        "[Default Dark Modern]": {
+            "textMateRules": [
+                {
+                    "scope": [
+                        "variable.other.property",
+                        "meta.attribute.python",
+                        "meta.member.access.python",
+                        "meta.method.declaration.ts",
+                        "variable.other.constant.ts"
+                    ],
+                    "settings": {
+                        "foreground": "#4FC1FF"
+                    }
+                },
+                {
+                    "scope": [
+                        "storage.modifier.ts",
+                        "variable.parameter.function-call.python"
+                    ],
+                    "settings": {
+                        "foreground": "#C586C0"
+                    }
+                },
+                {
+                    "scope": [
+                        "meta.function-call.python",
+                        "meta.definition.variable.name",
+                        "meta.class.inheritance.python",
+                        "meta.function.decorator.python",
+                        "meta.function-call.generic.python",
+                        "entity.name.function.python",
+                        "entity.other.inherited-class.python",
+                        "entity.name.function.decorator.python"
+                    ],
+                    "settings": {
+                        "foreground": "#DCDCAA"
+                    }
+                },
+                {
+                    "scope": [
+                        "entity.name.namespace",
+                        "variable.other.property.js",
+                        "meta.function-call.arguments.python"
+                    ],
+                    "settings": {
+                        "foreground": "#9CDCFE"
+                    }
+                },
+                {
+                    "scope": [
+                        "constant.other.caps.python",
+                        "variable.language.special.cls.python",
+                        "variable.language.special.self.python",
+                        "variable.parameter.function-call.python",
+                        "variable.parameter.function.language.special.cls.python",
+                        "variable.parameter.function.language.special.self.python"
+                    ],
+                    "settings": {
+                        "foreground": "#569CD6"
+                    }
+                }
+            ]
+        },
+        "[Default Dark+]": {
+            "textMateRules": [
+                {
+                    "scope": [
+                        "variable.other.property",
+                        "meta.attribute.python",
+                        "meta.member.access.python",
+                        "meta.method.declaration.ts",
+                        "variable.other.constant.ts"
+                    ],
+                    "settings": {
+                        "foreground": "#4FC1FF"
+                    }
+                },
+                {
+                    "scope": [
+                        "storage.modifier.ts",
+                        "variable.parameter.function-call.python"
+                    ],
+                    "settings": {
+                        "foreground": "#C586C0"
+                    }
+                },
+                {
+                    "scope": [
+                        "meta.function-call.python",
+                        "meta.class.inheritance.python",
+                        "meta.function.decorator.python",
+                        "meta.function-call.generic.python",
+                        "entity.name.function.python",
+                        "entity.other.inherited-class.python",
+                        "entity.name.function.decorator.python"
+                    ],
+                    "settings": {
+                        "foreground": "#DCDCAA"
+                    }
+                },
+                {
+                    "scope": [
+                        "entity.name.namespace",
+                        "variable.other.property.js",
+                        "meta.function-call.arguments.python"
+                    ],
+                    "settings": {
+                        "foreground": "#9CDCFE"
+                    }
+                },
+                {
+                    "scope": [
+                        "constant.other.caps.python",
+                        "variable.language.special.cls.python",
+                        "variable.language.special.self.python",
+                        "variable.parameter.function-call.python",
+                        "variable.parameter.function.language.special.cls.python",
+                        "variable.parameter.function.language.special.self.python"
+                    ],
+                    "settings": {
+                        "foreground": "#569CD6"
+                    }
+                }
+            ]
+        },
+        "[Default Light+]": {
+            "textMateRules": [
+                {
+                    "scope": "string.quoted.single.python",
+                    "settings": {
+                        "foreground": "#008000"
+                    }
+                },
+                {
+                    "scope": "meta.function-call.generic.python",
+                    "settings": {
+                        "foreground": "#0000FF"
+                    }
+                },
+                {
+                    "scope": [
+                        "variable.parameter",
+                        "variable.parameter.function.language.special.cls.python",
+                        "variable.parameter.function.language.special.self.python"
+                    ],
+                    "settings": {
+                        "foreground": "#A31515"
+                    }
+                }
+            ]
+        },
+        "[Default Light Modern]": {
+            "textMateRules": [
+                {
+                    "scope": [
+                        "entity.name.namespace"
+                    ],
+                    "settings": {
+                        "foreground": "#0000FF"
+                    }
+                },
+                {
+                    "scope": [
+                        "variable.parameter.function.language.special.cls.python",
+                        "variable.parameter.function.language.special.self.python"
+                    ],
+                    "settings": {
+                        "foreground": "#A31515"
+                    }
+                }
+            ]
+        },
+        "[Dracula]": {
+            "textMateRules": [
+                {
+                    "scope": [
+                        "support",
+                        "source.ts",
+                        "source.python",
+                        "source.javascript",
+                        "variable.parameter"
+                    ],
+                    "settings": {
+                        "fontStyle": ""
+                    }
+                },
+                {
+                    "scope": [
+                        "meta.attribute.python",
+                        "variable.other.property"
+                    ],
+                    "settings": {
+                        "foreground": "#8BE9FD"
+                    }
+                },
+                {
+                    "scope": "entity.other.inherited-class",
+                    "settings": {
+                        "foreground": "#FFB86C"
+                    }
+                },
+                {
+                    "scope": [
+                        "constant.other.caps.python",
+                        "meta.function-call.arguments.python",
+                        "variable.parameter.function-call.python"
+                    ],
+                    "settings": {
+                        "foreground": "#FFB86C"
+                    }
+                },
+                {
+                    "scope": "meta.function-call.generic.python",
+                    "settings": {
+                        "foreground": "#50FA7B"
+                    }
+                }
+            ]
+        },
+        "[Dracula Soft]": {
+            "textMateRules": [
+                {
+                    "scope": [
+                        "meta.attribute.python",
+                        "variable.other.property"
+                    ],
+                    "settings": {
+                        "foreground": "#8BE9FD"
+                    }
+                },
+                {
+                    "scope": "entity.other.inherited-class",
+                    "settings": {
+                        "foreground": "#FFB86C"
+                    }
+                },
+                {
+                    "scope": [
+                        "constant.other.caps.python",
+                        "meta.function-call.arguments.python",
+                        "variable.parameter.function-call.python"
+                    ],
+                    "settings": {
+                        "foreground": "#FFB86C"
+                    }
+                },
+                {
+                    "scope": "meta.function-call.generic.python",
+                    "settings": {
+                        "foreground": "#50FA7B"
+                    }
+                }
+            ]
+        },
+        "[Eva Dark]": {
+            "textMateRules": [
+                {
+                    "scope": "comment",
+                    "settings": {
+                        "fontStyle": ""
+                    }
+                },
+                {
+                    "scope": [
+                        "storage.modifier.async.js",
+                        "storage.modifier.async.ts"
+                    ],
+                    "settings": {
+                        "foreground": "#CF68E1"
+                    }
+                },
+                {
+                    "scope": [
+                        "constant.language.true.cpp",
+                        "constant.language.false.cpp"
+                    ],
+                    "settings": {
+                        "foreground": "#56B7C3"
+                    }
+                },
+                {
+                    "scope": [
+                        "variable.language.special.self.python",
+                        "variable.language.special.cls.python",
+                        "variable.parameter.function.language.special.cls.python",
+                        "variable.parameter.function.language.special.self.python"
+                    ],
+                    "settings": {
+                        "foreground": "#F02B77"
+                    }
+                }
+            ]
+        },
+        "[FlatUI Dark]": {
+            "textMateRules": [
+                {
+                    "scope": [
+                        "comment",
+                        "comment.line.number-sign.python"
+                    ],
+                    "settings": {
+                        "fontStyle": ""
+                    }
+                },
+                {
+                    "scope": [
+                        "support.type.python",
+                        "variable.other.property.js",
+                        "variable.other.property.ts"
+                    ],
+                    "settings": {
+                        "foreground": "#D19A66"
+                    }
+                },
+                {
+                    "scope": [
+                        "variable.language.this.js",
+                        "variable.language.this.ts",
+                        "variable.parameter.function.language.special.self.python"
+                    ],
+                    "settings": {
+                        "foreground": "#E06C75"
+                    }
+                }
+            ]
+        },
+        "[GitHub Dark]": {
+            "textMateRules": [
+                {
+                    "scope": [
+                        "variable.other.property.js",
+                        "variable.other.object.property.js",
+                        "variable.parameter.function-call.python"
+                    ],
+                    "settings": {
+                        "foreground": "#ffab70"
+                    }
+                },
+                {
+                    "scope": [
+                        "meta.attribute.python",
+                        "meta.member.access.python",
+                        "entity.other.inherited-class.python"
+                    ],
+                    "settings": {
+                        "foreground": "#b392f0"
+                    }
+                },
+                {
+                    "scope": [
+                        "variable.language.this.cpp",
+                        "variable.language.special.self.python",
+                        "variable.parameter.function.language.special.self.python"
+                    ],
+                    "settings": {
+                        "foreground": "#F97583"
+                    }
+                },
+                {
+                    "scope": [
+                        "entity.name.function.js",
+                        "meta.function-call.python",
+                        "meta.function-call.generic.python"
+                    ],
+                    "settings": {
+                        "foreground": "#79B8FF"
+                    }
+                },
+                {
+                    "scope": [
+                        "variable.other.property.go",
+                        "constant.language.boolean.go",
+                        "meta.function.decorator.python",
+                        "support.function.builtin.python",
+                        "entity.name.function.decorator.python"
+                    ],
+                    "settings": {
+                        "foreground": "#85E89D"
+                    }
+                },
+                {
+                    "scope": [
+                        "meta.body.struct.cpp",
+                        "meta.block.struct.cpp",
+                        "constant.other.caps.python",
+                        "entity.other.inherited-class.python",
+                        "meta.function-call.arguments.python"
+                    ],
+                    "settings": {
+                        "foreground": "#FAFBFC"
+                    }
+                },
+                {
+                    "scope": [
+                        "string.quoted",
+                        "string.unquoted",
+                        "string.quoted.single",
+                        "string.quoted.double",
+                        "string.quoted.triple",
+                        "string.interpolated",
+                        "string.template.ts",
+                        "string.regexp",
+                        "string.other",
+                        "support.type.primitive.ts"
+                    ],
+                    "settings": {
+                        "foreground": "#748ea8"
+                    }
+                }
+            ]
+        },
+        "[GitHub Dark Default]": {
+            "textMateRules": [
+                {
+                    "scope": [
+                        "variable.other.property.js",
+                        "variable.other.object.property.js"
+                    ],
+                    "settings": {
+                        "foreground": "#ffab70"
+                    }
+                },
+                {
+                    "scope": [
+                        "meta.attribute.python",
+                        "meta.member.access.python",
+                        "entity.other.inherited-class.python"
+                    ],
+                    "settings": {
+                        "foreground": "#b392f0"
+                    }
+                },
+                {
+                    "scope": [
+                        "variable.language.this.cpp",
+                        "variable.language.special.self.python",
+                        "variable.parameter.function.language.special.self.python"
+                    ],
+                    "settings": {
+                        "foreground": "#F97583"
+                    }
+                },
+                {
+                    "scope": [
+                        "entity.name.function.js",
+                        "meta.function-call.python",
+                        "meta.function-call.generic.python"
+                    ],
+                    "settings": {
+                        "foreground": "#79B8FF"
+                    }
+                },
+                {
+                    "scope": [
+                        "variable.other.property.go",
+                        "constant.language.boolean.go",
+                        "meta.function.decorator.python",
+                        "support.function.builtin.python",
+                        "entity.name.function.decorator.python"
+                    ],
+                    "settings": {
+                        "foreground": "#85E89D"
+                    }
+                },
+                {
+                    "scope": [
+                        "meta.body.struct.cpp",
+                        "meta.block.struct.cpp",
+                        "constant.other.caps.python",
+                        "entity.other.inherited-class.python",
+                        "meta.function-call.arguments.python"
+                    ],
+                    "settings": {
+                        "foreground": "#FAFBFC"
+                    }
+                },
+                {
+                    "scope": [
+                        "string.quoted",
+                        "string.unquoted",
+                        "string.quoted.single",
+                        "string.quoted.double",
+                        "string.quoted.triple",
+                        "string.interpolated",
+                        "string.template.ts",
+                        "string.regexp",
+                        "string.other",
+                        "support.type.primitive.ts"
+                    ],
+                    "settings": {
+                        "foreground": "#748ea8"
+                    }
+                }
+            ]
+        },
+        "[GitHub Dark Dimmed]": {
+            "textMateRules": [
+                {
+                    "scope": [
+                        "variable.other.property.js",
+                        "variable.other.object.property.js"
+                    ],
+                    "settings": {
+                        "foreground": "#ffab70"
+                    }
+                },
+                {
+                    "scope": [
+                        "meta.attribute.python",
+                        "meta.member.access.python",
+                        "entity.other.inherited-class.python"
+                    ],
+                    "settings": {
+                        "foreground": "#b392f0"
+                    }
+                },
+                {
+                    "scope": [
+                        "variable.language.this.cpp",
+                        "variable.language.special.self.python",
+                        "variable.parameter.function.language.special.self.python"
+                    ],
+                    "settings": {
+                        "foreground": "#F97583"
+                    }
+                },
+                {
+                    "scope": [
+                        "entity.name.function.js",
+                        "meta.function-call.python",
+                        "meta.function-call.generic.python"
+                    ],
+                    "settings": {
+                        "foreground": "#79B8FF"
+                    }
+                },
+                {
+                    "scope": [
+                        "variable.other.property.go",
+                        "constant.language.boolean.go",
+                        "meta.function.decorator.python",
+                        "support.function.builtin.python",
+                        "entity.name.function.decorator.python"
+                    ],
+                    "settings": {
+                        "foreground": "#85E89D"
+                    }
+                },
+                {
+                    "scope": [
+                        "meta.body.struct.cpp",
+                        "meta.block.struct.cpp",
+                        "constant.other.caps.python",
+                        "entity.other.inherited-class.python",
+                        "meta.function-call.arguments.python"
+                    ],
+                    "settings": {
+                        "foreground": "#FAFBFC"
+                    }
+                },
+                {
+                    "scope": [
+                        "string.quoted",
+                        "string.unquoted",
+                        "string.quoted.single",
+                        "string.quoted.double",
+                        "string.quoted.triple",
+                        "string.interpolated",
+                        "string.template.ts",
+                        "string.regexp",
+                        "string.other",
+                        "support.type.primitive.ts"
+                    ],
+                    "settings": {
+                        "foreground": "#748ea8"
+                    }
+                }
+            ]
+        },
+        "[GitHub Light]": {
+            "textMateRules": [
+                {
+                    "scope": [
+                        "meta.member.access.python",
+                        "entity.other.inherited-class.python",
+                        "entity.name.function.decorator.python"
+                    ],
+                    "settings": {
+                        "foreground": "#ec7723"
+                    }
+                },
+                {
+                    "scope": [
+                        "variable.language.special.self.python",
+                        "variable.parameter.function.language.special.self.python"
+                    ],
+                    "settings": {
+                        "foreground": "#D73A49"
+                    }
+                },
+                {
+                    "scope": [
+                        "meta.member.access.python",
+                        "meta.function-call.python",
+                        "meta.function-call.generic.python",
+                        "meta.function-call.arguments.python"
+                    ],
+                    "settings": {
+                        "foreground": "#005CC5"
+                    }
+                },
+                {
+                    "scope": "meta.function-call.arguments.python",
+                    "settings": {
+                        "foreground": "#24292E"
+                    }
+                },
+                {
+                    "scope": [
+                        "string.quoted",
+                        "string.unquoted",
+                        "string.quoted.single",
+                        "string.quoted.double",
+                        "string.quoted.triple",
+                        "string.interpolated",
+                        "string.regexp",
+                        "string.other"
+                    ],
+                    "settings": {
+                        "foreground": "#748ea8"
+                    }
+                }
+            ]
+        },
+        "[GitHub Light Default]": {
+            "textMateRules": [
+                {
+                    "scope": [
+                        "meta.function-call.generic",
+                        "support.function.builtin.python"
+                    ],
+                    "settings": {
+                        "foreground": "#D2A8FF"
+                    }
+                },
+                {
+                    "scope": [
+                        "meta.attribute.python",
+                        "meta.function-call.generic.python",
+                        "entity.name.function.decorator.python"
+                    ],
+                    "settings": {
+                        "foreground": "#005CC5"
+                    }
+                },
+                {
+                    "scope": [
+                        "meta.attribute.python",
+                        "variable.parameter.function.language.python"
+                    ],
+                    "settings": {
+                        "foreground": "#E36209"
+                    }
+                },
+                {
+                    "scope": [
+                        "variable.parameter.function",
+                        "variable.language.special.cls",
+                        "variable.language.special.self.python",
+                        "variable.parameter.function.language.special.self.python"
+                    ],
+                    "settings": {
+                        "foreground": "#D73A49"
+                    }
+                }
+            ]
+        },
+        "[Material]": {
+            "textMateRules": [
+                {
+                    "scope": [
+                        "meta.function.decorator.python"
+                    ],
+                    "settings": {
+                        "foreground": "#CDD3DE"
+                    }
+                },
+                {
+                    "scope": [
+                        "variable.parameter.function.language.special.cls.python",
+                        "variable.parameter.function.language.special.self.python"
+                    ],
+                    "settings": {
+                        "foreground": "#FF5370"
+                    }
+                }
+            ]
+        },
+        "[Material Night Eighties]": {
+            "textMateRules": [
+                {
+                    "scope": [
+                        "support.type.python",
+                        "entity.name.function"
+                    ],
+                    "settings": {
+                        "foreground": "#FFCB6B"
+                    }
+                },
+                {
+                    "scope": [
+                        "variable.language.special.cls",
+                        "variable.language.special.self.python",
+                        "variable.parameter.function.language.special.cls.python",
+                        "variable.parameter.function.language.special.self.python"
+                    ],
+                    "settings": {
+                        "foreground": "#FF5370"
+                    }
+                }
+            ]
+        },
+        "[Monokai Dimmed]": {
+            "textMateRules": [
+                {
+                    "scope": [
+                        "entity.name.namespace",
+                        "entity.name.type.class"
+                    ],
+                    "settings": {
+                        "foreground": "#8080FF"
+                    }
+                },
+                {
+                    "scope": [
+                        "meta.object-literal.key.js.jsx"
+                    ],
+                    "settings": {
+                        "foreground": "#D0B344"
+                    }
+                },
+                {
+                    "scope": "keyword.language.gherkin.feature",
+                    "settings": {
+                        "foreground": "#CE6700"
+                    }
+                },
+                {
+                    "scope": "keyword.language.gherkin.feature.step",
+                    "settings": {
+                        "foreground": "#6089B4"
+                    }
+                },
+                {
+                    "scope": [
+                        "constant.other.caps.python",
+                        "keyword.language.gherkin.feature.scenario"
+                    ],
+                    "settings": {
+                        "foreground": "#9872A2"
+                    }
+                },
+                {
+                    "scope": [
+                        "variable.language.special.cls",
+                        "variable.language.special.self.python",
+                        "variable.parameter.function.language.special.cls.python",
+                        "variable.parameter.function.language.special.self.python"
+                    ],
+                    "settings": {
+                        "foreground": "#FF5370"
+                    }
+                }
+            ]
+        },
+        "[Monokai Pro (Filter Spectrum)]": {
+            "textMateRules": [
+                {
+                    "scope": [
+                        "comment",
+                        "source.js",
+                        "support.type",
+                        "source.python"
+                    ],
+                    "settings": {
+                        "fontStyle": ""
+                    }
+                },
+                {
+                    "scope": [
+                        "entity.name.tag.js",
+                        "keyword.control.export.js",
+                        "support.class.component.js"
+                    ],
+                    "settings": {
+                        "foreground": "#948AE3"
+                    }
+                },
+                {
+                    "scope": [
+                        "entity.name.type.module.js"
+                    ],
+                    "settings": {
+                        "foreground": "#F7F1FF"
+                    }
+                },
+                {
+                    "scope": [
+                        "entity.other.inherited-class.js"
+                    ],
+                    "settings": {
+                        "fontStyle": "",
+                        "foreground": "#FCE566"
+                    }
+                },
+                {
+                    "scope": [
+                        "storage.type.js",
+                        "storage.modifier.js",
+                        "storage.type.function.js",
+                        "entity.other.attribute-name.js",
+                        "entity.other.inherited-class.js",
+                        "variable.parameter.js",
+                        "variable.language.this.js",
+                        "variable.language.super.js"
+                    ],
+                    "settings": {
+                        "fontStyle": ""
+                    }
+                },
+                {
+                    "scope": [
+                        "storage.type.class.js"
+                    ],
+                    "settings": {
+                        "fontStyle": "",
+                        "foreground": "#7BD88F"
+                    }
+                },
+                {
+                    "scope": [
+                        "storage.type.class.python"
+                    ],
+                    "settings": {
+                        "foreground": "#FC618D"
+                    }
+                },
+                {
+                    "scope": [
+                        "support.function.builtin.python"
+                    ],
+                    "settings": {
+                        "foreground": "#948AE3"
+                    }
+                },
+                {
+                    "scope": [
+                        "storage.type.class.python",
+                        "storage.type.function.python",
+                        "variable.parameter.function.language.python"
+                    ],
+                    "settings": {
+                        "fontStyle": ""
+                    }
+                },
+                {
+                    "scope": [
+                        "entity.other.inherited-class.python"
+                    ],
+                    "settings": {
+                        "fontStyle": "",
+                        "foreground": "#FD9353"
+                    }
+                },
+                {
+                    "scope": [
+                        "variable.language.special.cls",
+                        "variable.language.special.self.python",
+                        "variable.parameter.function.language.special.cls.python",
+                        "variable.parameter.function.language.special.self.python"
+                    ],
+                    "settings": {
+                        "fontStyle": ""
+                    }
+                }
+            ]
+        },
+        "[Night Owl (No Italics)]": {
+            "textMateRules": [
+                {
+                    "scope": [
+                        "storage.type.js",
+                        "storage.type.class.python",
+                        "storage.type.function.python"
+                    ],
+                    "settings": {
+                        "foreground": "#C792EA"
+                    }
+                },
+                {
+                    "scope": "meta.function-call.arguments.python",
+                    "settings": {
+                        "foreground": "#D6DEEB"
+                    }
+                },
+                {
+                    "scope": "string.quoted.docstring.multi.python",
+                    "settings": {
+                        "foreground": "#637777"
+                    }
+                },
+                {
+                    "scope": [
+                        "meta.function-call",
+                        "meta.function-call.generic.python"
+                    ],
+                    "settings": {
+                        "foreground": "#7FDBCA"
+                    }
+                },
+                {
+                    "scope": "variable.parameter.function.language.python",
+                    "settings": {
+                        "foreground": "#ECC48D"
+                    }
+                },
+                {
+                    "scope": [
+                        "meta.attribute.python",
+                        "variable.parameter.function-call.python"
+                    ],
+                    "settings": {
+                        "foreground": "#82AAFF"
+                    }
+                },
+                {
+                    "scope": [
+                        "variable.parameter.function",
+                        "variable.language.special.cls",
+                        "variable.language.special.self.python",
+                        "variable.parameter.function.language.special.self.python"
+                    ],
+                    "settings": {
+                        "foreground": "#FF5874"
+                    }
+                }
+            ]
+        },
+        "[Night Owl Black]": {
+            "textMateRules": [
+                {
+                    "scope": [
+                        "storage.type.ts",
+                        "storage.type.js",
+                        "keyword.control.flow.python"
+                    ],
+                    "settings": {
+                        "foreground": "#C792EA"
+                    }
+                },
+                {
+                    "scope": "meta.function-call.arguments.python",
+                    "settings": {
+                        "foreground": "#D6DEEB"
+                    }
+                },
+                {
+                    "scope": "string.quoted.docstring.multi.python",
+                    "settings": {
+                        "foreground": "#637777"
+                    }
+                },
+                {
+                    "scope": [
+                        "meta.function-call",
+                        "meta.function-call.generic.python",
+                        "storage.type.class.python",
+                        "storage.type.function.python"
+                    ],
+                    "settings": {
+                        "foreground": "#7FDBCA"
+                    }
+                },
+                {
+                    "scope": [
+                        "variable.parameter",
+                        "variable.parameter.function.language.python"
+                    ],
+                    "settings": {
+                        "foreground": "#ECC48D"
+                    }
+                },
+                {
+                    "scope": [
+                        "meta.attribute.python",
+                        "variable.parameter.function-call.python"
+                    ],
+                    "settings": {
+                        "foreground": "#82AAFF"
+                    }
+                },
+                {
+                    "scope": [
+                        "variable.parameter.function",
+                        "variable.language.special.cls",
+                        "variable.language.special.self.python",
+                        "variable.parameter.function.language.special.self.python"
+                    ],
+                    "settings": {
+                        "foreground": "#FF5874"
+                    }
+                }
+            ]
+        },
+        "[Night Owl Black (No Italics)]": {
+            "textMateRules": [
+                {
+                    "scope": [
+                        "storage.type.ts",
+                        "storage.type.js",
+                        "keyword.control.flow.python"
+                    ],
+                    "settings": {
+                        "foreground": "#C792EA"
+                    }
+                },
+                {
+                    "scope": [
+                        "meta.function-call.arguments.python"
+                    ],
+                    "settings": {
+                        "foreground": "#D6DEEB"
+                    }
+                },
+                {
+                    "scope": [
+                        "string",
+                        "string.quoted",
+                        "string.quoted.docstring.multi.python"
+                    ],
+                    "settings": {
+                        "foreground": "#637777"
+                    }
+                },
+                {
+                    "scope": [
+                        "entity.name.function.js"
+                    ],
+                    "settings": {
+                        "foreground": "#ADDB67"
+                    }
+                },
+                {
+                    "scope": [
+                        "meta.function-call",
+                        "meta.function-call.generic.python",
+                        "storage.type.class.python",
+                        "storage.type.function.python"
+                    ],
+                    "settings": {
+                        "foreground": "#7FDBCA"
+                    }
+                },
+                {
+                    "scope": [
+                        "variable.parameter",
+                        "variable.parameter.function.language.python"
+                    ],
+                    "settings": {
+                        "foreground": "#ECC48D"
+                    }
+                },
+                {
+                    "scope": [
+                        "meta.attribute.python",
+                        "variable.parameter.function-call.python"
+                    ],
+                    "settings": {
+                        "foreground": "#82AAFF"
+                    }
+                },
+                {
+                    "scope": [
+                        "variable.parameter.function",
+                        "variable.language.special.cls",
+                        "variable.language.special.self.python",
+                        "variable.parameter.function.language.special.self.python"
+                    ],
+                    "settings": {
+                        "foreground": "#FF5874"
+                    }
+                }
+            ]
+        },
+        "[Oceanic Next]": {
+            "textMateRules": [
+                {
+                    "scope": [
+                        "keyword.operator"
+                    ],
+                    "settings": {
+                        "foreground": "#65737E"
+                    }
+                },
+                {
+                    "scope": [
+                        "meta.function-call.arguments.python"
+                    ],
+                    "settings": {
+                        "foreground": "#CDD3DE"
+                    }
+                },
+                {
+                    "scope": [
+                        "support.function.builtin.python"
+                    ],
+                    "settings": {
+                        "foreground": "#FAC863"
+                    }
+                },
+                {
+                    "scope": [
+                        "entity.name.type.class.python"
+                    ],
+                    "settings": {
+                        "foreground": "#F99157"
+                    }
+                },
+                {
+                    "scope": [
+                        "meta.attribute.python",
+                        "meta.member.access.python",
+                        "variable.other.property"
+                    ],
+                    "settings": {
+                        "foreground": "#5FB3B3"
+                    }
+                },
+                {
+                    "scope": [
+                        "constant.other.caps.python",
+                        "variable.language.special.cls.python",
+                        "variable.language.special.self.python",
+                        "variable.parameter.function-call.python",
+                        "variable.parameter.function.language.special.cls.python",
+                        "variable.parameter.function.language.special.self.python"
+                    ],
+                    "settings": {
+                        "fontStyle": "",
+                        "foreground": "#EC5F67"
+                    }
+                }
+            ]
+        },
+        "[Oceanic Next (dimmed bg)]": {
+            "textMateRules": [
+                {
+                    "scope": [
+                        "support.function.builtin.python"
+                    ],
+                    "settings": {
+                        "foreground": "#FAC863"
+                    }
+                },
+                {
+                    "scope": [
+                        "meta.function-call.arguments.python"
+                    ],
+                    "settings": {
+                        "foreground": "#CDD3DE"
+                    }
+                },
+                {
+                    "scope": [
+                        "meta.attribute.python",
+                        "meta.member.access.python",
+                        "variable.other.property"
+                    ],
+                    "settings": {
+                        "foreground": "#5FB3B3"
+                    }
+                },
+                {
+                    "scope": [
+                        "variable.language.special.cls.python",
+                        "variable.language.special.self.python",
+                        "variable.parameter.function-call.python",
+                        "variable.parameter.function.language.special.cls.python",
+                        "variable.parameter.function.language.special.self.python"
+                    ],
+                    "settings": {
+                        "fontStyle": "",
+                        "foreground": "#EC5F67"
+                    }
+                }
+            ]
+        },
+        "[One Dark Pro]": {
+            "textMateRules": [
+                {
+                    "scope": [
+                        "comment",
+                        "keyword.control.flow.python",
+                        "keyword.control.import.python"
+                    ],
+                    "settings": {
+                        "fontStyle": ""
+                    }
+                },
+                {
+                    "scope": "variable.parameter",
+                    "settings": {
+                        "fontStyle": "",
+                        "foreground": "#D4D4D4"
+                    }
+                },
+                {
+                    "scope": [
+                        "meta.attribute.python",
+                        "meta.member.access.python",
+                        "variable.other.property"
+                    ],
+                    "settings": {
+                        "foreground": "#D19A66"
+                    }
+                },
+                {
+                    "scope": [
+                        "support.type.python"
+                    ],
+                    "settings": {
+                        "foreground": "#56B6C2"
+                    }
+                },
+                {
+                    "scope": [
+                        "variable.language.special.cls.python",
+                        "variable.language.special.self.python",
+                        "variable.parameter.function-call.python",
+                        "variable.parameter.function.language.special.cls.python",
+                        "variable.parameter.function.language.special.self.python"
+                    ],
+                    "settings": {
+                        "fontStyle": "",
+                        "foreground": "#e06c75"
+                    }
+                }
+            ]
+        },
+        "[(Actual) Obsidian]": {
+            "textMateRules": [
+                {
+                    "scope": [
+                        "support.function.builtin.python",
+                        "meta.function-call.generic.python"
+                    ],
+                    "settings": {
+                        "foreground": "#678CB1"
+                    }
+                },
+                {
+                    "scope": [
+                        "support.type.python",
+                        "meta.function.decorator.python",
+                        "entity.name.function.decorator.python",
+                        "variable.parameter.function-call.python"
+                    ],
+                    "settings": {
+                        "foreground": "#A082BD"
+                    }
+                },
+                {
+                    "scope": [
+                        "keyword.operator.logical.python",
+                        "variable.language.special.cls.python",
+                        "variable.language.special.self.python",
+                        "variable.parameter.function.language.special.cls.python",
+                        "variable.parameter.function.language.special.self.python"
+                    ],
+                    "settings": {
+                        "foreground": "#93C763"
+                    }
+                }
+            ]
+        },
+        "[One Dark Pro Darker]": {
+            "textMateRules": [
+                {
+                    "scope": "variable.parameter",
+                    "settings": {
+                        "fontStyle": "",
+                        "foreground": "#D4D4D4"
+                    }
+                },
+                {
+                    "scope": [
+                        "keyword.control.flow.python",
+                        "keyword.control.import.python"
+                    ],
+                    "settings": {
+                        "fontStyle": ""
+                    }
+                },
+                {
+                    "scope": [
+                        "meta.function.decorator.python",
+                        "entity.other.inherited-class.python",
+                        "entity.name.function.decorator.python"
+                    ],
+                    "settings": {
+                        "foreground": "#61AFEF"
+                    }
+                },
+                {
+                    "scope": [
+                        "meta.attribute.python",
+                        "variable.other.property",
+                        "constant.other.caps.python",
+                        "variable.parameter.function-call.python"
+                    ],
+                    "settings": {
+                        "foreground": "#D19A66"
+                    }
+                },
+                {
+                    "scope": [
+                        "variable.language.special.cls.python",
+                        "variable.language.special.self.python",
+                        "variable.parameter.function-call.python",
+                        "variable.parameter.function.language.special.cls.python",
+                        "variable.parameter.function.language.special.self.python"
+                    ],
+                    "settings": {
+                        "fontStyle": "",
+                        "foreground": "#e06c75"
+                    }
+                }
+            ]
+        },
+        "[One Monokai]": {
+            "textMateRules": [
+                {
+                    "scope": "meta.function-call.generic.python",
+                    "settings": {
+                        "foreground": "#61AFEF"
+                    }
+                },
+                {
+                    "scope": [
+                        "meta.attribute.python"
+                    ],
+                    "settings": {
+                        "foreground": "#98C379"
+                    }
+                },
+                {
+                    "scope": [
+                        "variable.parameter.function.language.python",
+                        "meta.function-call.agruments",
+                        "meta.function.parameters",
+                        "variable.parameter"
+                    ],
+                    "settings": {
+                        "foreground": "#D19A66",
+                        "fontStyle": ""
+                    }
+                },
+                {
+                    "scope": [
+                        "variable.parameter.function",
+                        "variable.language.special.cls",
+                        "variable.language.special.self.python",
+                        "variable.parameter.function.language.special.self.python"
+                    ],
+                    "settings": {
+                        "foreground": "#E06C75"
+                    }
+                }
+            ]
+        },
+        "[Panda Syntax]": {
+            "textMateRules": [
+                {
+                    "scope": "comment",
+                    "settings": {
+                        "fontStyle": ""
+                    }
+                },
+                {
+                    "scope": [
+                        "variable.parameter"
+                    ],
+                    "settings": {
+                        "foreground": "#E6E6E6"
+                    }
+                },
+                {
+                    "scope": [
+                        "keyword.operator"
+                    ],
+                    "settings": {
+                        "foreground": "#19f9d899"
+                    }
+                },
+                {
+                    "scope": [
+                        "string.template.ts",
+                        "string.template.js",
+                        "string.template.jsx",
+                        "string.quoted.single.ts",
+                        "string.quoted.single.js",
+                        "string.quoted.single.jsx"
+                    ],
+                    "settings": {
+                        "foreground": "#BCAAFE"
+                    }
+                },
+                {
+                    "scope": [
+                        "meta.attribute.python",
+                        "meta.member.access.python"
+                    ],
+                    "settings": {
+                        "foreground": "#FFCC95"
+                    }
+                },
+                {
+                    "scope": [
+                        "comment.line.number-sign.python",
+                        "string.quoted.docstring.multi.python"
+                    ],
+                    "settings": {
+                        "fontStyle": "",
+                        "foreground": "#676B79"
+                    }
+                },
+                {
+                    "scope": [
+                        "variable.other.property.ts",
+                        "variable.other.property.js",
+                        "variable.other.property.jsx"
+                    ],
+                    "settings": {
+                        "foreground": "#19F9D8"
+                    }
+                },
+                {
+                    "scope": [
+                        "entity.name.function.python",
+                        "entity.name.type.class.python",
+                        "support.function.builtin.python",
+                        "meta.function-call.generic.python"
+                    ],
+                    "settings": {
+                        "foreground": "#6FC1FF"
+                    }
+                },
+                {
+                    "scope": [
+                        "variable.language.special.cls.python",
+                        "variable.language.special.self.python",
+                        "variable.parameter.function-call.python",
+                        "variable.parameter.function.language.special.cls.python",
+                        "variable.parameter.function.language.special.self.python"
+                    ],
+                    "settings": {
+                        "foreground": "#FF75B5"
+                    }
+                }
+            ]
+        },
+        "[Plastic]": {
+            "textMateRules": [
+                {
+                    "scope": "comment",
+                    "settings": {
+                        "fontStyle": ""
+                    }
+                },
+                {
+                    "scope": [
+                        "source.python",
+                        "meta.function-call.arguments.python"
+                    ],
+                    "settings": {
+                        "foreground": "#C6CCD7"
+                    }
+                },
+                {
+                    "scope": [
+                        "meta.attribute.python",
+                        "meta.member.access.python"
+                    ],
+                    "settings": {
+                        "foreground": "#61AFEF"
+                    }
+                },
+                {
+                    "scope": [
+                        "storage.type.annotation.java",
+                        "meta.declaration.annotation.java",
+                        "variable.other.constant",
+                        "variable.other.property.ts",
+                        "variable.other.property.js",
+                        "variable.other.property.jsx",
+                        "constant.other.caps.python",
+                        "variable.parameter.function-call.python"
+                    ],
+                    "settings": {
+                        "foreground": "#D19A66"
+                    }
+                },
+                {
+                    "scope": [
+                        "meta.property-name.css",
+                        "support.type.property-name.css",
+                        "entity.other.attribute-name.js.jsx",
+                        "meta.function-call.python",
+                        "meta.function-call.generic.python"
+                    ],
+                    "settings": {
+                        "foreground": "#B57EDC"
+                    }
+                },
+                {
+                    "scope": [
+                        "variable.parameter.function.language.special.cls.python",
+                        "variable.parameter.function.language.special.self.python"
+                    ],
+                    "settings": {
+                        "foreground": "#E06C75"
+                    }
+                }
+            ]
+        },
+        "[Quiet Light]": {
+            "textMateRules": [
+                {
+                    "scope": [
+                        "entity.name.tag.js",
+                        "entity.name.tag.html",
+                        "storage.type.function.js"
+                    ],
+                    "settings": {
+                        "foreground": "#7A3E9D",
+                        "fontStyle": "bold"
+                    }
+                },
+                {
+                    "scope": [
+                        "storage.type.js"
+                    ],
+                    "settings": {
+                        "foreground": "#4B69C6"
+                    }
+                },
+                {
+                    "scope": [
+                        "entity.other.attribute-name.js",
+                        "entity.other.attribute-name.html"
+                    ],
+                    "settings": {
+                        "fontStyle": ""
+                    }
+                },
+                {
+                    "scope": [],
+                    "settings": {
+                        "foreground": "#AA3731"
+                    }
+                },
+                {
+                    "scope": [
+                        "entity.name.type.class"
+                    ],
+                    "settings": {
+                        "foreground": "#9C5D27",
+                        "fontStyle": ""
+                    }
+                },
+                {
+                    "scope": [
+                        "meta.class.python",
+                        "meta.function.python",
+                        "storage.type.class.python",
+                        "storage.type.function.python"
+                    ],
+                    "settings": {
+                        "foreground": "#4B69C6"
+                    }
+                },
+                {
+                    "scope": [
+                        "variable.language.special.cls.python",
+                        "variable.language.special.self.python",
+                        "variable.parameter.function.language.special.cls.python",
+                        "variable.parameter.function.language.special.self.python"
+                    ],
+                    "settings": {
+                        "fontStyle": "bold"
+                    }
+                }
+            ]
+        },
+        "[Son of Obsidian]": {
+            "textMateRules": [
+                {
+                    "scope": [
+                        "entity.name.function.python",
+                        "support.function.builtin.python",
+                        "meta.function-call.generic.python"
+                    ],
+                    "settings": {
+                        "foreground": "#678CB1"
+                    }
+                },
+                {
+                    "scope": [
+                        "support.type.python",
+                        "meta.function.decorator.python",
+                        "entity.name.function.decorator.python",
+                        "variable.parameter.function-call.python"
+                    ],
+                    "settings": {
+                        "foreground": "#A082BD"
+                    }
+                },
+                {
+                    "scope": [
+                        "keyword.operator.logical.python",
+                        "variable.language.special.cls.python",
+                        "variable.language.special.self.python",
+                        "variable.parameter.function.language.special.cls.python",
+                        "variable.parameter.function.language.special.self.python"
+                    ],
+                    "settings": {
+                        "foreground": "#93C763"
+                    }
+                }
+            ]
+        },
+        "[Sourcegraph Dark]": {
+            "textMateRules": [
+                {
+                    "scope": [
+                        "entity.other.inherited-class.python"
+                    ],
+                    "settings": {
+                        "foreground": "#FFA8A8"
+                    }
+                },
+                {
+                    "scope": [
+                        "meta.attribute.python",
+                        "constant.other.caps.python",
+                        "entity.name.type.module.js"
+                    ],
+                    "settings": {
+                        "foreground": "#72C3FC"
+                    }
+                },
+                {
+                    "scope": [
+                        "entity.other.attribute-name.js",
+                        "meta.function-call.generic.python"
+                    ],
+                    "settings": {
+                        "foreground": "#FFF3BF"
+                    }
+                },
+                {
+                    "scope": [
+                        "meta.object-literal.key",
+                        "variable.language.special.cls",
+                        "variable.language.special.self.python",
+                        "variable.parameter.function.language.special.cls.python",
+                        "variable.parameter.function.language.special.self.python"
+                    ],
+                    "settings": {
+                        "foreground": "#329AF0"
+                    }
+                }
+            ]
+        },
+        "[Spinel]": {
+            "textMateRules": [
+                {
+                    "scope": [
+                        "comment",
+                        "variable.other",
+                        "variable.parameter"
+                    ],
+                    "settings": {
+                        "fontStyle": ""
+                    }
+                },
+                {
+                    "scope": [
+                        "entity.other.attribute-name.tsx",
+                        "entity.other.attribute-name.js.jsx"
+                    ],
+                    "settings": {
+                        "foreground": "#FF9A3B"
+                    }
+                },
+                {
+                    "scope": [
+                        "entity.name.type.interface.tsx",
+                        "storage.type.function.async.python"
+                    ],
+                    "settings": {
+                        "foreground": "#ED2A88"
+                    }
+                },
+                {
+                    "scope": [
+                        "entity.name.tag.tsx",
+                        "entity.name.function.tsx",
+                        "entity.name.tag.js.jsx",
+                        "storage.type.class.python",
+                        "storage.type.function.python",
+                        "meta.function-call.generic.python"
+                    ],
+                    "settings": {
+                        "foreground": "#4B82E9"
+                    }
+                },
+                {
+                    "scope": [
+                        "variable.language.special.cls",
+                        "variable.language.special.self.python",
+                        "variable.parameter.function.language.special.cls.python",
+                        "variable.parameter.function.language.special.self.python"
+                    ],
+                    "settings": {
+                        "foreground": "#DD5555"
+                    }
+                }
+            ]
+        },
+        "[Tomorrow]": {
+            "textMateRules": [
+                {
+                    "scope": [
+                        "variable.other.local.cpp"
+                    ],
+                    "settings": {
+                        "foreground": "#4D4D4C"
+                    }
+                },
+                {
+                    "scope": [
+                        "entity.name.scope-resolution.cpp"
+                    ],
+                    "settings": {
+                        "foreground": "#C82829"
+                    }
+                },
+                {
+                    "scope": [
+                        "cout.",
+                        "meta.block.cpp"
+                    ],
+                    "settings": {
+                        "foreground": "#3E999F"
+                    }
+                }
+            ]
+        },
+        "[Tomorrow Night]": {
+            "textMateRules": [
+                {
+                    "scope": "constant.other.caps.python",
+                    "settings": {
+                        "foreground": "#FFCC66"
+                    }
+                },
+                {
+                    "scope": [
+                        "variable.parameter.function.language.special.cls.python",
+                        "variable.parameter.function.language.special.self.python"
+                    ],
+                    "settings": {
+                        "foreground": "#CC6666"
+                    }
+                }
+            ]
+        },
+        "[Tomorrow Night Bright]": {
+            "textMateRules": [
+                {
+                    "scope": "constant.other.caps.python",
+                    "settings": {
+                        "foreground": "#FFCC66"
+                    }
+                },
+                {
+                    "scope": [
+                        "variable.parameter.function.language.special.cls.python",
+                        "variable.parameter.function.language.special.self.python"
+                    ],
+                    "settings": {
+                        "foreground": "#D54E53"
+                    }
+                }
+            ]
+        },
+        "[Tomorrow Night Eighties]": {
+            "textMateRules": [
+                {
+                    "scope": "constant.other.caps.python",
+                    "settings": {
+                        "foreground": "#FFCC66"
+                    }
+                },
+                {
+                    "scope": [
+                        "variable.parameter.function.language.special.cls.python",
+                        "variable.parameter.function.language.special.self.python"
+                    ],
+                    "settings": {
+                        "foreground": "#CC6666"
+                    }
+                },
+                {
+                    "scope": [
+                        "meta.function-call.arguments.python"
+                    ],
+                    "settings": {
+                        "foreground": "#CCCCCC"
+                    }
+                }
+            ]
+        },
+        "[Tokyo Storm AltSynt]": {
+            "textMateRules": [
+                {
+                    "scope": [
+                        "variable.parameter"
+                    ],
+                    "settings": {
+                        "fontStyle": ""
+                    }
+                },
+                {
+                    "scope": [
+                        "variable.other.property.js"
+                    ],
+                    "settings": {
+                        "foreground": "#D19A66"
+                    }
+                },
+                {
+                    "scope": [
+                        "constant.other.caps.python"
+                    ],
+                    "settings": {
+                        "foreground": "#EB6572"
+                    }
+                },
+                {
+                    "scope": [
+                        "meta.function-call.generic.python",
+                        "string.quoted.docstring.multi.python"
+                    ],
+                    "settings": {
+                        "foreground": "#7DCFFF"
+                    }
+                },
+                {
+                    "scope": [
+                        "meta.attribute.python",
+                        "meta.indexed-name.python"
+                    ],
+                    "settings": {
+                        "foreground": "#36c0c0",
+                        "fontStyle": ""
+                    }
+                },
+                {
+                    "scope": [
+                        "variable.parameter.function",
+                        "variable.language.special.cls",
+                        "variable.language.special.self.python",
+                        "variable.parameter.function.language.special.self.python"
+                    ],
+                    "settings": {
+                        "foreground": "#C678DD"
+                    }
+                }
+            ]
+        },
+        "[Tokyo Storm Gogh]": {
+            "textMateRules": [
+                {
+                    "scope": [
+                        "support.class",
+                        "entity.name.type.class",
+                        "entity.other.inherited-class.python"
+                    ],
+                    "settings": {
+                        "foreground": "#7dcfff"
+                    }
+                }
+            ]
+        },
+        "[Tokyo Night AltSynt]": {
+            "textMateRules": [
+                {
+                    "scope": [
+                        "variable.parameter"
+                    ],
+                    "settings": {
+                        "fontStyle": ""
+                    }
+                },
+                {
+                    "scope": [
+                        "variable.other.property.js"
+                    ],
+                    "settings": {
+                        "foreground": "#D19A66"
+                    }
+                },
+                {
+                    "scope": [
+                        "meta.function-call.generic.python",
+                        "string.quoted.docstring.multi.python"
+                    ],
+                    "settings": {
+                        "foreground": "#7DCFFF"
+                    }
+                },
+                {
+                    "scope": [
+                        "meta.attribute.python",
+                        "meta.indexed-name.python"
+                    ],
+                    "settings": {
+                        "foreground": "#36c0c0",
+                        "fontStyle": ""
+                    }
+                },
+                {
+                    "scope": [
+                        "variable.parameter.function",
+                        "variable.language.special.cls",
+                        "variable.language.special.self.python",
+                        "variable.parameter.function.language.special.self.python"
+                    ],
+                    "settings": {
+                        "foreground": "#C678DD"
+                    }
+                }
+            ]
+        },
+        "[United Ubuntu]": {
+            "textMateRules": [
+                {
+                    "scope": "comment",
+                    "settings": {
+                        "fontStyle": ""
+                    }
+                },
+                {
+                    "scope": "keyword.control",
+                    "settings": {
+                        "foreground": "#FF73FD"
+                    }
+                },
+                {
+                    "scope": [
+                        "variable.other.property.js",
+                        "variable.other.property.ts"
+                    ],
+                    "settings": {
+                        "foreground": "#4EC9B0"
+                    }
+                },
+                {
+                    "scope": [
+                        "variable.language.this.js",
+                        "variable.language.this.ts"
+                    ],
+                    "settings": {
+                        "fontStyle": "",
+                        "foreground": "#C6C5FE"
+                    }
+                },
+                {
+                    "scope": [
+                        "meta.block.variable.other",
+                        "variable.other.object.ts",
+                        "variable.other.constant.ts",
+                        "variable.other.readwrite.ts"
+                    ],
+                    "settings": {
+                        "foreground": "#B5B3AA"
+                    }
+                }
+            ]
+        },
+        "[Winter is Coming (Light - No Italics)]": {
+            "textMateRules": [
+                {
+                    "scope": [
+                        "meta.function-call.generic.python"
+                    ],
+                    "settings": {
+                        "foreground": "#B1108E"
+                    }
+                },
+                {
+                    "scope": [
+                        "variable.language.special.cls.python",
+                        "variable.language.special.self.python",
+                        "variable.parameter.function.language.special.cls.python",
+                        "variable.parameter.function.language.special.self.python"
+                    ],
+                    "settings": {
+                        "foreground": "#08134A"
+                    }
+                }
+            ]
+        },
+        "[Xcode Syntax Dark (Catalina)]": {
+            "textMateRules": [
+                {
+                    "scope": [
+                        "constant.other.caps.python",
+                        "meta.function.parameters.python",
+                        "variable.parameter.function-call.python",
+                        "variable.parameter.function.language.python"
+                    ],
+                    "settings": {
+                        "foreground": "#CC9767"
+                    }
+                },
+                {
+                    "scope": "meta.function-call.arguments.python",
+                    "settings": {
+                        "foreground": "#BBBBBB"
+                    }
+                },
+                {
+                    "scope": [
+                        "meta.function-call.python",
+                        "meta.function-cal.generic.python"
+                    ],
+                    "settings": {
+                        "foreground": "#4DB1CB"
+                    }
+                },
+                {
+                    "scope": [
+                        "meta.function.decorator.python",
+                        "entity.name.function.decorator.python"
+                    ],
+                    "settings": {
+                        "foreground": "#D9BAFF"
+                    }
+                },
+                {
+                    "scope": [
+                        "meta.object-literal.key",
+                        "keyword.operator.logical.python",
+                        "variable.language.special.cls",
+                        "variable.language.special.self.python",
+                        "variable.parameter.function.language.special.cls.python",
+                        "variable.parameter.function.language.special.self.python"
+                    ],
+                    "settings": {
+                        "foreground": "#FE7AB2"
+                    }
+                }
+            ]
+        },
+        "[Xcode Syntax Dark Bold (Catalina)]": {
+            "textMateRules": [
+                {
+                    "scope": [
+                        "constant.other.caps.python",
+                        "meta.function.parameters.python",
+                        "variable.parameter.function-call.python",
+                        "variable.parameter.function.language.python"
+                    ],
+                    "settings": {
+                        "foreground": "#CC9767"
+                    }
+                },
+                {
+                    "scope": "meta.function-call.arguments.python",
+                    "settings": {
+                        "foreground": "#BBBBBB"
+                    }
+                },
+                {
+                    "scope": [
+                        "meta.class",
+                        "meta.function",
+                        "entity.name.function",
+                        "entity.name.type.class"
+                    ],
+                    "settings": {
+                        "foreground": "#6BDFFF",
+                        "fontStyle": "bold"
+                    }
+                },
+                {
+                    "scope": [
+                        "meta.function-call.python",
+                        "meta.function-cal.generic.python"
+                    ],
+                    "settings": {
+                        "foreground": "#4DB1CB"
+                    }
+                },
+                {
+                    "scope": [
+                        "meta.function.decorator.python",
+                        "entity.name.function.decorator.python"
+                    ],
+                    "settings": {
+                        "foreground": "#D9BAFF"
+                    }
+                },
+                {
+                    "scope": [
+                        "meta.object-literal.key",
+                        "keyword.operator.logical.python",
+                        "variable.language.special.cls",
+                        "variable.language.special.self.python",
+                        "variable.parameter.function.language.special.cls.python",
+                        "variable.parameter.function.language.special.self.python"
+                    ],
+                    "settings": {
+                        "foreground": "#FE7AB2"
+                    }
+                }
+            ]
+        },
+        "textMateRules": [
+            {
+                "scope": "keyword.other.dotenv",
+                "settings": {
+                    "foreground": "#FF000000"
+                }
+            }
+        ]
+    },
+    "editor.semanticTokenColorCustomizations": {
+        "[Ambiance [beta]]": {
+            "rules": {
+                "clsParameter:typescriptreact": "#C6C5FE",
+                "selfParameter:typescriptreact": "#C6C5FE",
+                "variable.defaultLibrary:typescriptreact": "#C6C5FE",
+            }
+        },
+        "[Adapta Nokto]": {
+            "rules": {
+                "property": "#C3E88D",
+                "property.declaration": "#EEFFFF",
+                "variable.builtin": "#9B859D"
+            }
+        },
+        "[Atom One Dark]": {
+            "rules": {
+                "variable": "#ABB2BF"
+            }
+        },
+        "[After Dark]": {
+            "rules": {
+                "variable": "#ADBAC7",
+                "property": "#88ABF9"
+            }
+        },
+        "[After Dark No Italics]": {
+            "rules": {
+                "variable": "#ADBAC7",
+                "property": "#88ABF9"
+            }
+        },
+        "[Atom One Light]": {
+            "rules": {
+                "module:python": "#50A14F",
+                "variable:python": "#383A42",
+                "property.declaration": "#383A42",
+                "variable.declaration:python": "#383A42"
+            }
+        },
+        "[Ayu Mirage Bordered]": {
+            "rules": {
+                "comment": {
+                    "fontStyle": ""
+                },
+                "selfParameter": {
+                    "foreground": "#f28779",
+                    "fontStyle": ""
+                }
+            }
+        },
+        "[Better Selenized Dark]": {
+            "rules": {
+                "*.builtin": "#2AA198",
+                "parameter": "#B58900",
+                "clsParameter": "#CB4B16",
+                "selfParameter": "#CB4B16"
+            }
+        },
+        "[Better Selenized Light]": {
+            "rules": {}
+        },
+        "[Better Solarized Dark]": {
+            "rules": {
+                "parameter": "#B58900",
+                "clsParameter": "#CB4B16",
+                "selfParameter": "#CB4B16"
+            }
+        },
+        "[Default Dark+]": {
+            "rules": {}
+        },
+        "[Dracula]": {
+            "rules": {
+                "parameter": {
+                    "fontStyle": ""
+                }
+            }
+        },
+        "[Enhanced Default]": {
+            "rules": {
+                "namespace:cpp": "#FFCB6B",
+                "variable.global:cpp": "#DF76D6",
+                "selfKeyword": "#4CABF9",
+                "selfParameter": "#4CABF9",
+                "selfTypeKeyword": "#4CABF9"
+            }
+        },
+        "[Enhanced Default (alt colors)]": {
+            "rules": {
+                "function.builtin": "#34e660",
+                "selfKeyword": "#FF5370",
+                "selfParameter": "#FF5370",
+                "selfTypeKeyword": "#FF5370"
+            }
+        },
+        "[Eva Dark]": {
+            "rules": {
+                "namespace:javascript": "#98C379",
+                "namespace:typescript": "#98C379"
+            }
+        },
+        "[GitHub Dark]": {
+            "rules": {
+                "module": "#E1E4E8",
+                "namespace": "#E1E4E8",
+                "namespace:go": "#B392F0",
+                "namespace:javascript": "#85E89D",
+
+                "variable.readonly": "#E1E4E8",
+                "variable.declaration": "#E1E4E8",
+                "variable.readonly:go": "#FFAB70",
+                "variable.defaultLibrary:javascript": "#B392F0",
+                "variable.readonly.defaultLibrary:go": "#85E89D",
+
+                // Functions & Methods
+                "method": "#79B8FF",
+                "function": "#79B8FF",
+
+                // Builtins and decorators
+                "type:cpp": "#B392F0",
+                "type:go": "#85E89D",
+                "*.builtin": "#85E89D",
+                "templateType": "#85E89D",
+                "module.decorator": "#85E89D",
+                "variable.global:cpp": "#85E89D",
+                "parameter:javascript": "#85E89D",
+                "function.defaultLibrary": "#85E89D",
+                "variable.defaultLibrary": "#85E89D",
+
+                // Properties
+                "property": "#B392F0",
+                "function.readonly": "#B392F0",
+                "property:cpp": "#FFAB70",
+                "property.decorator": "#FFAB70",
+                "property.declaration": "#E1E4E8",
+
+                // self & cls
+                "selfKeyword": "#FF7B72",
+                "clsParameter": "#FF7B72",
+                "selfTypeKeyword": "#FF7B72",
+            }
+        },
+        "[GitHub Dark Default]": {
+            "rules": {
+                "class": "#B392F0",
+
+                "module": "#E1E4E8",
+                "namespace": "#E1E4E8",
+                "namespace:go": "#B392F0",
+                "namespace:javascript": "#85E89D",
+
+                "variable.readonly": "#E1E4E8",
+                "variable.readonly:go": "#FFAB70",
+                "variable.declaration": "#E1E4E8",
+                "variable.defaultLibrary:javascript": "#B392F0",
+                "variable.readonly.defaultLibrary:go": "#85E89D",
+
+                // Functions & Methods
+                "method": "#79B8FF",
+                "function": "#79B8FF",
+
+                // Builtins and decorators
+                "type:go": "#85E89D",
+                "type:cpp": "#B392F0",
+                "*.builtin": "#85E89D",
+                "templateType": "#85E89D",
+                "module.decorator": "#85E89D",
+                "variable.global:cpp": "#85E89D",
+                "parameter:javascript": "#85E89D",
+                "function.defaultLibrary": "#85E89D",
+                "variable.defaultLibrary": "#85E89D",
+
+                // Properties
+                "property": "#B392F0",
+                "property:cpp": "#FFAB70",
+                "function.readonly": "#B392F0",
+                "property.decorator": "#FFAB70",
+                "property.declaration": "#FFAB70",
+
+                // self & cls
+                "clsParameter": "#FF7B72",
+                "selfKeyword": "#FF7B72",
+                "selfTypeKeyword": "#FF7B72",
+            }
+        },
+        "[GitHub Dark Dimmed]": {
+            "rules": {
+                "class": "#B392F0",
+
+                "module": "#E1E4E8",
+                "namespace": "#E1E4E8",
+                "namespace:go": "#B392F0",
+                "namespace:javascript": "#85E89D",
+
+                "variable.readonly": "#E1E4E8",
+                "variable.readonly:go": "#FFAB70",
+                "variable.declaration": "#E1E4E8",
+                "variable.defaultLibrary:javascript": "#B392F0",
+                "variable.readonly.defaultLibrary:go": "#85E89D",
+
+                // Functions & Methods
+                "method": "#79B8FF",
+                "function": "#79B8FF",
+
+                // Builtins and decorators
+                "type:go": "#85E89D",
+                "type:cpp": "#B392F0",
+                "*.builtin": "#85E89D",
+                "templateType": "#85E89D",
+                "module.decorator": "#85E89D",
+                "variable.global:cpp": "#85E89D",
+                "parameter:javascript": "#85E89D",
+                "function.defaultLibrary": "#85E89D",
+                "variable.defaultLibrary": "#85E89D",
+
+                // Properties
+                "property": "#B392F0",
+                "property:cpp": "#FFAB70",
+                "function.readonly": "#B392F0",
+                "property.decorator": "#FFAB70",
+                "property.declaration": "#FFAB70",
+
+                // self & cls
+                "clsParameter": "#FF7B72",
+                "selfKeyword": "#FF7B72",
+                "selfTypeKeyword": "#FF7B72",
+            }
+        },
+        "[Monokai Dimmed]": {
+            "rules": {
+                "property": "#CE6700",
+                "class.declaration": "#d0b344",
+                "module:python": "#d0b344"
+            }
+        },
+        "[Night Owl Black]": {
+            "rules": {
+              // "variable:javascript": "#D6DEEB",
+              "class:python": "#ECC48D",
+              "variable:python": "#d7dbe0",
+            //   "parameter:python": "#ECC48D",
+
+              "clsParameter": "#FF5874",
+              "selfKeyword": "#FF5874",
+              "selfTypeKeyword": "#FF5874",
+              "selfParameter": "#FF5874",
+              "selfParameter.declaration:python": "#FF5874",
+
+              "variable.readonly:javascript": "#7FDBCA",
+              "variable.readonly:typescript": "#7FDBCA"
+            }
+        },
+        "[Night Owl Black (No Italics)]": {
+            "rules": {
+                // "variable:javascript": "#D6DEEB",
+                "class:python": "#ECC48D",
+                "variable:python": "#d7dbe0",
+                // "property.declaration:python": "#addb67",
+                // "parameter:python": "#ECC48D",
+
+                "clsParameter": "#FF5874",
+                "selfKeyword": "#FF5874",
+                "selfTypeKeyword": "#FF5874",
+                "selfParameter": "#FF5874",
+                "selfParameter.declaration:python": "#FF5874",
+
+                "class.typeHint": "#ADDB67",
+                "variable.readonly:javascript": "#7FDBCA",
+                "variable.readonly:typescript": "#7FDBCA"
+            }
+        },
+        "[Oceanic Next]": {
+            "rules": {
+                "enum:python": "#F99157",
+                "class.declaration:python": "#6699CC",
+                "function.decorator:python": "#C594C5",
+                "variable.declaration.readonly:python": "#EC5F67",
+            }
+        },
+        "[One Dark Pro]": {
+            "rules": {
+                "variable": "#D4D4D4",
+                "function": "#61AFEF",
+                "clsParameter": "#e06c75",
+                "selfParameter": "#e06c75",
+                "*.decorator": "#e5c07b"
+            }
+        },
+        "[One Dark Pro Darker]": {
+            "rules": {
+                "variable": "#D4D4D4",
+                "function": "#61AFEF",
+                "clsParameter": "#e06c75",
+                "selfParameter": "#e06c75",
+                "*.decorator": "#e5c07b"
+            }
+        },
+        "[Plastic]": {
+            "rules": {
+                "method": "#B57EDC",
+                "function": "#B57EDC",
+                "property": "#56B6C2",
+                "enumMember": "#D19A66",
+                "clsParameter": "#E06C75",
+                "selfParameter": "#E06C75",
+                "variable.decorator": "#E06C75",
+            }
+        },
+        "[Spinel]": {
+            "rules": {
+                "function:typescriptreact": "#EEE385",
+                "interface:typescriptreact": "#D464EB",
+                "function.declaration:typescriptreact": "#4B82E9",
+                "method.defaultLibrary:typescriptreact": "#D464EB",
+                "interface.declaration:typescriptreact": "#D464EB",
+                // "variable:python": "#D1CCF1",
+                "class:python": "#EEE385",
+                "class.declaration:python": "#D464EB",
+                "enum.declaration:python": "#D464EB",
+                "enumMember": "#7DCFCF", // "#EEE0E0",
+                "method:python": "#4B82E9", // "#D1CCF1"
+                "function:python": "#4B82E9",
+                "function.builtin:python": "#D464EB", // "#EEE385",
+                "module:python": "#FF9A3B",
+                "module.decorator:python": "#4B82E9",
+                "method.decorator:python": "#EEE385",
+                "function.decorator:python": "#EEE385",
+                "parameter": {
+                    "fontStyle": ""
+                }
+                // "function.decorator:python": "#D1CCF1"
+            }
+        },
+        "[Tokyo Storm AltSynt]": {
+            "rules": {
+                "parameter": { "fontStyle": "" },
+                "property.declaration:javascript": "#D19A66",
+                "property.declaration:javascriptreact": "#D19A66",
+                "variable.declaration.readonly:python": "#EB6572",
+                "method.decorator:python": "#36C0C0",
+                "module.decorator:python": "#6199ef",
+                "function.decorator:python": "#6199ef"
+            }
+        },
+        "[Tokyo Storm Gogh]": {
+            "rules": {
+                "parameter": { "fontStyle": "" }
+            }
+        },
+        "[Tokyo Night AltSynt]": {
+            "rules": {
+                "parameter": { "fontStyle": "" },
+                "property.declaration:javascript": "#D19A66",
+                "property.declaration:javascriptreact": "#D19A66"
+            }
+        },
+        "[Tomorrow]": {
+            "rules": {
+                "namespace:cpp": "#C82829",
+                "variable.global:cpp": "#3E999F"
+            }
+        }
+    },
+
+    "markdown.preview.fontSize": 13.5,
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "left"
+    },
+    "oneDarkPro.editorTheme": "Ocean",
+    "redhat.telemetry.enabled": false,
+    "search.showLineNumbers": true,
+    "symbols.hidesExplorerArrows": false,
+
+    "workbench.sideBar.location": "right",
+    "workbench.editor.enablePreview": false,
+    "workbench.editor.enablePreviewFromQuickOpen": false,
+    "workbench.editor.highlightModifiedTabs": true,
+    "workbench.editor.tabSizing": "shrink",
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.productIconTheme": "fluent-icons",
+    "workbench.colorCustomizations": {
+        "dart.closingLabels": "#676B79",
+        "[Adapta Nokto]": {
+            // "tab.activeForeground": "#fff",
+            // "tab.activeBackground": "#1C2022",
+            "statusBar.background": "#08090e",
+            "tab.activeBorder": "#9CDCFE",
+            "tab.unfocusedActiveBorder": "#9CDCFE",
+            "tab.inactiveBackground": "#011627",
+            "tab.inactiveForeground": "#757575",
+            "tab.unfocusedActiveForeground": "#fff",
+            "tab.unfocusedInactiveForeground": "#757575",
+            "editor.background": "#011627",         // Night owl
+            // "editor.background": "#08090e",      // Night Owl Black
+            // "editor.background": "#1C2022",      // Dark Modern
+            // "editor.background": "#21252B",       // Plastic
+            // "editor.background": "#24292E",      // Github Dark
+            // "editor.background": "#26272b",
+            // "editor.background": "#1E1F27"        // Codepen Night
+            // "editor.background": "#282A36"
+            // "editor.background": "#282A36"          // Dracula
+            // "editor.background": "#282C34"          // One dark pro
+        },
+        "[Atom One Light]": {
+            "editor.background": "#f8f6edcf"
+        },
+        "[Dark+ Material]": {
+            "tab.activeBorder": "#9CDCFE",
+            "tab.unfocusedActiveBorder": "#9CDCFE",
+        },
+        // "[Default Dark+]": {
+        //     "activityBar.border": "#343434",
+        //     "activityBar.background": "#08090e",
+        //     "activityBarBadge.background": "#242424",
+        //     "sideBar.border": "#343434",
+        //     "sideBar.background": "#0c1117",
+        //     "sideBar.foreground": "#8c929b",
+        //     "sideBarTitle.foreground": "#fff",
+        //     "sideBarSectionHeader.border": "#343434",
+        //     "sideBarSectionHeader.foreground": "#fff",
+        //     "sideBarSectionHeader.background": "#0b1117",
+        //     "tab.border": "#08090e",
+        //     "tab.activeBorder": "#9CDCFE",
+        //     "tab.unfocusedActiveBorder": "#9CDCFE",
+        //     "tab.activeForeground": "#fff",
+        //     "tab.activeBackground": "#08090e",
+        //     "tab.inactiveBackground": "#0c1117",
+        //     "tab.inactiveForeground": "#757575",
+        //     "tab.unfocusedActiveForeground": "#fff",
+        //     "tab.unfocusedInactiveForeground": "#757575",
+        //     "editor.background": "#08090e",
+        //     "editorWhitespace.foreground": "#242424",
+        //     "editorGroupHeader.tabsBackground": "#08090e",
+        //     "statusBar.background": "#08090e"
+        // },
+        "[Eva Dark]": {
+            // "editor.background": "#26272b",
+            // "editorGutter.background": "#26272b",
+            "minimap.background": "#1b1d2383"
+        },
+        "[Material Night Eighties]": {
+            "editorWhitespace.foreground": "#414141d7"
+        },
+        "[Oceanic Next (dimmed bg)]": {
+            // "editorWhitespace.foreground": "#242424",
+        },
+        "[One Monokai]": {
+            // "activityBar.border": "#343434",
+            // "activityBar.background": "#08090e",
+            // "activityBarBadge.background": "#242424",
+            // "editor.background": "#08090e",
+            // "editorWhitespace.foreground": "#242424",
+            // "sideBar.border": "#343434",
+            // "sideBar.background": "#0c1117",
+            // "sideBar.foreground": "#8c939b",
+            // "sideBarTitle.foreground": "#fff",
+            // "sideBarSectionHeader.border": "#343434",
+            // "sideBarSectionHeader.foreground": "#fff",
+            // "sideBarSectionHeader.background": "#0b1117"
+        },
+        "[GitHub Dark Default]": {
+            "editorWhitespace.foreground": "#242424"
+        },
+        "[GitHub Dark Dimmed]": {
+            "editorWhitespace.foreground": "#242424"
+        },
+        "[Better Solarized Dark]": {
+            "peekView.border": "#E50A69AB",
+            "peekViewTitle.background": "#002b36",
+            "peekViewResult.background": "#00212b",
+            "peekViewEditor.background": "#002b36",
+            "peekViewEditor.matchHighlightBackground": "#00212bAB"
+        },
+        "[Monokai Dimmed]": {
+            "tab.activeBorder": "#CE6700"
+        },
+        "[Spinel]": {
+            "activityBar.activeBorder": "#1085FF",
+            "activityBar.background": "#21252B",
+            "activityBar.border": "#0D1117",
+            "activityBar.foreground": "#C6CCD7",
+            "activityBar.inactiveForeground": "#5F6672",
+            "activityBarBadge.background": "#E06C75",
+            "activityBarBadge.foreground": "#ffffff",
+            "breadcrumb.focusForeground": "#C6CCD7",
+            "breadcrumb.foreground": "#5F6672",
+            "button.background": "#E06C75",
+            "button.foreground": "#ffffff",
+            "button.hoverBackground": "#E48189",
+            "button.secondaryBackground": "#0D1117",
+            "button.secondaryForeground": "#ffffff",
+            "checkbox.background": "#61AFEF",
+            "checkbox.foreground": "#ffffff",
+            "contrastBorder": "#0D1117",
+            "debugToolBar.background": "#181A1F",
+            "diffEditor.border": "#0D1117",
+            "diffEditor.diagonalFill": "#0D1117",
+            "diffEditor.insertedLineBackground": "#CBF6AC0D",
+            "diffEditor.insertedTextBackground": "#CBF6AC1A",
+            "diffEditor.removedLineBackground": "#FF9FA80D",
+            "diffEditor.removedTextBackground": "#FF9FA81A",
+            "dropdown.background": "#181A1F",
+            "dropdown.border": "#0D1117",
+            "editor.background": "#21252B",
+            "editor.findMatchBackground": "#00000000",
+            "editor.findMatchBorder": "#1085FF",
+            "editor.findMatchHighlightBackground": "#00000000",
+            "editor.findMatchHighlightBorder": "#C6CCD7",
+            "editor.foreground": "#A9B2C3",
+            "editor.lineHighlightBackground": "#A9B2C31A",
+            "editor.lineHighlightBorder": "#00000000",
+            "editor.linkedEditingBackground": "#0D1117",
+            "editor.rangeHighlightBorder": "#C6CCD7",
+            "editor.selectionBackground": "#A9B2C333",
+            "editor.selectionHighlightBackground": "#A9B2C31A",
+            "editor.selectionHighlightBorder": "#C6CCD7",
+            "editor.wordHighlightBackground": "#00000000",
+            "editor.wordHighlightBorder": "#1085FF",
+            "editor.wordHighlightStrongBackground": "#00000000",
+            "editor.wordHighlightStrongBorder": "#1085FF",
+            "editorBracketHighlight.foreground1": "#A9B2C3",
+            "editorBracketHighlight.foreground2": "#61AFEF",
+            "editorBracketHighlight.foreground3": "#E5C07B",
+            "editorBracketHighlight.foreground4": "#E06C75",
+            "editorBracketHighlight.foreground5": "#98C379",
+            "editorBracketHighlight.foreground6": "#B57EDC",
+            "editorBracketHighlight.unexpectedBracket.foreground": "#D74E42",
+            "editorBracketMatch.background": "#00000000",
+            "editorBracketMatch.border": "#1085FF",
+            "editorCursor.foreground": "#A9B2C3",
+            "editorError.foreground": "#D74E42",
+            "editorGroup.border": "#0D1117",
+            "editorGroup.emptyBackground": "#181A1F",
+            "editorGroupHeader.tabsBackground": "#181A1F",
+            "editorGutter.addedBackground": "#98C379",
+            "editorGutter.deletedBackground": "#E06C75",
+            "editorGutter.modifiedBackground": "#D19A66",
+            "editorHoverWidget.background": "#181A1F",
+            "editorHoverWidget.border": "#1085FF",
+            "editorIndentGuide.activeBackground": "#A9B2C333",
+            "editorIndentGuide.background": "#0D1117",
+            "editorInfo.foreground": "#1085FF",
+            "editorInlayHint.background": "#00000000",
+            "editorInlayHint.foreground": "#5F6672",
+            "editorLightBulb.foreground": "#E9D16C",
+            "editorLightBulbAutoFix.foreground": "#1085FF",
+            "editorLineNumber.activeForeground": "#C6CCD7",
+            "editorLineNumber.foreground": "#5F6672",
+            "editorOverviewRuler.addedForeground": "#98C379",
+            "editorOverviewRuler.border": "#0D1117",
+            "editorOverviewRuler.deletedForeground": "#E06C75",
+            "editorOverviewRuler.errorForeground": "#D74E42",
+            "editorOverviewRuler.findMatchForeground": "#1085FF",
+            "editorOverviewRuler.infoForeground": "#1085FF",
+            "editorOverviewRuler.modifiedForeground": "#D19A66",
+            "editorOverviewRuler.warningForeground": "#E9D16C",
+            "editorRuler.foreground": "#0D1117",
+            "editorStickyScroll.background": "#181A1F",
+            "editorStickyScrollHover.background": "#21252B",
+            "editorSuggestWidget.background": "#181A1F",
+            "editorSuggestWidget.border": "#1085FF",
+            "editorSuggestWidget.selectedBackground": "#A9B2C31A",
+            "editorWarning.foreground": "#E9D16C",
+            "editorWhitespace.foreground": "#A9B2C31A",
+            "editorWidget.background": "#181A1F",
+            "errorForeground": "#D74E42",
+            "focusBorder": "#1085FF",
+            "gitDecoration.deletedResourceForeground": "#E06C75",
+            "gitDecoration.ignoredResourceForeground": "#5F6672",
+            "gitDecoration.modifiedResourceForeground": "#D19A66",
+            "gitDecoration.untrackedResourceForeground": "#98C379",
+            "input.background": "#0D1117",
+            "inputOption.activeBorder": "#1085FF",
+            "inputValidation.errorBackground": "#D74E42",
+            "inputValidation.errorBorder": "#D74E42",
+            "inputValidation.infoBackground": "#1085FF",
+            "inputValidation.infoBorder": "#1085FF",
+            "inputValidation.infoForeground": "#0D1117",
+            "inputValidation.warningBackground": "#E9D16C",
+            "inputValidation.warningBorder": "#E9D16C",
+            "inputValidation.warningForeground": "#0D1117",
+            "list.activeSelectionBackground": "#A9B2C333",
+            "list.activeSelectionForeground": "#ffffff",
+            "list.errorForeground": "#D74E42",
+            "list.focusBackground": "#A9B2C333",
+            "list.hoverBackground": "#A9B2C31A",
+            "list.inactiveFocusOutline": "#5F6672",
+            "list.inactiveSelectionBackground": "#A9B2C333",
+            "list.inactiveSelectionForeground": "#C6CCD7",
+            "list.warningForeground": "#E9D16C",
+            "minimap.findMatchHighlight": "#1085FF",
+            "minimap.selectionHighlight": "#C6CCD7",
+            "minimapGutter.addedBackground": "#98C379",
+            "minimapGutter.deletedBackground": "#E06C75",
+            "minimapGutter.modifiedBackground": "#D19A66",
+            "notificationCenter.border": "#0D1117",
+            "notificationCenterHeader.background": "#181A1F",
+            "notifications.background": "#181A1F",
+            "notifications.border": "#0D1117",
+            "notificationToast.border": "#0D1117",
+            "panel.background": "#181A1F",
+            "panel.border": "#0D1117",
+            "panelTitle.inactiveForeground": "#5F6672",
+            "peekView.border": "#1085FF",
+            "peekViewEditor.background": "#181A1F",
+            "peekViewEditor.matchHighlightBackground": "#A9B2C333",
+            "peekViewResult.background": "#181A1F",
+            "peekViewResult.matchHighlightBackground": "#A9B2C333",
+            "peekViewResult.selectionBackground": "#A9B2C31A",
+            "peekViewResult.selectionForeground": "#C6CCD7",
+            "peekViewTitle.background": "#181A1F",
+            "sash.hoverBorder": "#A9B2C333",
+            "scrollbar.shadow": "#00000000",
+            "scrollbarSlider.activeBackground": "#A9B2C333",
+            "scrollbarSlider.background": "#A9B2C31A",
+            "scrollbarSlider.hoverBackground": "#A9B2C333",
+            "sideBar.background": "#181A1F",
+            "sideBar.border": "#0D1117",
+            "sideBar.foreground": "#C6CCD7",
+            "sideBarSectionHeader.background": "#21252B",
+            // "statusBar.background": "#21252B",
+            // "statusBar.border": "#0D1117",
+            // "statusBar.debuggingBackground": "#21252B",
+            // "statusBar.debuggingBorder": "#56B6C2",
+            // "statusBar.debuggingForeground": "#A9B2C3",
+            // "statusBar.focusBorder": "#A9B2C3",
+            // "statusBar.foreground": "#A9B2C3",
+            // "statusBar.noFolderBackground": "#181A1F",
+            // "statusBarItem.activeBackground": "#0D1117",
+            // "statusBarItem.errorBackground": "#21252B",
+            // "statusBarItem.errorForeground": "#D74E42",
+            // "statusBarItem.focusBorder": "#A9B2C3",
+            // "statusBarItem.hoverBackground": "#181A1F",
+            // "statusBarItem.hoverForeground": "#A9B2C3",
+            // "statusBarItem.remoteBackground": "#21252B",
+            // "statusBarItem.remoteForeground": "#B57EDC",
+            // "statusBarItem.warningBackground": "#21252B",
+            // "statusBarItem.warningForeground": "#E9D16C",
+            "tab.activeBackground": "#21252B",
+            "tab.activeBorderTop": "#1085FF",
+            "tab.activeForeground": "#C6CCD7",
+            "tab.border": "#0D1117",
+            "tab.inactiveBackground": "#181A1F",
+            "tab.inactiveForeground": "#5F6672",
+            "tab.lastPinnedBorder": "#A9B2C333",
+            "terminal.ansiBlack": "#5F6672",
+            "terminal.ansiBlue": "#61AFEF",
+            "terminal.ansiBrightBlack": "#5F6672",
+            "terminal.ansiBrightBlue": "#61AFEF",
+            "terminal.ansiBrightCyan": "#56B6C2",
+            "terminal.ansiBrightGreen": "#98C379",
+            "terminal.ansiBrightMagenta": "#B57EDC",
+            "terminal.ansiBrightRed": "#E06C75",
+            "terminal.ansiBrightWhite": "#A9B2C3",
+            "terminal.ansiBrightYellow": "#E5C07B",
+            "terminal.ansiCyan": "#56B6C2",
+            "terminal.ansiGreen": "#98C379",
+            "terminal.ansiMagenta": "#B57EDC",
+            "terminal.ansiRed": "#E06C75",
+            "terminal.ansiWhite": "#A9B2C3",
+            "terminal.ansiYellow": "#E5C07B",
+            "terminal.foreground": "#A9B2C3",
+            "titleBar.activeBackground": "#21252B",
+            "titleBar.activeForeground": "#C6CCD7",
+            "titleBar.border": "#0D1117",
+            "titleBar.inactiveBackground": "#21252B",
+            "titleBar.inactiveForeground": "#5F6672",
+            "toolbar.hoverBackground": "#A9B2C333",
+            "widget.shadow": "#00000000"
+        },
+        "[Sourcegraph Dark]": {
+            "tab.activeBorder": "#72C3FC",
+        },
+        "[Xcode Syntax Dark (Catalina)]": {
+            "activityBar.border": "#343434",
+            "activityBar.background": "#08090e",
+            "activityBarBadge.background": "#242424",
+            "sideBar.border": "#343434",
+            "sideBar.background": "#0c1117",
+            "sideBar.foreground": "#8c929b",
+            "sideBarTitle.foreground": "#fff",
+            "sideBarSectionHeader.border": "#343434",
+            "sideBarSectionHeader.foreground": "#fff",
+            "sideBarSectionHeader.background": "#0b1117",
+            "tab.border": "#08090e",
+            "tab.activeBorder": "#9CDCFE",
+            "tab.unfocusedActiveBorder": "#9CDCFE",
+            "tab.activeForeground": "#fff",
+            "tab.activeBackground": "#08090e",
+            "tab.inactiveBackground": "#0c1117",
+            "tab.inactiveForeground": "#757575",
+            "tab.unfocusedActiveForeground": "#fff",
+            "tab.unfocusedInactiveForeground": "#757575",
+            "editor.background": "#08090e",
+            "editorWhitespace.foreground": "#242424",
+            "editorGroupHeader.tabsBackground": "#08090e",
+            "statusBar.background": "#08090e"
+        },
+        "[Xcode Syntax Dark Bold (Catalina)]": {
+            "activityBar.border": "#343434",
+            "activityBar.background": "#08090e",
+            "activityBarBadge.background": "#242424",
+            "sideBar.border": "#343434",
+            "sideBar.background": "#0c1117",
+            "sideBar.foreground": "#8c929b",
+            "sideBarTitle.foreground": "#fff",
+            "sideBarSectionHeader.border": "#343434",
+            "sideBarSectionHeader.foreground": "#fff",
+            "sideBarSectionHeader.background": "#0b1117",
+            "tab.border": "#08090e",
+            "tab.activeBorder": "#9CDCFE",
+            "tab.unfocusedActiveBorder": "#9CDCFE",
+            "tab.activeForeground": "#fff",
+            "tab.activeBackground": "#08090e",
+            "tab.inactiveBackground": "#0c1117",
+            "tab.inactiveForeground": "#757575",
+            "tab.unfocusedActiveForeground": "#fff",
+            "tab.unfocusedInactiveForeground": "#757575",
+            "editor.background": "#08090e",
+            "editorWhitespace.foreground": "#242424",
+            "editorGroupHeader.tabsBackground": "#08090e",
+            "statusBar.background": "#08090e"
+        }
+    },
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook"
+    },
+
+    "python.languageServer": "Pylance",
+    "python.pipenvPath": "/usr/local/bin/pipenv",
+    "[python]": {
+        "gitlens.codeLens.symbolScopes": [
+            "!Module"
+        ],
+        "editor.wordBasedSuggestions": "off"
+    },
+    "files.associations": {
+        ".env*": "dotenv",
+        "vector": "cpp",
+        "iosfwd": "cpp",
+        "__bit_reference": "cpp",
+        "__config": "cpp",
+        "__hash_table": "cpp",
+        "__locale": "cpp",
+        "__node_handle": "cpp",
+        "__split_buffer": "cpp",
+        "__threading_support": "cpp",
+        "__tree": "cpp",
+        "__verbose_abort": "cpp",
+        "array": "cpp",
+        "bitset": "cpp",
+        "cctype": "cpp",
+        "clocale": "cpp",
+        "cmath": "cpp",
+        "complex": "cpp",
+        "cstdarg": "cpp",
+        "cstddef": "cpp",
+        "cstdint": "cpp",
+        "cstdio": "cpp",
+        "cstdlib": "cpp",
+        "cstring": "cpp",
+        "ctime": "cpp",
+        "cwchar": "cpp",
+        "cwctype": "cpp",
+        "deque": "cpp",
+        "execution": "cpp",
+        "initializer_list": "cpp",
+        "ios": "cpp",
+        "iostream": "cpp",
+        "istream": "cpp",
+        "limits": "cpp",
+        "locale": "cpp",
+        "map": "cpp",
+        "mutex": "cpp",
+        "new": "cpp",
+        "optional": "cpp",
+        "ostream": "cpp",
+        "queue": "cpp",
+        "ratio": "cpp",
+        "sstream": "cpp",
+        "stack": "cpp",
+        "stdexcept": "cpp",
+        "streambuf": "cpp",
+        "string": "cpp",
+        "string_view": "cpp",
+        "tuple": "cpp",
+        "typeinfo": "cpp",
+        "unordered_map": "cpp",
+        "unordered_set": "cpp",
+        "variant": "cpp",
+        "algorithm": "cpp"
+    },
+    "dart.lineLength": 120,
+    "dart.openDevTools": "flutter",
+    "[dart]": {
+        "editor.formatOnSave": false,
+        "editor.formatOnType": false,
+        "editor.rulers": [
+            80,
+            120
+        ],
+        "editor.selectionHighlight": false,
+        "editor.suggestSelection": "first",
+        "editor.tabCompletion": "onlySnippets",
+        "editor.wordBasedSuggestions": "off"
+    },
+    "[dart][python]": {
+        "editor.wordBasedSuggestions": "off"
+    },
+    "[go]": {
+        "editor.insertSpaces": false,
+        "editor.formatOnSave": false,
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": "never"
+        }
+    },
+    "yaml.schemas": {
+        "file:///Users/harish/.vscode/extensions/atlassian.atlascode-3.0.9/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+    },
+    "parallels-desktop.git.path": "/usr/bin/git",
+    "parallels-desktop.brew.path": "/opt/homebrew/bin/brew",
+    "parallels-desktop.hashicorp.vagrant.path": "/usr/local/bin/vagrant",
+    "parallels-desktop.extension.path": "/Users/harish/.parallels-desktop-vscode",
+    "parallels-desktop.hashicorp.vagrant.parallels.plugin": false,
+    "parallels-desktop.hashicorp.packer.path": "/opt/homebrew/bin/packer",
+    "parallels-desktop.prlctl.path": "/usr/local/bin/prlctl",
+    "python.defaultInterpreterPath": "/Users/harish/.pyenv/versions/3.10.14/envs/sutd",
+    "githubPullRequests.pullBranch": "never",
+    "explorer.fileNesting.patterns": {
+        "Cargo.toml": "Cargo.lock",
+        "*.sqlite": "${capture}.${extname}-*",
+        "*.db": "${capture}.${extname}-*",
+        "*.sqlite3": "${capture}.${extname}-*",
+        "*.db3": "${capture}.${extname}-*",
+        "*.sdb": "${capture}.${extname}-*",
+        "*.s3db": "${capture}.${extname}-*"
+    },
+
+    "gopls": {
+        "ui.semanticTokens": true
+    },
+
+    // Cody dev settings
+    // "openctx.enable": true,
+    "cody.useContext": "blended",
+    "openctx.providers": {   
+    //   "https://sourcegraph.com/.api/openctx": true,
+      "file:///Users/harish/Workspaces/oss/sourcegraph/opencodegraph/provider/web/dist/bundle.js": true,
+    //   "file:///Users/harish/Workspaces/oss/sourcegraph/opencodegraph/provider/hello-world/dist/bundle.js": true,
+    },
+    "git.openRepositoryInParentFolders": "never",
+    "biome.enabled": false,
+    "diffEditor.experimental.showMoves": true,
+    "diffEditor.useInlineViewWhenSpaceIsLimited": false,
+    "workbench.layoutControl.enabled": false,
+    "editor.accessibilitySupport": "off",
+    "makefile.configureOnOpen": true,
+    "C_Cpp.default.cppStandard": "c++20",
+    "C_Cpp.default.cStandard": "c23",
+    "cmake.pinnedCommands": [
+        "workbench.action.tasks.configureTaskRunner",
+        "workbench.action.tasks.runTask"
+    ],
+    "window.confirmBeforeClose": "keyboardOnly",
+    "github.copilot.enable": {
+        "*": true,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false
+    },
+    "workbench.colorTheme": "Enhanced Default (alt colors)"
+}
