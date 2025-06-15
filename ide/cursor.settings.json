@@ -4,7 +4,7 @@
     "editor.fontSize": 12.5,
     "editor.formatOnType": false,
     "editor.formatOnSave": false,
-    "editor.fontFamily": "Cascadia Code, GeistMono Nerd Font, ZedMono Nerd Font, JetBrainsMono Nerd Font, Lekton Nerd Font, FiraCode Nerd Font Propo, Ubuntu Mono, PO52, Operator Mono, Lilex Nerd Font, FiraCode Nerd Font",
+    "editor.fontFamily": "Cascadia Code, IBM Plex Mono Medium, MonoLisa Nerd Font Mono, IBM Plex Mono, GeistMono Nerd Font, ZedMono Nerd Font, JetBrainsMono Nerd Font, Lekton Nerd Font, FiraCode Nerd Font Propo, Ubuntu Mono, PO52, Operator Mono, Lilex Nerd Font, FiraCode Nerd Font",
     "editor.fontLigatures": "'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'ss07', 'ss08', 'calt', 'dlig'",
     // "editor.fontFamily": "GeistMono Nerd Font, SFMono Nerd Font Mono, 0xProto Nerd Font, JetBrainsMono Nerd Font Mono, Ubuntu Mono, IBM Plex Mono, Noto Mono, Lilex Nerd Font Mono, Operator Mono, Mononoki Nerd Font, MonoLisa Nerd Font Mono, MartianMono Nerd Font Mono, FiraCode Nerd Font Mono, FiraCode Nerd Font",
     "terminal.integrated.fontSize": 12.5,
@@ -1076,7 +1076,7 @@
                 },
                 {
                     "scope": [
-                        "meta.indexed-name.python",
+                        "meta.indexed-name.python"
                     ],
                     "settings": {
                         "foreground": "#E4BF7F"
@@ -1094,20 +1094,20 @@
                 },
                 {
                     "scope": [
+                        "constant.language",
+                        "constant.language.boolean",
                         "constant.language.true.cpp",
-                        "constant.language.false.cpp"
+                        "constant.language.false.cpp",
+                        "support.type.primitive.tsx"
                     ],
                     "settings": {
                         "foreground": "#56B7C3"
                     }
                 },
                 {
-                    "scope": [
-                        "constant.language.python",
-                    ],
+                    "scope": [],
                     "settings": {
                         "foreground": "#E06C75"
-                        // "foreground": "#A78CFA"
                     }
                 },
                 {
@@ -3117,7 +3117,15 @@
         "[Eva Dark]": {
             "rules": {
                 "namespace:javascript": "#98C379",
-                "namespace:typescript": "#98C379"
+                "namespace:typescript": "#98C379",
+                "property.declaration:javascript": "#E4BF7F",
+                "property.declaration:typescript": "#E4BF7F",
+                "variable.defaultLibrary:javascript": "#A78CFA",
+                "variable.defaultLibrary:javascriptreact": "#A78CFA",
+                "variable.defaultLibrary:typescript": "#A78CFA",
+                "variable.defaultLibrary:typescriptreact": "#A78CFA",
+                "function.declaration.readonly.local:javascriptreact": "#E06C75",
+                "function.declaration.readonly.local:typescriptreact": "#E06C75"
             }
         },
         "[GitHub Dark]": {
@@ -3821,6 +3829,7 @@
     "editor.minimap.enabled": true,
     "editor.renderWhitespace": "boundary",
     "editor.codeLensFontFamily": "Default",
+    // "amp.terminal.commands.environment": "node-spawn",
     "amp.mcpServers": {
         "playwright": {
             "command": "npx",
@@ -3853,6 +3862,14 @@
         "xargs",
         "sudo",
         "curl",
-        "cd"
+        "cd",
+        "sleep",
+        "npm",
+        "kill",
+        "true",
+        "pyenv",
+        "eval",
+        "eval",
+        "npx"
     ],
 }
