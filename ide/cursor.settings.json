@@ -862,10 +862,27 @@
                 },
                 {
                     "scope": [
+                        "variable.parameter.function-call.python",
+                    ],
+                    "settings": {
+                        "foreground": "#85E89D"
+                    }
+                },
+                {
+                    "scope": [
+                        "variable.language.this.js",
+                        "variable.language.this.ts",
                         "constant.other.caps.python",
+                        "support.function.builtin.python"
+                    ],
+                    "settings": {
+                        "foreground": "#E06C75"
+                    }
+                },
+                {
+                    "scope": [
                         "variable.language.special.cls.python",
                         "variable.language.special.self.python",
-                        "variable.parameter.function-call.python",
                         "variable.parameter.function.language.special.cls.python",
                         "variable.parameter.function.language.special.self.python"
                     ],
@@ -3327,7 +3344,13 @@
                 "enumMember": "#D19A66",
                 "clsParameter": "#E06C75",
                 "selfParameter": "#E06C75",
-                "variable.decorator": "#E06C75"
+                "variable.decorator": "#E06C75",
+                "variable.defaultLibrary:typescript": "#56B6C2"
+            }
+        },
+        "[Sourcegraph Dark]": {
+            "rules": {
+                "variable.defaultLibrary:typescript": "#4EC9B0"
             }
         },
         "[Spinel]": {
@@ -3818,7 +3841,7 @@
         "markdown": false,
         "scminput": false
     },
-    "workbench.colorTheme": "Eva Dark",
+    "workbench.colorTheme": "Default Dark Modern",
     "cursor.cpp.disabledLanguages": [
         "plaintext",
         "markdown",
@@ -3870,6 +3893,9 @@
         "pyenv",
         "eval",
         "eval",
-        "npx"
+        "npx",
+        "chmod",
+        "docker",
+        "docker"
     ],
 }
