@@ -862,6 +862,14 @@
                 },
                 {
                     "scope": [
+                        "support.function.builtin.python"
+                    ],
+                    "settings": {
+                        "foreground": "#BCAAFE"
+                    }
+                },
+                {
+                    "scope": [
                         "variable.parameter.function-call.python",
                     ],
                     "settings": {
@@ -873,7 +881,6 @@
                         "variable.language.this.js",
                         "variable.language.this.ts",
                         "constant.other.caps.python",
-                        "support.function.builtin.python"
                     ],
                     "settings": {
                         "foreground": "#E06C75"
@@ -3896,6 +3903,9 @@
         "npx",
         "chmod",
         "docker",
-        "docker"
+        "docker",
+        "railway",
+        "pnpm",
+        "sh"
     ],
 }
