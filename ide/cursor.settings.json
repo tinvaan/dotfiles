@@ -4,7 +4,7 @@
     "editor.fontSize": 12.5,
     "editor.formatOnType": false,
     "editor.formatOnSave": false,
-    "editor.fontFamily": "GeistMono Nerd Font, Cascadia Code, JetBrainsMono Nerd Font, IBM Plex Mono Medium, MonoLisa Nerd Font Mono, IBM Plex Mono, ZedMono Nerd Font, Lekton Nerd Font, FiraCode Nerd Font Propo, Ubuntu Mono, PO52, Operator Mono, Lilex Nerd Font, FiraCode Nerd Font",
+    "editor.fontFamily": "Cascadia Code, GeistMono Nerd Font, JetBrainsMono Nerd Font, IBM Plex Mono Medium, MonoLisa Nerd Font Mono, IBM Plex Mono, ZedMono Nerd Font, Lekton Nerd Font, FiraCode Nerd Font Propo, Ubuntu Mono, PO52, Operator Mono, Lilex Nerd Font, FiraCode Nerd Font",
     "editor.fontLigatures": "'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'ss07', 'ss08', 'calt', 'dlig'",
     // "editor.fontFamily": "GeistMono Nerd Font, SFMono Nerd Font Mono, 0xProto Nerd Font, JetBrainsMono Nerd Font Mono, Ubuntu Mono, IBM Plex Mono, Noto Mono, Lilex Nerd Font Mono, Operator Mono, Mononoki Nerd Font, MonoLisa Nerd Font Mono, MartianMono Nerd Font Mono, FiraCode Nerd Font Mono, FiraCode Nerd Font",
     "terminal.integrated.fontSize": 12.5,
@@ -882,11 +882,10 @@
                 },
                 {
                     "scope": [
-                        "constant.other.caps.python",
-                        // "entity.name.function.decorator.python"
+                        "constant.other.caps.python"
                     ],
                     "settings": {
-                        "foreground": "#FFAB70",
+                        "foreground": "#FFAB70"
                     }
                 },
                 {
@@ -899,7 +898,6 @@
                         "variable.parameter.function.language.special.self.python"
                     ],
                     "settings": {
-                        // "foreground": "#569CD6"
                         "foreground": "#E06C75"
                     }
                 }
@@ -3122,6 +3120,8 @@
         },
         "[Default Dark Modern]": {
             "rules": {
+                "interface:typescript": "#FFAB70",
+                "interface:typescriptreact": "#FFAB70",
                 "variable.declaration.readonly.local:javascript": "#85E89D",
                 "variable.declaration.readonly.local:typescript": "#85E89D",
                 "variable.declaration.readonly.local:javascriptreact": "#85E89D",
