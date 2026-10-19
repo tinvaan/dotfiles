@@ -3,6 +3,7 @@ export ZSH="$HOME/.oh-my-zsh"
 
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH="$HOME/.local/bin:$PATH"
 export PATH=$PATH:/opt/homebrew/sbin
 export PATH=$PATH:/usr/local/go/bin
 export PATH=$HOME/fvm/versions/stable/bin:$HOME/fvm/default/bin:$PATH # Flutter SDK paths
@@ -107,7 +108,6 @@ source <(fzf --zsh)
 source $ZSH/oh-my-zsh.sh
 source $HOME/.api.keys.sh
 source $HOME/.pyenv/init.sh
-source $HOME/Workspaces/oss/pulp/env.sh
 
 source virtualenvwrapper.sh
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
@@ -185,3 +185,4 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
+
